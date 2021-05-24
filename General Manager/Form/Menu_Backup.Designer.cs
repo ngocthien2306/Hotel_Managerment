@@ -91,7 +91,6 @@ namespace General_Manager.Form
             this.ItemForCMND = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForpassword = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForgender = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForbdate = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForrole = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemFordaywork = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForpicture = new DevExpress.XtraLayout.LayoutControlItem();
@@ -101,6 +100,7 @@ namespace General_Manager.Form
             this.ItemForemail = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForaddress = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForphone = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForbdate = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -155,7 +155,6 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCMND)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForgender)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForbdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForrole)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemFordaywork)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).BeginInit();
@@ -165,6 +164,7 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.ItemForemail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForaddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForphone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForbdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -487,7 +487,7 @@ namespace General_Manager.Form
             this.IdTextEdit.Name = "IdTextEdit";
             this.IdTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.IdTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.IdTextEdit.Properties.Mask.EditMask = "N0";
+            this.IdTextEdit.Properties.Mask.EditMask = "d";
             this.IdTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.IdTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.IdTextEdit.Size = new System.Drawing.Size(296, 22);
@@ -567,7 +567,7 @@ namespace General_Manager.Form
             this.phoneTextEdit.Name = "phoneTextEdit";
             this.phoneTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.phoneTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.phoneTextEdit.Properties.Mask.EditMask = "N0";
+            this.phoneTextEdit.Properties.Mask.EditMask = "d";
             this.phoneTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.phoneTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.phoneTextEdit.Size = new System.Drawing.Size(987, 22);
@@ -756,15 +756,6 @@ namespace General_Manager.Form
             this.ItemForgender.Text = "gender";
             this.ItemForgender.TextSize = new System.Drawing.Size(55, 16);
             // 
-            // ItemForbdate
-            // 
-            this.ItemForbdate.Control = this.bdateDateEdit;
-            this.ItemForbdate.Location = new System.Drawing.Point(1074, 0);
-            this.ItemForbdate.Name = "ItemForbdate";
-            this.ItemForbdate.Size = new System.Drawing.Size(359, 26);
-            this.ItemForbdate.Text = "bdate";
-            this.ItemForbdate.TextSize = new System.Drawing.Size(55, 16);
-            // 
             // ItemForrole
             // 
             this.ItemForrole.Control = this.roleTextEdit;
@@ -849,6 +840,15 @@ namespace General_Manager.Form
             this.ItemForphone.Text = "phone";
             this.ItemForphone.TextSize = new System.Drawing.Size(55, 16);
             // 
+            // ItemForbdate
+            // 
+            this.ItemForbdate.Control = this.bdateDateEdit;
+            this.ItemForbdate.Location = new System.Drawing.Point(1074, 0);
+            this.ItemForbdate.Name = "ItemForbdate";
+            this.ItemForbdate.Size = new System.Drawing.Size(359, 26);
+            this.ItemForbdate.Text = "bdate";
+            this.ItemForbdate.TextSize = new System.Drawing.Size(55, 16);
+            // 
             // tabbedControlGroup1
             // 
             this.tabbedControlGroup1.Location = new System.Drawing.Point(365, 130);
@@ -867,11 +867,11 @@ namespace General_Manager.Form
             // gridControl1
             // 
             this.gridControl1.DataSource = this.employeeBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(12, 521);
+            this.gridControl1.Location = new System.Drawing.Point(-4, 521);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.ribbon;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1465, 354);
+            this.gridControl1.Size = new System.Drawing.Size(1459, 354);
             this.gridControl1.TabIndex = 8;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1084,7 +1084,6 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCMND)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForgender)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForbdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForrole)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemFordaywork)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).EndInit();
@@ -1094,6 +1093,7 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.ItemForemail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForaddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForphone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForbdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
