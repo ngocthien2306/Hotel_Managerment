@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Hotel_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Check_in">
+          <Key>
+            <PropertyRef Name="check_in_date" />
+            <PropertyRef Name="emp_id" />
+          </Key>
+          <Property Name="check_in_date" Type="datetime" Nullable="false" />
+          <Property Name="emp_id" Type="int" Nullable="false" />
+          <Property Name="check_in_time" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Check_out">
+          <Key>
+            <PropertyRef Name="check_out_date" />
+            <PropertyRef Name="emp_id" />
+          </Key>
+          <Property Name="check_out_date" Type="datetime" Nullable="false" />
+          <Property Name="emp_id" Type="int" Nullable="false" />
+          <Property Name="check_out_time" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" />
+          <Property Name="fname" Type="nvarchar" MaxLength="10" />
+          <Property Name="lname" Type="nvarchar" MaxLength="10" />
+          <Property Name="CMND" Type="nvarchar" MaxLength="20" />
+          <Property Name="bdate" Type="datetime" />
+          <Property Name="address" Type="nvarchar" MaxLength="50" />
+          <Property Name="phone" Type="int" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="salary" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="role" Type="nvarchar" MaxLength="20" />
+          <Property Name="daywork" Type="datetime" />
+          <Property Name="work" Type="int" />
+          <Property Name="picture" Type="image" />
+          <Property Name="gender" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Employee_Position">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="position" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="position" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Manage_emp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="emp_id" Type="int" />
+        </EntityType>
+        <EntityType Name="Monney_Transaction">
+          <Key>
+            <PropertyRef Name="id_transaction" />
+          </Key>
+          <Property Name="id_transaction" Type="int" Nullable="false" />
+          <Property Name="transaction_type" Type="nvarchar" MaxLength="1" />
+          <Property Name="execute_date" Type="datetime" />
+          <Property Name="emp_id" Type="int" />
+          <Property Name="money_tranfer" Type="money" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="pos_num" />
+          </Key>
+          <Property Name="pos_num" Type="int" Nullable="false" />
+          <Property Name="pos_name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__Check_in__emp_id__300424B4">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Check_in" Type="Self.Check_in" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Check_in">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Check_out__33D4B598">
+          <End Role="Check_in" Type="Self.Check_in" Multiplicity="1" />
+          <End Role="Check_out" Type="Self.Check_out" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Check_in">
+              <PropertyRef Name="check_in_date" />
+              <PropertyRef Name="emp_id" />
+            </Principal>
+            <Dependent Role="Check_out">
+              <PropertyRef Name="check_out_date" />
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Check_out__emp_i__32E0915F">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Check_out" Type="Self.Check_out" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Check_out">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Employee___posit__286302EC">
+          <End Role="Position" Type="Self.Position" Multiplicity="1" />
+          <End Role="Employee_Position" Type="Self.Employee_Position" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Position">
+              <PropertyRef Name="pos_num" />
+            </Principal>
+            <Dependent Role="Employee_Position">
+              <PropertyRef Name="position" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Employee_Pos__Id__29572725">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Employee_Position" Type="Self.Employee_Position" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Employee_Position">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Manage_em__emp_i__2D27B809">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Manage_emp" Type="Self.Manage_emp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Manage_emp">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Manage_emp__Id__2C3393D0">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Manage_emp" Type="Self.Manage_emp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Manage_emp">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Monney_Tr__emp_i__398D8EEE">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Monney_Transaction" Type="Self.Monney_Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Monney_Transaction">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Hotel_ModelStoreContainer">
+          <EntitySet Name="Check_in" EntityType="Self.Check_in" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Check_out" EntityType="Self.Check_out" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee_Position" EntityType="Self.Employee_Position" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Manage_emp" EntityType="Self.Manage_emp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Monney_Transaction" EntityType="Self.Monney_Transaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Check_in__emp_id__300424B4" Association="Self.FK__Check_in__emp_id__300424B4">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Check_in" EntitySet="Check_in" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Check_out__33D4B598" Association="Self.FK__Check_out__33D4B598">
+            <End Role="Check_in" EntitySet="Check_in" />
+            <End Role="Check_out" EntitySet="Check_out" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Check_out__emp_i__32E0915F" Association="Self.FK__Check_out__emp_i__32E0915F">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Check_out" EntitySet="Check_out" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Employee___posit__286302EC" Association="Self.FK__Employee___posit__286302EC">
+            <End Role="Position" EntitySet="Position" />
+            <End Role="Employee_Position" EntitySet="Employee_Position" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Employee_Pos__Id__29572725" Association="Self.FK__Employee_Pos__Id__29572725">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Employee_Position" EntitySet="Employee_Position" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Manage_em__emp_i__2D27B809" Association="Self.FK__Manage_em__emp_i__2D27B809">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Manage_emp" EntitySet="Manage_emp" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Manage_emp__Id__2C3393D0" Association="Self.FK__Manage_emp__Id__2C3393D0">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Manage_emp" EntitySet="Manage_emp" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Monney_Tr__emp_i__398D8EEE" Association="Self.FK__Monney_Tr__emp_i__398D8EEE">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Monney_Transaction" EntitySet="Monney_Transaction" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Hotel_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Check_in">
+          <Key>
+            <PropertyRef Name="check_in_date" />
+            <PropertyRef Name="emp_id" />
+          </Key>
+          <Property Name="check_in_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="emp_id" Type="Int32" Nullable="false" />
+          <Property Name="check_in_time" Type="Time" Precision="7" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__Check_in__emp_id__300424B4" FromRole="Check_in" ToRole="Employee" />
+          <NavigationProperty Name="Check_out" Relationship="Self.FK__Check_out__33D4B598" FromRole="Check_in" ToRole="Check_out" />
+        </EntityType>
+        <EntityType Name="Check_out">
+          <Key>
+            <PropertyRef Name="check_out_date" />
+            <PropertyRef Name="emp_id" />
+          </Key>
+          <Property Name="check_out_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="emp_id" Type="Int32" Nullable="false" />
+          <Property Name="check_out_time" Type="Time" Precision="7" />
+          <NavigationProperty Name="Check_in" Relationship="Self.FK__Check_out__33D4B598" FromRole="Check_out" ToRole="Check_in" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__Check_out__emp_i__32E0915F" FromRole="Check_out" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="fname" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="lname" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CMND" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="bdate" Type="DateTime" Precision="3" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phone" Type="Int32" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="salary" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="role" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="daywork" Type="DateTime" Precision="3" />
+          <Property Name="work" Type="Int32" />
+          <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Check_in" Relationship="Self.FK__Check_in__emp_id__300424B4" FromRole="Employee" ToRole="Check_in" />
+          <NavigationProperty Name="Check_out" Relationship="Self.FK__Check_out__emp_i__32E0915F" FromRole="Employee" ToRole="Check_out" />
+          <NavigationProperty Name="Manage_emp" Relationship="Self.FK__Manage_em__emp_i__2D27B809" FromRole="Employee" ToRole="Manage_emp" />
+          <NavigationProperty Name="Manage_emp1" Relationship="Self.FK__Manage_emp__Id__2C3393D0" FromRole="Employee" ToRole="Manage_emp" />
+          <NavigationProperty Name="Monney_Transaction" Relationship="Self.FK__Monney_Tr__emp_i__398D8EEE" FromRole="Employee" ToRole="Monney_Transaction" />
+          <NavigationProperty Name="Positions" Relationship="Self.Employee_Position" FromRole="Employee" ToRole="Position" />
+        </EntityType>
+        <EntityType Name="Manage_emp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="emp_id" Type="Int32" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__Manage_em__emp_i__2D27B809" FromRole="Manage_emp" ToRole="Employee" />
+          <NavigationProperty Name="Employee1" Relationship="Self.FK__Manage_emp__Id__2C3393D0" FromRole="Manage_emp" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Monney_Transaction">
+          <Key>
+            <PropertyRef Name="id_transaction" />
+          </Key>
+          <Property Name="id_transaction" Type="Int32" Nullable="false" />
+          <Property Name="transaction_type" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="execute_date" Type="DateTime" Precision="3" />
+          <Property Name="emp_id" Type="Int32" />
+          <Property Name="money_tranfer" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__Monney_Tr__emp_i__398D8EEE" FromRole="Monney_Transaction" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="pos_num" />
+          </Key>
+          <Property Name="pos_num" Type="Int32" Nullable="false" />
+          <Property Name="pos_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Employees" Relationship="Self.Employee_Position" FromRole="Position" ToRole="Employee" />
+        </EntityType>
+        <Association Name="FK__Check_in__emp_id__300424B4">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Check_in" Type="Self.Check_in" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Check_in">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Check_out__33D4B598">
+          <End Role="Check_in" Type="Self.Check_in" Multiplicity="1" />
+          <End Role="Check_out" Type="Self.Check_out" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Check_in">
+              <PropertyRef Name="check_in_date" />
+              <PropertyRef Name="emp_id" />
+            </Principal>
+            <Dependent Role="Check_out">
+              <PropertyRef Name="check_out_date" />
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Check_out__emp_i__32E0915F">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Check_out" Type="Self.Check_out" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Check_out">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Manage_em__emp_i__2D27B809">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Manage_emp" Type="Self.Manage_emp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Manage_emp">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Manage_emp__Id__2C3393D0">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Manage_emp" Type="Self.Manage_emp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Manage_emp">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Monney_Tr__emp_i__398D8EEE">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Monney_Transaction" Type="Self.Monney_Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Monney_Transaction">
+              <PropertyRef Name="emp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Employee_Position">
+          <End Role="Position" Type="Self.Position" Multiplicity="*" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="Hotel_Management_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Check_in" EntityType="Self.Check_in" />
+          <EntitySet Name="Check_out" EntityType="Self.Check_out" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Manage_emp" EntityType="Self.Manage_emp" />
+          <EntitySet Name="Monney_Transaction" EntityType="Self.Monney_Transaction" />
+          <EntitySet Name="Positions" EntityType="Self.Position" />
+          <AssociationSet Name="FK__Check_in__emp_id__300424B4" Association="Self.FK__Check_in__emp_id__300424B4">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Check_in" EntitySet="Check_in" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Check_out__33D4B598" Association="Self.FK__Check_out__33D4B598">
+            <End Role="Check_in" EntitySet="Check_in" />
+            <End Role="Check_out" EntitySet="Check_out" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Check_out__emp_i__32E0915F" Association="Self.FK__Check_out__emp_i__32E0915F">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Check_out" EntitySet="Check_out" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Manage_em__emp_i__2D27B809" Association="Self.FK__Manage_em__emp_i__2D27B809">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Manage_emp" EntitySet="Manage_emp" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Manage_emp__Id__2C3393D0" Association="Self.FK__Manage_emp__Id__2C3393D0">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Manage_emp" EntitySet="Manage_emp" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Monney_Tr__emp_i__398D8EEE" Association="Self.FK__Monney_Tr__emp_i__398D8EEE">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Monney_Transaction" EntitySet="Monney_Transaction" />
+          </AssociationSet>
+          <AssociationSet Name="Employee_Position" Association="Self.Employee_Position">
+            <End Role="Position" EntitySet="Positions" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Hotel_ModelStoreContainer" CdmEntityContainer="Hotel_Management_Entities">
+          <EntitySetMapping Name="Check_in">
+            <EntityTypeMapping TypeName="Hotel_Model.Check_in">
+              <MappingFragment StoreEntitySet="Check_in">
+                <ScalarProperty Name="check_in_date" ColumnName="check_in_date" />
+                <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+                <ScalarProperty Name="check_in_time" ColumnName="check_in_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Check_out">
+            <EntityTypeMapping TypeName="Hotel_Model.Check_out">
+              <MappingFragment StoreEntitySet="Check_out">
+                <ScalarProperty Name="check_out_date" ColumnName="check_out_date" />
+                <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+                <ScalarProperty Name="check_out_time" ColumnName="check_out_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="Hotel_Model.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="CMND" ColumnName="CMND" />
+                <ScalarProperty Name="bdate" ColumnName="bdate" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="salary" ColumnName="salary" />
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="daywork" ColumnName="daywork" />
+                <ScalarProperty Name="work" ColumnName="work" />
+                <ScalarProperty Name="picture" ColumnName="picture" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Manage_emp">
+            <EntityTypeMapping TypeName="Hotel_Model.Manage_emp">
+              <MappingFragment StoreEntitySet="Manage_emp">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Monney_Transaction">
+            <EntityTypeMapping TypeName="Hotel_Model.Monney_Transaction">
+              <MappingFragment StoreEntitySet="Monney_Transaction">
+                <ScalarProperty Name="id_transaction" ColumnName="id_transaction" />
+                <ScalarProperty Name="transaction_type" ColumnName="transaction_type" />
+                <ScalarProperty Name="execute_date" ColumnName="execute_date" />
+                <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+                <ScalarProperty Name="money_tranfer" ColumnName="money_tranfer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Positions">
+            <EntityTypeMapping TypeName="Hotel_Model.Position">
+              <MappingFragment StoreEntitySet="Position">
+                <ScalarProperty Name="pos_num" ColumnName="pos_num" />
+                <ScalarProperty Name="pos_name" ColumnName="pos_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Employee_Position" TypeName="Hotel_Model.Employee_Position" StoreEntitySet="Employee_Position">
+            <EndProperty Name="Position">
+              <ScalarProperty Name="pos_num" ColumnName="position" />
+            </EndProperty>
+            <EndProperty Name="Employee">
+              <ScalarProperty Name="Id" ColumnName="Id" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
