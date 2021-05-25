@@ -10,7 +10,7 @@ namespace General_Manager.Form
     class Room
     {
         Database db = new Database();
-
+       
         public bool checkRoomID(int rid)
         {
             SqlCommand command = new SqlCommand("select * from ROOM where rid = @rid", db.GetConnection);
