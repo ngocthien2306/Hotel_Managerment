@@ -30,7 +30,6 @@ namespace General_Manager.Form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -91,10 +90,9 @@ namespace General_Manager.Form
             this.fluentDesignFormContainer1.Controls.Add(this.title_lb);
             this.fluentDesignFormContainer1.Controls.Add(this.customerpanel);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 59);
-            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 27);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1065, 657);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(954, 555);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // dataGridView1
@@ -102,20 +100,11 @@ namespace General_Manager.Form
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.DataSource = this.roomBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 439);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 357);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1058, 245);
+            this.dataGridView1.Size = new System.Drawing.Size(907, 199);
             this.dataGridView1.TabIndex = 8;
             // 
             // roomBindingSource
@@ -125,10 +114,9 @@ namespace General_Manager.Form
             // update_btn
             // 
             this.update_btn.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
-            this.update_btn.Location = new System.Drawing.Point(747, 346);
-            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.update_btn.Location = new System.Drawing.Point(640, 281);
             this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(131, 37);
+            this.update_btn.Size = new System.Drawing.Size(112, 30);
             this.update_btn.TabIndex = 7;
             this.update_btn.Text = "Update";
             this.update_btn.UseVisualStyleBackColor = true;
@@ -137,10 +125,9 @@ namespace General_Manager.Form
             // cancel_btn
             // 
             this.cancel_btn.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
-            this.cancel_btn.Location = new System.Drawing.Point(945, 346);
-            this.cancel_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cancel_btn.Location = new System.Drawing.Point(810, 281);
             this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(131, 37);
+            this.cancel_btn.Size = new System.Drawing.Size(112, 30);
             this.cancel_btn.TabIndex = 6;
             this.cancel_btn.Text = "Cancel";
             this.cancel_btn.UseVisualStyleBackColor = true;
@@ -149,10 +136,9 @@ namespace General_Manager.Form
             // book_btn
             // 
             this.book_btn.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
-            this.book_btn.Location = new System.Drawing.Point(556, 346);
-            this.book_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.book_btn.Location = new System.Drawing.Point(477, 281);
             this.book_btn.Name = "book_btn";
-            this.book_btn.Size = new System.Drawing.Size(131, 37);
+            this.book_btn.Size = new System.Drawing.Size(112, 30);
             this.book_btn.TabIndex = 5;
             this.book_btn.Text = "Book";
             this.book_btn.UseVisualStyleBackColor = true;
@@ -164,10 +150,9 @@ namespace General_Manager.Form
             this.room_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.room_lb.Appearance.Options.UseFont = true;
             this.room_lb.Appearance.Options.UseForeColor = true;
-            this.room_lb.Location = new System.Drawing.Point(41, 68);
-            this.room_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.room_lb.Location = new System.Drawing.Point(35, 55);
             this.room_lb.Name = "room_lb";
-            this.room_lb.Size = new System.Drawing.Size(63, 29);
+            this.room_lb.Size = new System.Drawing.Size(48, 23);
             this.room_lb.TabIndex = 4;
             this.room_lb.Text = "Room";
             // 
@@ -193,10 +178,9 @@ namespace General_Manager.Form
             this.roompanel.Controls.Add(this.roomtype_lb);
             this.roompanel.Controls.Add(this.roomid_lb);
             this.roompanel.Controls.Add(this.roomid_tb);
-            this.roompanel.Location = new System.Drawing.Point(17, 86);
-            this.roompanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roompanel.Location = new System.Drawing.Point(15, 70);
             this.roompanel.Name = "roompanel";
-            this.roompanel.Size = new System.Drawing.Size(519, 316);
+            this.roompanel.Size = new System.Drawing.Size(445, 257);
             this.roompanel.TabIndex = 3;
             // 
             // max_lb
@@ -205,22 +189,20 @@ namespace General_Manager.Form
             this.max_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.max_lb.Appearance.Options.UseFont = true;
             this.max_lb.Appearance.Options.UseForeColor = true;
-            this.max_lb.Location = new System.Drawing.Point(278, 217);
-            this.max_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.max_lb.Location = new System.Drawing.Point(238, 176);
             this.max_lb.Name = "max_lb";
-            this.max_lb.Size = new System.Drawing.Size(153, 24);
+            this.max_lb.Size = new System.Drawing.Size(124, 19);
             this.max_lb.TabIndex = 16;
             this.max_lb.Text = "Maximum people";
             // 
             // max_tb
             // 
             this.max_tb.Enabled = false;
-            this.max_tb.Location = new System.Drawing.Point(278, 256);
-            this.max_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.max_tb.Location = new System.Drawing.Point(238, 208);
             this.max_tb.Name = "max_tb";
             this.max_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.max_tb.Properties.Appearance.Options.UseFont = true;
-            this.max_tb.Size = new System.Drawing.Size(224, 30);
+            this.max_tb.Size = new System.Drawing.Size(192, 26);
             this.max_tb.TabIndex = 15;
             // 
             // cost_lb
@@ -229,32 +211,29 @@ namespace General_Manager.Form
             this.cost_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.cost_lb.Appearance.Options.UseFont = true;
             this.cost_lb.Appearance.Options.UseForeColor = true;
-            this.cost_lb.Location = new System.Drawing.Point(24, 217);
-            this.cost_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cost_lb.Location = new System.Drawing.Point(21, 176);
             this.cost_lb.Name = "cost_lb";
-            this.cost_lb.Size = new System.Drawing.Size(40, 24);
+            this.cost_lb.Size = new System.Drawing.Size(32, 19);
             this.cost_lb.TabIndex = 14;
             this.cost_lb.Text = "Cost";
             // 
             // cost_tb
             // 
             this.cost_tb.Enabled = false;
-            this.cost_tb.Location = new System.Drawing.Point(24, 256);
-            this.cost_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cost_tb.Location = new System.Drawing.Point(21, 208);
             this.cost_tb.Name = "cost_tb";
             this.cost_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.cost_tb.Properties.Appearance.Options.UseFont = true;
-            this.cost_tb.Size = new System.Drawing.Size(224, 30);
+            this.cost_tb.Size = new System.Drawing.Size(192, 26);
             this.cost_tb.TabIndex = 13;
             // 
             // roomtype_cb
             // 
             this.roomtype_cb.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.roomtype_cb.FormattingEnabled = true;
-            this.roomtype_cb.Location = new System.Drawing.Point(278, 68);
-            this.roomtype_cb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roomtype_cb.Location = new System.Drawing.Point(238, 55);
             this.roomtype_cb.Name = "roomtype_cb";
-            this.roomtype_cb.Size = new System.Drawing.Size(223, 32);
+            this.roomtype_cb.Size = new System.Drawing.Size(192, 27);
             this.roomtype_cb.TabIndex = 12;
             this.roomtype_cb.SelectedIndexChanged += new System.EventHandler(this.roomtype_cb_SelectedIndexChanged);
             // 
@@ -263,13 +242,12 @@ namespace General_Manager.Form
             this.checkout_picker.CustomFormat = "  dd / MM / yyyy ";
             this.checkout_picker.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.checkout_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.checkout_picker.Location = new System.Drawing.Point(278, 162);
-            this.checkout_picker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkout_picker.Location = new System.Drawing.Point(238, 132);
             this.checkout_picker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.checkout_picker.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.checkout_picker.Name = "checkout_picker";
             this.checkout_picker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkout_picker.Size = new System.Drawing.Size(223, 32);
+            this.checkout_picker.Size = new System.Drawing.Size(192, 27);
             this.checkout_picker.TabIndex = 11;
             // 
             // checkout_lb
@@ -278,10 +256,9 @@ namespace General_Manager.Form
             this.checkout_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.checkout_lb.Appearance.Options.UseFont = true;
             this.checkout_lb.Appearance.Options.UseForeColor = true;
-            this.checkout_lb.Location = new System.Drawing.Point(278, 127);
-            this.checkout_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkout_lb.Location = new System.Drawing.Point(238, 103);
             this.checkout_lb.Name = "checkout_lb";
-            this.checkout_lb.Size = new System.Drawing.Size(91, 24);
+            this.checkout_lb.Size = new System.Drawing.Size(72, 19);
             this.checkout_lb.TabIndex = 10;
             this.checkout_lb.Text = "Check Out";
             // 
@@ -290,13 +267,12 @@ namespace General_Manager.Form
             this.checkin_picker.CustomFormat = "  dd / MM / yyyy ";
             this.checkin_picker.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.checkin_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.checkin_picker.Location = new System.Drawing.Point(24, 162);
-            this.checkin_picker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkin_picker.Location = new System.Drawing.Point(21, 132);
             this.checkin_picker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.checkin_picker.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.checkin_picker.Name = "checkin_picker";
             this.checkin_picker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkin_picker.Size = new System.Drawing.Size(223, 32);
+            this.checkin_picker.Size = new System.Drawing.Size(192, 27);
             this.checkin_picker.TabIndex = 9;
             // 
             // checkin_lb
@@ -305,10 +281,9 @@ namespace General_Manager.Form
             this.checkin_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.checkin_lb.Appearance.Options.UseFont = true;
             this.checkin_lb.Appearance.Options.UseForeColor = true;
-            this.checkin_lb.Location = new System.Drawing.Point(24, 127);
-            this.checkin_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkin_lb.Location = new System.Drawing.Point(21, 103);
             this.checkin_lb.Name = "checkin_lb";
-            this.checkin_lb.Size = new System.Drawing.Size(77, 24);
+            this.checkin_lb.Size = new System.Drawing.Size(61, 19);
             this.checkin_lb.TabIndex = 6;
             this.checkin_lb.Text = "Check In";
             // 
@@ -318,10 +293,9 @@ namespace General_Manager.Form
             this.roomtype_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.roomtype_lb.Appearance.Options.UseFont = true;
             this.roomtype_lb.Appearance.Options.UseForeColor = true;
-            this.roomtype_lb.Location = new System.Drawing.Point(278, 38);
-            this.roomtype_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roomtype_lb.Location = new System.Drawing.Point(238, 31);
             this.roomtype_lb.Name = "roomtype_lb";
-            this.roomtype_lb.Size = new System.Drawing.Size(42, 24);
+            this.roomtype_lb.Size = new System.Drawing.Size(34, 19);
             this.roomtype_lb.TabIndex = 4;
             this.roomtype_lb.Text = "Type";
             // 
@@ -331,21 +305,19 @@ namespace General_Manager.Form
             this.roomid_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.roomid_lb.Appearance.Options.UseFont = true;
             this.roomid_lb.Appearance.Options.UseForeColor = true;
-            this.roomid_lb.Location = new System.Drawing.Point(24, 38);
-            this.roomid_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roomid_lb.Location = new System.Drawing.Point(21, 31);
             this.roomid_lb.Name = "roomid_lb";
-            this.roomid_lb.Size = new System.Drawing.Size(19, 24);
+            this.roomid_lb.Size = new System.Drawing.Size(15, 19);
             this.roomid_lb.TabIndex = 2;
             this.roomid_lb.Text = "ID";
             // 
             // roomid_tb
             // 
-            this.roomid_tb.Location = new System.Drawing.Point(24, 69);
-            this.roomid_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roomid_tb.Location = new System.Drawing.Point(21, 56);
             this.roomid_tb.Name = "roomid_tb";
             this.roomid_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.roomid_tb.Properties.Appearance.Options.UseFont = true;
-            this.roomid_tb.Size = new System.Drawing.Size(224, 30);
+            this.roomid_tb.Size = new System.Drawing.Size(192, 26);
             this.roomid_tb.TabIndex = 0;
             // 
             // customer_lb
@@ -354,10 +326,9 @@ namespace General_Manager.Form
             this.customer_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.customer_lb.Appearance.Options.UseFont = true;
             this.customer_lb.Appearance.Options.UseForeColor = true;
-            this.customer_lb.Location = new System.Drawing.Point(580, 68);
-            this.customer_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customer_lb.Location = new System.Drawing.Point(497, 55);
             this.customer_lb.Name = "customer_lb";
-            this.customer_lb.Size = new System.Drawing.Size(106, 29);
+            this.customer_lb.Size = new System.Drawing.Size(83, 23);
             this.customer_lb.TabIndex = 1;
             this.customer_lb.Text = "Customer";
             // 
@@ -367,10 +338,9 @@ namespace General_Manager.Form
             this.title_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.title_lb.Appearance.Options.UseFont = true;
             this.title_lb.Appearance.Options.UseForeColor = true;
-            this.title_lb.Location = new System.Drawing.Point(432, 7);
-            this.title_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.title_lb.Location = new System.Drawing.Point(370, 6);
             this.title_lb.Name = "title_lb";
-            this.title_lb.Size = new System.Drawing.Size(252, 36);
+            this.title_lb.Size = new System.Drawing.Size(200, 29);
             this.title_lb.TabIndex = 2;
             this.title_lb.Text = "Room Registration";
             // 
@@ -392,10 +362,9 @@ namespace General_Manager.Form
             this.customerpanel.Controls.Add(this.phone_tb);
             this.customerpanel.Controls.Add(this.name_lb);
             this.customerpanel.Controls.Add(this.name_tb);
-            this.customerpanel.Location = new System.Drawing.Point(556, 86);
-            this.customerpanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.customerpanel.Location = new System.Drawing.Point(477, 70);
             this.customerpanel.Name = "customerpanel";
-            this.customerpanel.Size = new System.Drawing.Size(519, 222);
+            this.customerpanel.Size = new System.Drawing.Size(445, 180);
             this.customerpanel.TabIndex = 0;
             // 
             // bdate_picker
@@ -403,13 +372,12 @@ namespace General_Manager.Form
             this.bdate_picker.CustomFormat = "  dd / MM / yyyy ";
             this.bdate_picker.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.bdate_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdate_picker.Location = new System.Drawing.Point(24, 162);
-            this.bdate_picker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bdate_picker.Location = new System.Drawing.Point(21, 132);
             this.bdate_picker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.bdate_picker.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.bdate_picker.Name = "bdate_picker";
             this.bdate_picker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bdate_picker.Size = new System.Drawing.Size(223, 32);
+            this.bdate_picker.Size = new System.Drawing.Size(192, 27);
             this.bdate_picker.TabIndex = 9;
             // 
             // address_lb
@@ -418,21 +386,19 @@ namespace General_Manager.Form
             this.address_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.address_lb.Appearance.Options.UseFont = true;
             this.address_lb.Appearance.Options.UseForeColor = true;
-            this.address_lb.Location = new System.Drawing.Point(278, 127);
-            this.address_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.address_lb.Location = new System.Drawing.Point(238, 103);
             this.address_lb.Name = "address_lb";
-            this.address_lb.Size = new System.Drawing.Size(75, 24);
+            this.address_lb.Size = new System.Drawing.Size(60, 19);
             this.address_lb.TabIndex = 8;
             this.address_lb.Text = "Address";
             // 
             // address_tb
             // 
-            this.address_tb.Location = new System.Drawing.Point(278, 166);
-            this.address_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.address_tb.Location = new System.Drawing.Point(238, 135);
             this.address_tb.Name = "address_tb";
             this.address_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.address_tb.Properties.Appearance.Options.UseFont = true;
-            this.address_tb.Size = new System.Drawing.Size(224, 30);
+            this.address_tb.Size = new System.Drawing.Size(192, 26);
             this.address_tb.TabIndex = 7;
             // 
             // bdate_lb
@@ -441,10 +407,9 @@ namespace General_Manager.Form
             this.bdate_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.bdate_lb.Appearance.Options.UseFont = true;
             this.bdate_lb.Appearance.Options.UseForeColor = true;
-            this.bdate_lb.Location = new System.Drawing.Point(24, 127);
-            this.bdate_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bdate_lb.Location = new System.Drawing.Point(21, 103);
             this.bdate_lb.Name = "bdate_lb";
-            this.bdate_lb.Size = new System.Drawing.Size(77, 24);
+            this.bdate_lb.Size = new System.Drawing.Size(61, 19);
             this.bdate_lb.TabIndex = 6;
             this.bdate_lb.Text = "Birthday";
             // 
@@ -454,21 +419,19 @@ namespace General_Manager.Form
             this.phone_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.phone_lb.Appearance.Options.UseFont = true;
             this.phone_lb.Appearance.Options.UseForeColor = true;
-            this.phone_lb.Location = new System.Drawing.Point(278, 38);
-            this.phone_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.phone_lb.Location = new System.Drawing.Point(238, 31);
             this.phone_lb.Name = "phone_lb";
-            this.phone_lb.Size = new System.Drawing.Size(56, 24);
+            this.phone_lb.Size = new System.Drawing.Size(46, 19);
             this.phone_lb.TabIndex = 4;
             this.phone_lb.Text = "Phone";
             // 
             // phone_tb
             // 
-            this.phone_tb.Location = new System.Drawing.Point(278, 69);
-            this.phone_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.phone_tb.Location = new System.Drawing.Point(238, 56);
             this.phone_tb.Name = "phone_tb";
             this.phone_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.phone_tb.Properties.Appearance.Options.UseFont = true;
-            this.phone_tb.Size = new System.Drawing.Size(224, 30);
+            this.phone_tb.Size = new System.Drawing.Size(192, 26);
             this.phone_tb.TabIndex = 3;
             // 
             // name_lb
@@ -477,43 +440,39 @@ namespace General_Manager.Form
             this.name_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.name_lb.Appearance.Options.UseFont = true;
             this.name_lb.Appearance.Options.UseForeColor = true;
-            this.name_lb.Location = new System.Drawing.Point(24, 38);
-            this.name_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.name_lb.Location = new System.Drawing.Point(21, 31);
             this.name_lb.Name = "name_lb";
-            this.name_lb.Size = new System.Drawing.Size(53, 24);
+            this.name_lb.Size = new System.Drawing.Size(43, 19);
             this.name_lb.TabIndex = 2;
             this.name_lb.Text = "Name";
             // 
             // name_tb
             // 
-            this.name_tb.Location = new System.Drawing.Point(24, 69);
-            this.name_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.name_tb.Location = new System.Drawing.Point(21, 56);
             this.name_tb.Name = "name_tb";
             this.name_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.name_tb.Properties.Appearance.Options.UseFont = true;
-            this.name_tb.Size = new System.Drawing.Size(224, 30);
+            this.name_tb.Size = new System.Drawing.Size(192, 26);
             this.name_tb.TabIndex = 0;
             // 
             // fluentDesignFormControl1
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1065, 59);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(954, 27);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
             // Book_Room
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 716);
+            this.ClientSize = new System.Drawing.Size(954, 582);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Book_Room";
             this.Text = "Room";
             this.TransparencyKey = System.Drawing.SystemColors.Control;

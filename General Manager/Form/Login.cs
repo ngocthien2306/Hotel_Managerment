@@ -15,6 +15,13 @@ namespace General_Manager.Form
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
+        
+        static public int CurrentID { get; set; }
+        static public void GetID(int UserID)
+        {
+            CurrentID = UserID;
+        }
+
         Database db = new Database();
         public Login()
         {
@@ -22,9 +29,8 @@ namespace General_Manager.Form
         }
         public void RoleLogin()
         {
-            //try
-            //{
-
+            try
+            {
                 string role = "";
                 User user = new User();
                 user.ID = Convert.ToInt32(Username_tb.Text);
@@ -44,10 +50,11 @@ namespace General_Manager.Form
                     SDA.Fill(set, "Employee");
                     data.CloseConnection();
                     role = table.Rows[0]["role"].ToString().Trim();
-
+                    int UserId = Convert.ToInt32(table.Rows[0]["id"].ToString());
+                    GetID(UserId);
                     if (user.GetLogin() && role == "Manager" && Manager_rbt.Checked == true)
                     {
-                        Manager manager = new Manager();
+                        Menu manager = new Menu();
 
                         manager.ShowDialog();
                     }
@@ -68,11 +75,11 @@ namespace General_Manager.Form
                 {
                     XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            //}
-            //catch
-            //{
-            //    XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            }
+            catch
+            {
+                XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
   
         
