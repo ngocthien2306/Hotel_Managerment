@@ -14,7 +14,7 @@ namespace General_Manager.Form
 
         public DataTable WorkTime(int Id)
         {
-            SqlCommand cmd = new SqlCommand("Select stime,etime from WorkShift where Id = " +Id, db.GetConnection);
+            SqlCommand cmd = new SqlCommand("Select stime, etime from WorkShift where Id = " +Id, db.GetConnection);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);

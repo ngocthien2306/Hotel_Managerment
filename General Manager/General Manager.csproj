@@ -80,10 +80,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attendance.cs">
+    <Compile Include="Form\Attendance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Attendance.Designer.cs">
+    <Compile Include="Form\Attendance.Designer.cs">
       <DependentUpon>Attendance.cs</DependentUpon>
     </Compile>
     <Compile Include="Check_in.cs">
@@ -162,7 +162,7 @@
     <Compile Include="Room.cs" />
     <Compile Include="User.cs" />
     <Compile Include="WorkShift.cs" />
-    <EmbeddedResource Include="Attendance.resx">
+    <EmbeddedResource Include="Form\Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Display_User.resx">

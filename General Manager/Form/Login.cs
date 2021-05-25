@@ -51,11 +51,15 @@ namespace General_Manager.Form
                     data.CloseConnection();
                     role = table.Rows[0]["role"].ToString().Trim();
                     int UserId = Convert.ToInt32(table.Rows[0]["id"].ToString());
+                    byte[] pic = (byte[])table.Rows[0]["picture"];
+                    MemoryStream picture = new MemoryStream(pic);
                     GetID(UserId);
                     if (user.GetLogin() && role == "Manager" && Manager_rbt.Checked == true)
                     {
                         Menu manager = new Menu();
-
+                        manager.Label_ShowId.Text = UserId.ToString();
+                        manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
+                        manager.PictureUser.Image = Image.FromStream(picture);
                         manager.ShowDialog();
                     }
                     else if (user.GetLogin() && role == "" && Receptionist_rbt.Checked == true)

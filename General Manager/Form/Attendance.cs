@@ -46,14 +46,15 @@ namespace General_Manager.Form
             Time_tb.Text = DateTime.Now.ToString("H:mm tt");
         }
 
-        private void Checkin_btn_Click(object sender, EventArgs e)
+
+        private void CheckIn_btn_Click_1(object sender, EventArgs e)
         {
             DateTime checkin = DateTime.Now;
             TimeSpan ts1 = checkin - Convert.ToDateTime(StartTime);
             XtraMessageBox.Show(ts1.ToString());
         }
 
-        private void Checkout_btn_Click(object sender, EventArgs e)
+        private void CheckOut_btn_Click_1(object sender, EventArgs e)
         {
             DateTime checkin = DateTime.Now;
             TimeSpan ts2 = checkin - Convert.ToDateTime(EndTime);
