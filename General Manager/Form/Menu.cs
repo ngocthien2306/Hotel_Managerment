@@ -142,5 +142,10 @@ namespace General_Manager.Form
             Attendance Att = new Attendance();
             Att.Show();
         }
+
+        private void m010303_ItemClick(object sender, ItemClickEventArgs e)
+        {            
+            
+        }
     }
 }
