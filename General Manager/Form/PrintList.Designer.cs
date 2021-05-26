@@ -482,10 +482,13 @@ namespace General_Manager.Form
             this.printPreviewBarItem102 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.printPreviewBarItem103 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.New_item = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.Save_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.SaveAs_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.Find_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.Close_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.Open_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.GridControlPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Format_data = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -500,9 +503,6 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup8 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.employeeTableAdapter = new General_Manager.Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
-            this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
@@ -660,11 +660,11 @@ namespace General_Manager.Form
             this.printPreviewBarItem104,
             this.zoomTrackBarEditItem2,
             this.New_item,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5,
+            this.Save_btn,
+            this.SaveAs_btn,
+            this.Find_btn,
+            this.Close_btn,
+            this.Open_btn,
             this.barSubItem1,
             this.barButtonGroup1});
             this.RibbonControl.Location = new System.Drawing.Point(0, 0);
@@ -2807,39 +2807,59 @@ namespace General_Manager.Form
             this.New_item.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("New_item.ImageOptions.LargeImage")));
             this.New_item.Name = "New_item";
             // 
-            // barButtonItem1
+            // Save_btn
             // 
-            this.barButtonItem1.Caption = "Save";
-            this.barButtonItem1.Id = 112;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.Save_btn.Caption = "Save";
+            this.Save_btn.Id = 112;
+            this.Save_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.Save_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.Save_btn.Name = "Save_btn";
             // 
-            // barButtonItem2
+            // SaveAs_btn
             // 
-            this.barButtonItem2.Caption = "Save As";
-            this.barButtonItem2.Id = 113;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.SaveAs_btn.Caption = "Save As";
+            this.SaveAs_btn.Id = 113;
+            this.SaveAs_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.SaveAs_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.SaveAs_btn.Name = "SaveAs_btn";
             // 
-            // barButtonItem3
+            // Find_btn
             // 
-            this.barButtonItem3.Caption = "Find";
-            this.barButtonItem3.Id = 114;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.Find_btn.Caption = "Find";
+            this.Find_btn.Id = 114;
+            this.Find_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.Find_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.Find_btn.Name = "Find_btn";
+            this.Find_btn.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
             // 
-            // barButtonItem4
+            // Close_btn
             // 
-            this.barButtonItem4.Caption = "Close";
-            this.barButtonItem4.Id = 115;
-            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.Close_btn.Caption = "Close";
+            this.Close_btn.Id = 115;
+            this.Close_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.Close_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.Close_btn.Name = "Close_btn";
+            this.Close_btn.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // Open_btn
+            // 
+            this.Open_btn.Caption = "Open";
+            this.Open_btn.Id = 116;
+            this.Open_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.Open_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.Open_btn.Name = "Open_btn";
+            this.Open_btn.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Id = 117;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // barButtonGroup1
+            // 
+            this.barButtonGroup1.Caption = "barButtonGroup1";
+            this.barButtonGroup1.Id = 118;
+            this.barButtonGroup1.Name = "barButtonGroup1";
             // 
             // GridControlPage
             // 
@@ -2852,11 +2872,11 @@ namespace General_Manager.Form
             // RibbonPageGroup1
             // 
             this.RibbonPageGroup1.ItemLinks.Add(this.New_item);
-            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
-            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
-            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
-            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.RibbonPageGroup1.ItemLinks.Add(this.Open_btn);
+            this.RibbonPageGroup1.ItemLinks.Add(this.Find_btn);
+            this.RibbonPageGroup1.ItemLinks.Add(this.Close_btn);
+            this.RibbonPageGroup1.ItemLinks.Add(this.SaveAs_btn);
+            this.RibbonPageGroup1.ItemLinks.Add(this.Save_btn);
             this.RibbonPageGroup1.Name = "RibbonPageGroup1";
             this.RibbonPageGroup1.Text = "File";
             // 
@@ -2886,8 +2906,8 @@ namespace General_Manager.Form
             // 
             this.printPreviewRibbonPageGroup1.AllowTextClipping = false;
             this.printPreviewRibbonPageGroup1.ContextSpecifier = this.documentViewerRibbonController1;
-            this.printPreviewRibbonPageGroup1.ItemLinks.Add(this.printPreviewBarItem50);
             this.printPreviewRibbonPageGroup1.ItemLinks.Add(this.printPreviewBarItem51);
+            this.printPreviewRibbonPageGroup1.ItemLinks.Add(this.printPreviewBarItem50);
             this.printPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document;
             this.printPreviewRibbonPageGroup1.Name = "printPreviewRibbonPageGroup1";
             this.printPreviewRibbonPageGroup1.ShowCaptionButton = false;
@@ -3000,26 +3020,6 @@ namespace General_Manager.Form
             // employeeTableAdapter
             // 
             this.employeeTableAdapter.ClearBeforeFill = true;
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Open";
-            this.barButtonItem5.Id = 116;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
-            // 
-            // barSubItem1
-            // 
-            this.barSubItem1.Id = 117;
-            this.barSubItem1.Name = "barSubItem1";
-            // 
-            // barButtonGroup1
-            // 
-            this.barButtonGroup1.Caption = "barButtonGroup1";
-            this.barButtonGroup1.Id = 118;
-            this.barButtonGroup1.Name = "barButtonGroup1";
             // 
             // PrintList
             // 
@@ -3205,17 +3205,17 @@ namespace General_Manager.Form
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup7;
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup8;
         private DevExpress.XtraBars.BarButtonItem New_item;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem Save_btn;
+        private DevExpress.XtraBars.BarButtonItem SaveAs_btn;
+        private DevExpress.XtraBars.BarButtonItem Find_btn;
         private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar3;
         private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar3;
         private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
         private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar1;
         private DevExpress.XtraPrinting.PrintingSystem PrintingSystem_DataEmployee;
         private DevExpress.XtraPrinting.PrintableComponentLink printableComponentLink1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem Close_btn;
+        private DevExpress.XtraBars.BarButtonItem Open_btn;
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.XtraBars.BarButtonGroup barButtonGroup1;
     }

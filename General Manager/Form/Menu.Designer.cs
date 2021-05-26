@@ -40,9 +40,9 @@ namespace General_Manager.Form
             this.m010301 = new DevExpress.XtraBars.BarButtonItem();
             this.m010302 = new DevExpress.XtraBars.BarButtonItem();
             this.m010303 = new DevExpress.XtraBars.BarButtonItem();
-            this.m010401 = new DevExpress.XtraBars.BarButtonItem();
-            this.m010402 = new DevExpress.XtraBars.BarButtonItem();
-            this.m010403 = new DevExpress.XtraBars.BarButtonItem();
+            this.M010401 = new DevExpress.XtraBars.BarButtonItem();
+            this.M010402 = new DevExpress.XtraBars.BarButtonItem();
+            this.M010403 = new DevExpress.XtraBars.BarButtonItem();
             this.M010501 = new DevExpress.XtraBars.BarButtonItem();
             this.M010502 = new DevExpress.XtraBars.BarButtonItem();
             this.M010503 = new DevExpress.XtraBars.BarButtonItem();
@@ -200,9 +200,9 @@ namespace General_Manager.Form
             this.m010301,
             this.m010302,
             this.m010303,
-            this.m010401,
-            this.m010402,
-            this.m010403,
+            this.M010401,
+            this.M010402,
+            this.M010403,
             this.M010501,
             this.M010502,
             this.M010503,
@@ -288,29 +288,29 @@ namespace General_Manager.Form
             this.m010303.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("m010303.ImageOptions.Image")));
             this.m010303.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("m010303.ImageOptions.LargeImage")));
             this.m010303.Name = "m010303";
-            this.m010303.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m010303_ItemClick);
             // 
-            // m010401
+            // M010401
             // 
-            this.m010401.Caption = "Employee";
-            this.m010401.Id = 10;
-            this.m010401.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010401.ImageOptions.SvgImage")));
-            this.m010401.Name = "m010401";
-            this.m010401.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m010401_ItemClick);
+            this.M010401.Caption = "Employee";
+            this.M010401.Id = 10;
+            this.M010401.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010401.ImageOptions.SvgImage")));
+            this.M010401.Name = "M010401";
+            this.M010401.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m010401_ItemClick);
             // 
-            // m010402
+            // M010402
             // 
-            this.m010402.Caption = "Finance";
-            this.m010402.Id = 11;
-            this.m010402.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010402.ImageOptions.SvgImage")));
-            this.m010402.Name = "m010402";
+            this.M010402.Caption = "Finance";
+            this.M010402.Id = 11;
+            this.M010402.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010402.ImageOptions.SvgImage")));
+            this.M010402.Name = "M010402";
+            this.M010402.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010402_ItemClick);
             // 
-            // m010403
+            // M010403
             // 
-            this.m010403.Caption = "Times";
-            this.m010403.Id = 12;
-            this.m010403.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010403.ImageOptions.SvgImage")));
-            this.m010403.Name = "m010403";
+            this.M010403.Caption = "Times";
+            this.M010403.Id = 12;
+            this.M010403.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010403.ImageOptions.SvgImage")));
+            this.M010403.Name = "M010403";
             // 
             // M010501
             // 
@@ -423,9 +423,9 @@ namespace General_Manager.Form
             // 
             // m0104
             // 
-            this.m0104.ItemLinks.Add(this.m010401);
-            this.m0104.ItemLinks.Add(this.m010402);
-            this.m0104.ItemLinks.Add(this.m010403);
+            this.m0104.ItemLinks.Add(this.M010401);
+            this.m0104.ItemLinks.Add(this.M010402);
+            this.m0104.ItemLinks.Add(this.M010403);
             this.m0104.Name = "m0104";
             this.m0104.Text = "Statics";
             // 
@@ -1154,7 +1154,7 @@ namespace General_Manager.Form
             // 
             // PictureUser
             // 
-            this.PictureUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictureUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PictureUser.Location = new System.Drawing.Point(0, 27);
             this.PictureUser.MenuManager = this.ribbon;
             this.PictureUser.Name = "PictureUser";
@@ -1255,9 +1255,9 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.BarButtonItem m010301;
         private DevExpress.XtraBars.BarButtonItem m010302;
         private DevExpress.XtraBars.BarButtonItem m010303;
-        private DevExpress.XtraBars.BarButtonItem m010401;
-        private DevExpress.XtraBars.BarButtonItem m010402;
-        private DevExpress.XtraBars.BarButtonItem m010403;
+        private DevExpress.XtraBars.BarButtonItem M010401;
+        private DevExpress.XtraBars.BarButtonItem M010402;
+        private DevExpress.XtraBars.BarButtonItem M010403;
         private DevExpress.XtraBars.BarButtonItem M010501;
         private DevExpress.XtraBars.BarButtonItem M010502;
         private DevExpress.XtraBars.BarButtonItem M010503;

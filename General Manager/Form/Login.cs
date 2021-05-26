@@ -29,8 +29,8 @@ namespace General_Manager.Form
         }
         public void RoleLogin()
         {
-            try
-            {
+            //try
+            //{
                 string role = "";
                 User user = new User();
                 user.ID = Convert.ToInt32(Username_tb.Text);
@@ -54,12 +54,14 @@ namespace General_Manager.Form
                     byte[] pic = (byte[])table.Rows[0]["picture"];
                     MemoryStream picture = new MemoryStream(pic);
                     GetID(UserId);
+                    WorkShift w = new WorkShift();
                     if (user.GetLogin() && role == "Manager" && Manager_rbt.Checked == true)
                     {
                         Menu manager = new Menu();
                         manager.Label_ShowId.Text = UserId.ToString();
                         manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
                         manager.PictureUser.Image = Image.FromStream(picture);
+                        w.InsertId(Convert.ToInt32(UserId));
                         manager.ShowDialog();
                     }
                     else if (user.GetLogin() && role == "" && Receptionist_rbt.Checked == true)
@@ -79,11 +81,11 @@ namespace General_Manager.Form
                 {
                     XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            }
-            catch
-            {
-                XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            //}
+            //catch
+            //{
+            //    XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
         }
   
         

@@ -143,15 +143,16 @@ namespace General_Manager.Form
             Att.Show();
         }
 
-        private void m010303_ItemClick(object sender, ItemClickEventArgs e)
-        {            
-            
-        }
-
         private void M030101_ItemClick(object sender, ItemClickEventArgs e)
         {
             PrintList print = new PrintList();
             print.ShowDialog();
+        }
+
+        private void M010402_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Statics sta = new Statics();
+            sta.ShowDialog();
         }
     }
 }
