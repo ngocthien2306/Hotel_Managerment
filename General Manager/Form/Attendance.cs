@@ -51,14 +51,16 @@ namespace General_Manager.Form
         {
             DateTime checkin = DateTime.Now;
             TimeSpan ts1 = checkin - Convert.ToDateTime(StartTime);
-            XtraMessageBox.Show(ts1.ToString());
+            int duration = Convert.ToInt32(ts1.TotalMinutes);
+            XtraMessageBox.Show(duration.ToString());
         }
 
         private void CheckOut_btn_Click_1(object sender, EventArgs e)
         {
             DateTime checkin = DateTime.Now;
             TimeSpan ts2 = checkin - Convert.ToDateTime(EndTime);
-            XtraMessageBox.Show(ts2.ToString());
+            int duration = Convert.ToInt32(ts2.TotalMinutes);
+            XtraMessageBox.Show(duration.ToString());
         }
     }
 }
