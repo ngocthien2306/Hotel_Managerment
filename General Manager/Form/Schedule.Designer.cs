@@ -56,7 +56,6 @@ namespace General_Manager.Form
             this.label1 = new System.Windows.Forms.Label();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Setshift = new DevExpress.XtraBars.BarButtonItem();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
@@ -292,7 +291,7 @@ namespace General_Manager.Form
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(387, 90);
+            this.label1.Location = new System.Drawing.Point(658, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 19);
             this.label1.TabIndex = 4;
@@ -311,21 +310,11 @@ namespace General_Manager.Form
             this.Setshift.Name = "Setshift";
             this.Setshift.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Setshift_ItemClick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(414, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1361, 812);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.navBarControl);
@@ -380,6 +369,5 @@ namespace General_Manager.Form
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraBars.BarButtonItem Setshift;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private System.Windows.Forms.Button button1;
     }
 }
