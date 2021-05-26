@@ -50,6 +50,8 @@ namespace General_Manager.Form
             this.Interface = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.Room_item = new DevExpress.XtraBars.BarButtonItem();
             this.Attendance_item = new DevExpress.XtraBars.BarButtonItem();
+            this.M030101 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.m0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -58,6 +60,8 @@ namespace General_Manager.Form
             this.m0105 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.M0108 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Theme = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M03 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.M0301 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m02 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -127,10 +131,6 @@ namespace General_Manager.Form
             this.Label_id = new System.Windows.Forms.Label();
             this.Label_wcome = new System.Windows.Forms.Label();
             this.PictureUser = new DevExpress.XtraEditors.PictureEdit();
-            this.M03 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.M0301 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.M030101 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
@@ -367,6 +367,23 @@ namespace General_Manager.Form
             this.Attendance_item.Name = "Attendance_item";
             this.Attendance_item.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Attendance_item_ItemClick);
             // 
+            // M030101
+            // 
+            this.M030101.Caption = "Print Invoice";
+            this.M030101.Id = 22;
+            this.M030101.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M030101.ImageOptions.Image")));
+            this.M030101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M030101.ImageOptions.LargeImage")));
+            this.M030101.Name = "M030101";
+            this.M030101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M030101_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Print Invidual";
+            this.barButtonItem1.Id = 23;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
             // M01
             // 
             this.M01.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -431,6 +448,20 @@ namespace General_Manager.Form
             this.Theme.ItemLinks.Add(this.Interface);
             this.Theme.Name = "Theme";
             this.Theme.Text = "Theme";
+            // 
+            // M03
+            // 
+            this.M03.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.M0301});
+            this.M03.Name = "M03";
+            this.M03.Text = "Print";
+            // 
+            // M0301
+            // 
+            this.M0301.ItemLinks.Add(this.M030101);
+            this.M0301.ItemLinks.Add(this.barButtonItem1);
+            this.M0301.Name = "M0301";
+            this.M0301.Text = "Print List Employee";
             // 
             // m02
             // 
@@ -1131,36 +1162,6 @@ namespace General_Manager.Form
             this.PictureUser.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.PictureUser.Size = new System.Drawing.Size(101, 90);
             this.PictureUser.TabIndex = 0;
-            // 
-            // M03
-            // 
-            this.M03.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.M0301});
-            this.M03.Name = "M03";
-            this.M03.Text = "Print";
-            // 
-            // M0301
-            // 
-            this.M0301.ItemLinks.Add(this.M030101);
-            this.M0301.ItemLinks.Add(this.barButtonItem1);
-            this.M0301.Name = "M0301";
-            this.M0301.Text = "Print List Employee";
-            // 
-            // M030101
-            // 
-            this.M030101.Caption = "Print Invoice";
-            this.M030101.Id = 22;
-            this.M030101.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M030101.ImageOptions.Image")));
-            this.M030101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M030101.ImageOptions.LargeImage")));
-            this.M030101.Name = "M030101";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Print Invidual";
-            this.barButtonItem1.Id = 23;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // Menu
             // 

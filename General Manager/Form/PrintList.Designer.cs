@@ -186,11 +186,200 @@ namespace General_Manager.Form
             DevExpress.Utils.SuperToolTip superToolTip52 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem52 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem52 = new DevExpress.Utils.ToolTipItem();
-            this.documentViewer1 = new DevExpress.XtraPrinting.Preview.DocumentViewer();
-            this.documentViewerRibbonController1 = new DevExpress.XtraPrinting.Preview.DocumentViewerRibbonController(this.components);
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            DevExpress.Utils.SuperToolTip superToolTip53 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem53 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem53 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip54 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem54 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem54 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip55 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem55 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem55 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip56 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem56 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem56 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip57 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem57 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem57 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip58 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem58 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem58 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip59 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem59 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem59 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip60 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem60 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem60 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip61 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem61 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem61 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip62 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem62 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem62 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip63 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem63 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem63 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip64 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem64 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem64 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip65 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem65 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem65 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip66 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem66 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem66 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip67 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem67 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem67 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip68 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem68 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem68 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip69 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem69 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem69 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip70 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem70 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem70 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip71 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem71 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem71 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip72 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem72 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem72 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip73 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem73 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem73 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip74 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem74 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem74 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip75 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem75 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem75 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip76 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem76 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem76 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip77 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem77 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem77 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip78 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem78 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem78 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip79 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem79 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem79 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip80 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem80 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem80 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip81 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem81 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem81 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip82 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem82 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem82 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip83 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem83 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem83 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip84 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem84 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem84 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip85 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem85 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem85 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip86 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem86 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem86 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip87 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem87 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem87 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip88 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem88 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem88 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip89 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem89 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem89 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip90 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem90 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem90 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip91 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem91 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem91 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip92 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem92 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem92 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip93 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem93 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem93 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip94 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem94 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem94 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip95 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem95 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem95 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip96 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem96 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem96 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip97 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem97 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem97 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip98 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem98 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem98 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip99 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem99 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem99 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip100 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem100 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem100 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip101 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem101 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem101 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip102 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem102 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem102 = new DevExpress.Utils.ToolTipItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrintList));
+            DevExpress.Utils.SuperToolTip superToolTip103 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem103 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem103 = new DevExpress.Utils.ToolTipItem();
+            this.repositoryItemProgressBar3 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
+            this.repositoryItemZoomTrackBar3 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
+            this.repositoryItemProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
+            this.repositoryItemZoomTrackBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
+            this.RibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.printPreviewBarItem1 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.documentViewerRibbonController1 = new DevExpress.XtraPrinting.Preview.DocumentViewerRibbonController(this.components);
+            this.DocumentViewer_Employee = new DevExpress.XtraPrinting.Preview.DocumentViewer();
+            this.PrintingSystem_DataEmployee = new DevExpress.XtraPrinting.PrintingSystem(this.components);
+            this.printableComponentLink1 = new DevExpress.XtraPrinting.PrintableComponentLink(this.components);
+            this.GridControl_Data = new DevExpress.XtraGrid.GridControl();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelManagementDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotel_ManagementDataSet = new General_Manager.Hotel_ManagementDataSet();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colpassword = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colfname = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.collname = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCMND = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colbdate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coladdress = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colphone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colemail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colsalary = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colrole = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldaywork = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colwork = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colpicture = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colgender = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.printPreviewStaticItem1 = new DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem();
+            this.progressBarEditItem1 = new DevExpress.XtraPrinting.Preview.ProgressBarEditItem();
+            this.printPreviewBarItem52 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewStaticItem2 = new DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem();
+            this.zoomTrackBarEditItem1 = new DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem();
+            this.progressBarEditItem2 = new DevExpress.XtraPrinting.Preview.ProgressBarEditItem();
+            this.documentViewerRibbonController2 = new DevExpress.XtraPrinting.Preview.DocumentViewerRibbonController(this.components);
+            this.printPreviewBarItem104 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.zoomTrackBarEditItem2 = new DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem();
             this.printPreviewBarItem2 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.printPreviewBarItem3 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.printPreviewBarItem4 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
@@ -241,14 +430,66 @@ namespace General_Manager.Form
             this.printPreviewBarItem49 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.printPreviewBarItem50 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.printPreviewBarItem51 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
-            this.printPreviewStaticItem1 = new DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem();
-            this.repositoryItemProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
-            this.progressBarEditItem1 = new DevExpress.XtraPrinting.Preview.ProgressBarEditItem();
-            this.printPreviewBarItem52 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
-            this.printPreviewStaticItem2 = new DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem();
-            this.repositoryItemZoomTrackBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar();
-            this.zoomTrackBarEditItem1 = new DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem();
-            this.ribbonPage1 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage();
+            this.printPreviewBarItem53 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem54 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem55 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem56 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem57 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem58 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem59 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem60 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem61 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem62 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem63 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem64 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem65 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem66 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem67 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem68 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem69 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem70 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem71 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem72 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem73 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem74 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem75 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem76 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem77 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem78 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem79 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem80 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem81 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem82 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem83 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem84 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem85 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem86 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem87 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem88 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem89 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem90 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem91 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem92 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem93 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem94 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem95 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem96 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem97 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem98 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem99 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem100 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem101 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem102 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.printPreviewBarItem103 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
+            this.New_item = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.GridControlPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Format_data = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.PreviewRibbonPage = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage();
             this.printPreviewRibbonPageGroup1 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup2 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup3 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
@@ -257,34 +498,57 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup6 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup7 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup8 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
-            ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.employeeTableAdapter = new General_Manager.Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrintingSystem_DataEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridControl_Data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController2)).BeginInit();
             this.SuspendLayout();
             // 
-            // documentViewer1
+            // repositoryItemProgressBar3
             // 
-            this.documentViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.documentViewer1.IsMetric = false;
-            this.documentViewer1.Location = new System.Drawing.Point(0, 179);
-            this.documentViewer1.Name = "documentViewer1";
-            this.documentViewer1.Size = new System.Drawing.Size(1104, 528);
-            this.documentViewer1.TabIndex = 0;
+            this.repositoryItemProgressBar3.Name = "repositoryItemProgressBar3";
             // 
-            // documentViewerRibbonController1
+            // repositoryItemZoomTrackBar3
             // 
-            this.documentViewerRibbonController1.DocumentViewer = this.documentViewer1;
-            this.documentViewerRibbonController1.RibbonControl = this.ribbonControl1;
-            this.documentViewerRibbonController1.RibbonStatusBar = this.ribbonStatusBar1;
+            this.repositoryItemZoomTrackBar3.Alignment = DevExpress.Utils.VertAlignment.Center;
+            this.repositoryItemZoomTrackBar3.AllowFocused = false;
+            this.repositoryItemZoomTrackBar3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.repositoryItemZoomTrackBar3.Maximum = 180;
+            this.repositoryItemZoomTrackBar3.Name = "repositoryItemZoomTrackBar3";
             // 
-            // ribbonControl1
+            // repositoryItemProgressBar1
             // 
-            this.ribbonControl1.AutoHideEmptyItems = true;
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.ribbonControl1.SearchEditItem,
+            this.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1";
+            // 
+            // repositoryItemZoomTrackBar1
+            // 
+            this.repositoryItemZoomTrackBar1.Alignment = DevExpress.Utils.VertAlignment.Center;
+            this.repositoryItemZoomTrackBar1.AllowFocused = false;
+            this.repositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.repositoryItemZoomTrackBar1.Maximum = 180;
+            this.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1";
+            // 
+            // RibbonControl
+            // 
+            this.RibbonControl.AutoHideEmptyItems = true;
+            this.RibbonControl.ExpandCollapseItem.Id = 0;
+            this.RibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.RibbonControl.ExpandCollapseItem,
+            this.RibbonControl.SearchEditItem,
             this.printPreviewBarItem1,
             this.printPreviewBarItem2,
             this.printPreviewBarItem3,
@@ -340,30 +604,79 @@ namespace General_Manager.Form
             this.progressBarEditItem1,
             this.printPreviewBarItem52,
             this.printPreviewStaticItem2,
-            this.zoomTrackBarEditItem1});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 57;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemProgressBar1,
-            this.repositoryItemZoomTrackBar1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1104, 179);
-            this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
-            this.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
-            // 
-            // ribbonStatusBar1
-            // 
-            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewStaticItem1);
-            this.ribbonStatusBar1.ItemLinks.Add(this.progressBarEditItem1);
-            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewBarItem52);
-            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewStaticItem2);
-            this.ribbonStatusBar1.ItemLinks.Add(this.zoomTrackBarEditItem1);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 707);
-            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
-            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1104, 28);
+            this.zoomTrackBarEditItem1,
+            this.printPreviewBarItem53,
+            this.printPreviewBarItem54,
+            this.printPreviewBarItem55,
+            this.printPreviewBarItem56,
+            this.printPreviewBarItem57,
+            this.printPreviewBarItem58,
+            this.printPreviewBarItem59,
+            this.printPreviewBarItem60,
+            this.printPreviewBarItem61,
+            this.printPreviewBarItem62,
+            this.printPreviewBarItem63,
+            this.printPreviewBarItem64,
+            this.printPreviewBarItem65,
+            this.printPreviewBarItem66,
+            this.printPreviewBarItem67,
+            this.printPreviewBarItem68,
+            this.printPreviewBarItem69,
+            this.printPreviewBarItem70,
+            this.printPreviewBarItem71,
+            this.printPreviewBarItem72,
+            this.printPreviewBarItem73,
+            this.printPreviewBarItem74,
+            this.printPreviewBarItem75,
+            this.printPreviewBarItem76,
+            this.printPreviewBarItem77,
+            this.printPreviewBarItem78,
+            this.printPreviewBarItem79,
+            this.printPreviewBarItem80,
+            this.printPreviewBarItem81,
+            this.printPreviewBarItem82,
+            this.printPreviewBarItem83,
+            this.printPreviewBarItem84,
+            this.printPreviewBarItem85,
+            this.printPreviewBarItem86,
+            this.printPreviewBarItem87,
+            this.printPreviewBarItem88,
+            this.printPreviewBarItem89,
+            this.printPreviewBarItem90,
+            this.printPreviewBarItem91,
+            this.printPreviewBarItem92,
+            this.printPreviewBarItem93,
+            this.printPreviewBarItem94,
+            this.printPreviewBarItem95,
+            this.printPreviewBarItem96,
+            this.printPreviewBarItem97,
+            this.printPreviewBarItem98,
+            this.printPreviewBarItem99,
+            this.printPreviewBarItem100,
+            this.printPreviewBarItem101,
+            this.printPreviewBarItem102,
+            this.printPreviewBarItem103,
+            this.progressBarEditItem2,
+            this.printPreviewBarItem104,
+            this.zoomTrackBarEditItem2,
+            this.New_item,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barSubItem1,
+            this.barButtonGroup1});
+            this.RibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.RibbonControl.MaxItemId = 119;
+            this.RibbonControl.Name = "RibbonControl";
+            this.RibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.GridControlPage,
+            this.PreviewRibbonPage});
+            this.RibbonControl.Size = new System.Drawing.Size(1227, 185);
+            this.RibbonControl.StatusBar = this.ribbonStatusBar1;
+            this.RibbonControl.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
+            this.RibbonControl.SelectedPageChanged += new System.EventHandler(this.RibbonControl_SelectedPageChanged);
             // 
             // printPreviewBarItem1
             // 
@@ -383,6 +696,328 @@ namespace General_Manager.Form
             superToolTip1.Items.Add(toolTipItem1);
             superToolTip1.MaxWidth = 210;
             this.printPreviewBarItem1.SuperTip = superToolTip1;
+            // 
+            // documentViewerRibbonController1
+            // 
+            this.documentViewerRibbonController1.DocumentViewer = this.DocumentViewer_Employee;
+            this.documentViewerRibbonController1.RibbonControl = this.RibbonControl;
+            this.documentViewerRibbonController1.RibbonStatusBar = this.ribbonStatusBar1;
+            // 
+            // DocumentViewer_Employee
+            // 
+            this.DocumentViewer_Employee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DocumentViewer_Employee.DocumentSource = this.PrintingSystem_DataEmployee;
+            this.DocumentViewer_Employee.IsMetric = false;
+            this.DocumentViewer_Employee.Location = new System.Drawing.Point(0, 185);
+            this.DocumentViewer_Employee.Name = "DocumentViewer_Employee";
+            this.DocumentViewer_Employee.Size = new System.Drawing.Size(1227, 473);
+            this.DocumentViewer_Employee.TabIndex = 3;
+            // 
+            // PrintingSystem_DataEmployee
+            // 
+            this.PrintingSystem_DataEmployee.Links.AddRange(new object[] {
+            this.printableComponentLink1});
+            // 
+            // printableComponentLink1
+            // 
+            this.printableComponentLink1.Component = this.GridControl_Data;
+            this.printableComponentLink1.PageHeaderFooter = new DevExpress.XtraPrinting.PageHeaderFooter(new DevExpress.XtraPrinting.PageHeaderArea(new string[] {
+                "Nguyen Ngoc Thien",
+                "",
+                ""}, new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), DevExpress.XtraPrinting.BrickAlignment.Near), null);
+            this.printableComponentLink1.PrintingSystemBase = this.PrintingSystem_DataEmployee;
+            // 
+            // GridControl_Data
+            // 
+            this.GridControl_Data.DataSource = this.employeeBindingSource;
+            this.GridControl_Data.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GridControl_Data.Location = new System.Drawing.Point(0, 185);
+            this.GridControl_Data.MainView = this.gridView1;
+            this.GridControl_Data.MenuManager = this.RibbonControl;
+            this.GridControl_Data.Name = "GridControl_Data";
+            this.GridControl_Data.Size = new System.Drawing.Size(1227, 473);
+            this.GridControl_Data.TabIndex = 2;
+            this.GridControl_Data.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "Employee";
+            this.employeeBindingSource.DataSource = this.hotelManagementDataSetBindingSource;
+            // 
+            // hotelManagementDataSetBindingSource
+            // 
+            this.hotelManagementDataSetBindingSource.DataSource = this.hotel_ManagementDataSet;
+            this.hotelManagementDataSetBindingSource.Position = 0;
+            // 
+            // hotel_ManagementDataSet
+            // 
+            this.hotel_ManagementDataSet.DataSetName = "Hotel_ManagementDataSet";
+            this.hotel_ManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colpassword,
+            this.colfname,
+            this.collname,
+            this.colCMND,
+            this.colbdate,
+            this.coladdress,
+            this.colphone,
+            this.colemail,
+            this.colsalary,
+            this.colrole,
+            this.coldaywork,
+            this.colwork,
+            this.colpicture,
+            this.colgender});
+            this.gridView1.GridControl = this.GridControl_Data;
+            this.gridView1.Name = "gridView1";
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.MinWidth = 25;
+            this.colId.Name = "colId";
+            this.colId.Visible = true;
+            this.colId.VisibleIndex = 0;
+            this.colId.Width = 94;
+            // 
+            // colpassword
+            // 
+            this.colpassword.FieldName = "password";
+            this.colpassword.MinWidth = 25;
+            this.colpassword.Name = "colpassword";
+            this.colpassword.Visible = true;
+            this.colpassword.VisibleIndex = 1;
+            this.colpassword.Width = 94;
+            // 
+            // colfname
+            // 
+            this.colfname.FieldName = "fname";
+            this.colfname.MinWidth = 25;
+            this.colfname.Name = "colfname";
+            this.colfname.Visible = true;
+            this.colfname.VisibleIndex = 2;
+            this.colfname.Width = 94;
+            // 
+            // collname
+            // 
+            this.collname.FieldName = "lname";
+            this.collname.MinWidth = 25;
+            this.collname.Name = "collname";
+            this.collname.Visible = true;
+            this.collname.VisibleIndex = 3;
+            this.collname.Width = 94;
+            // 
+            // colCMND
+            // 
+            this.colCMND.FieldName = "CMND";
+            this.colCMND.MinWidth = 25;
+            this.colCMND.Name = "colCMND";
+            this.colCMND.Visible = true;
+            this.colCMND.VisibleIndex = 4;
+            this.colCMND.Width = 94;
+            // 
+            // colbdate
+            // 
+            this.colbdate.FieldName = "bdate";
+            this.colbdate.MinWidth = 25;
+            this.colbdate.Name = "colbdate";
+            this.colbdate.Visible = true;
+            this.colbdate.VisibleIndex = 5;
+            this.colbdate.Width = 94;
+            // 
+            // coladdress
+            // 
+            this.coladdress.FieldName = "address";
+            this.coladdress.MinWidth = 25;
+            this.coladdress.Name = "coladdress";
+            this.coladdress.Visible = true;
+            this.coladdress.VisibleIndex = 6;
+            this.coladdress.Width = 94;
+            // 
+            // colphone
+            // 
+            this.colphone.FieldName = "phone";
+            this.colphone.MinWidth = 25;
+            this.colphone.Name = "colphone";
+            this.colphone.Visible = true;
+            this.colphone.VisibleIndex = 7;
+            this.colphone.Width = 94;
+            // 
+            // colemail
+            // 
+            this.colemail.FieldName = "email";
+            this.colemail.MinWidth = 25;
+            this.colemail.Name = "colemail";
+            this.colemail.Visible = true;
+            this.colemail.VisibleIndex = 8;
+            this.colemail.Width = 94;
+            // 
+            // colsalary
+            // 
+            this.colsalary.FieldName = "salary";
+            this.colsalary.MinWidth = 25;
+            this.colsalary.Name = "colsalary";
+            this.colsalary.Visible = true;
+            this.colsalary.VisibleIndex = 9;
+            this.colsalary.Width = 94;
+            // 
+            // colrole
+            // 
+            this.colrole.FieldName = "role";
+            this.colrole.MinWidth = 25;
+            this.colrole.Name = "colrole";
+            this.colrole.Visible = true;
+            this.colrole.VisibleIndex = 10;
+            this.colrole.Width = 94;
+            // 
+            // coldaywork
+            // 
+            this.coldaywork.FieldName = "daywork";
+            this.coldaywork.MinWidth = 25;
+            this.coldaywork.Name = "coldaywork";
+            this.coldaywork.Visible = true;
+            this.coldaywork.VisibleIndex = 11;
+            this.coldaywork.Width = 94;
+            // 
+            // colwork
+            // 
+            this.colwork.FieldName = "work";
+            this.colwork.MinWidth = 25;
+            this.colwork.Name = "colwork";
+            this.colwork.Visible = true;
+            this.colwork.VisibleIndex = 12;
+            this.colwork.Width = 94;
+            // 
+            // colpicture
+            // 
+            this.colpicture.FieldName = "picture";
+            this.colpicture.MinWidth = 25;
+            this.colpicture.Name = "colpicture";
+            this.colpicture.Visible = true;
+            this.colpicture.VisibleIndex = 13;
+            this.colpicture.Width = 94;
+            // 
+            // colgender
+            // 
+            this.colgender.FieldName = "gender";
+            this.colgender.MinWidth = 25;
+            this.colgender.Name = "colgender";
+            this.colgender.Visible = true;
+            this.colgender.VisibleIndex = 14;
+            this.colgender.Width = 94;
+            // 
+            // ribbonStatusBar1
+            // 
+            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewStaticItem1);
+            this.ribbonStatusBar1.ItemLinks.Add(this.progressBarEditItem1);
+            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewBarItem52);
+            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewStaticItem2);
+            this.ribbonStatusBar1.ItemLinks.Add(this.zoomTrackBarEditItem1);
+            this.ribbonStatusBar1.ItemLinks.Add(this.progressBarEditItem2);
+            this.ribbonStatusBar1.ItemLinks.Add(this.printPreviewBarItem104);
+            this.ribbonStatusBar1.ItemLinks.Add(this.zoomTrackBarEditItem2);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 658);
+            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
+            this.ribbonStatusBar1.Ribbon = this.RibbonControl;
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1227, 30);
+            // 
+            // printPreviewStaticItem1
+            // 
+            this.printPreviewStaticItem1.Caption = "Nothing";
+            this.printPreviewStaticItem1.Id = 52;
+            this.printPreviewStaticItem1.LeftIndent = 1;
+            this.printPreviewStaticItem1.Name = "printPreviewStaticItem1";
+            this.printPreviewStaticItem1.RightIndent = 1;
+            this.printPreviewStaticItem1.Type = "PageOfPages";
+            // 
+            // progressBarEditItem1
+            // 
+            this.progressBarEditItem1.ContextSpecifier = this.documentViewerRibbonController1;
+            this.progressBarEditItem1.Edit = this.repositoryItemProgressBar3;
+            this.progressBarEditItem1.EditHeight = 12;
+            this.progressBarEditItem1.EditWidth = 150;
+            this.progressBarEditItem1.Id = 53;
+            this.progressBarEditItem1.Name = "progressBarEditItem1";
+            this.progressBarEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // printPreviewBarItem52
+            // 
+            this.printPreviewBarItem52.Caption = "Stop";
+            this.printPreviewBarItem52.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding;
+            this.printPreviewBarItem52.ContextSpecifier = this.documentViewerRibbonController1;
+            this.printPreviewBarItem52.Enabled = false;
+            this.printPreviewBarItem52.Hint = "Stop";
+            this.printPreviewBarItem52.Id = 54;
+            this.printPreviewBarItem52.Name = "printPreviewBarItem52";
+            this.printPreviewBarItem52.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // printPreviewStaticItem2
+            // 
+            this.printPreviewStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.printPreviewStaticItem2.AutoSize = DevExpress.XtraBars.BarStaticItemSize.None;
+            this.printPreviewStaticItem2.Caption = "100%";
+            this.printPreviewStaticItem2.Id = 55;
+            this.printPreviewStaticItem2.Name = "printPreviewStaticItem2";
+            this.printPreviewStaticItem2.Type = "ZoomFactorText";
+            // 
+            // zoomTrackBarEditItem1
+            // 
+            this.zoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.zoomTrackBarEditItem1.ContextSpecifier = this.documentViewerRibbonController1;
+            this.zoomTrackBarEditItem1.Edit = this.repositoryItemZoomTrackBar3;
+            this.zoomTrackBarEditItem1.EditValue = 90;
+            this.zoomTrackBarEditItem1.EditWidth = 140;
+            this.zoomTrackBarEditItem1.Enabled = false;
+            this.zoomTrackBarEditItem1.Id = 56;
+            this.zoomTrackBarEditItem1.Name = "zoomTrackBarEditItem1";
+            this.zoomTrackBarEditItem1.Range = new int[] {
+        10,
+        500};
+            // 
+            // progressBarEditItem2
+            // 
+            this.progressBarEditItem2.ContextSpecifier = this.documentViewerRibbonController2;
+            this.progressBarEditItem2.Edit = this.repositoryItemProgressBar1;
+            this.progressBarEditItem2.EditHeight = 12;
+            this.progressBarEditItem2.EditWidth = 150;
+            this.progressBarEditItem2.Id = 108;
+            this.progressBarEditItem2.Name = "progressBarEditItem2";
+            this.progressBarEditItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // documentViewerRibbonController2
+            // 
+            this.documentViewerRibbonController2.DocumentViewer = this.DocumentViewer_Employee;
+            this.documentViewerRibbonController2.RibbonControl = this.RibbonControl;
+            this.documentViewerRibbonController2.RibbonStatusBar = this.ribbonStatusBar1;
+            // 
+            // printPreviewBarItem104
+            // 
+            this.printPreviewBarItem104.Caption = "Stop";
+            this.printPreviewBarItem104.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding;
+            this.printPreviewBarItem104.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem104.Enabled = false;
+            this.printPreviewBarItem104.Hint = "Stop";
+            this.printPreviewBarItem104.Id = 109;
+            this.printPreviewBarItem104.Name = "printPreviewBarItem104";
+            this.printPreviewBarItem104.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // zoomTrackBarEditItem2
+            // 
+            this.zoomTrackBarEditItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.zoomTrackBarEditItem2.ContextSpecifier = this.documentViewerRibbonController2;
+            this.zoomTrackBarEditItem2.Edit = this.repositoryItemZoomTrackBar1;
+            this.zoomTrackBarEditItem2.EditWidth = 140;
+            this.zoomTrackBarEditItem2.Enabled = false;
+            this.zoomTrackBarEditItem2.Id = 110;
+            this.zoomTrackBarEditItem2.Name = "zoomTrackBarEditItem2";
+            this.zoomTrackBarEditItem2.Range = new int[] {
+        10,
+        500};
             // 
             // printPreviewBarItem2
             // 
@@ -1265,75 +1900,977 @@ namespace General_Manager.Form
             superToolTip51.MaxWidth = 210;
             this.printPreviewBarItem51.SuperTip = superToolTip51;
             // 
-            // printPreviewStaticItem1
+            // printPreviewBarItem53
             // 
-            this.printPreviewStaticItem1.Caption = "Nothing";
-            this.printPreviewStaticItem1.Id = 52;
-            this.printPreviewStaticItem1.LeftIndent = 1;
-            this.printPreviewStaticItem1.Name = "printPreviewStaticItem1";
-            this.printPreviewStaticItem1.RightIndent = 1;
-            this.printPreviewStaticItem1.Type = "PageOfPages";
+            this.printPreviewBarItem53.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem53.Caption = "Editing Fields";
+            this.printPreviewBarItem53.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HighlightEditingFields;
+            this.printPreviewBarItem53.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem53.Enabled = false;
+            this.printPreviewBarItem53.Id = 57;
+            this.printPreviewBarItem53.Name = "printPreviewBarItem53";
+            superToolTip52.FixedTooltipWidth = true;
+            toolTipTitleItem52.Text = "Highlight Editing Fields";
+            toolTipItem52.LeftIndent = 6;
+            toolTipItem52.Text = "Highlight all editing fields to quickly discover which of the document elements a" +
+    "re editable.";
+            superToolTip52.Items.Add(toolTipTitleItem52);
+            superToolTip52.Items.Add(toolTipItem52);
+            superToolTip52.MaxWidth = 210;
+            this.printPreviewBarItem53.SuperTip = superToolTip52;
             // 
-            // repositoryItemProgressBar1
+            // printPreviewBarItem54
             // 
-            this.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1";
+            this.printPreviewBarItem54.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem54.Caption = "Bookmarks";
+            this.printPreviewBarItem54.Command = DevExpress.XtraPrinting.PrintingSystemCommand.DocumentMap;
+            this.printPreviewBarItem54.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem54.Enabled = false;
+            this.printPreviewBarItem54.Id = 58;
+            this.printPreviewBarItem54.Name = "printPreviewBarItem54";
+            superToolTip53.FixedTooltipWidth = true;
+            toolTipTitleItem53.Text = "Document Map";
+            toolTipItem53.LeftIndent = 6;
+            toolTipItem53.Text = "Open the Document Map, which allows you to navigate through a structural view of " +
+    "the document.";
+            superToolTip53.Items.Add(toolTipTitleItem53);
+            superToolTip53.Items.Add(toolTipItem53);
+            superToolTip53.MaxWidth = 210;
+            this.printPreviewBarItem54.SuperTip = superToolTip53;
             // 
-            // progressBarEditItem1
+            // printPreviewBarItem55
             // 
-            this.progressBarEditItem1.ContextSpecifier = this.documentViewerRibbonController1;
-            this.progressBarEditItem1.Edit = this.repositoryItemProgressBar1;
-            this.progressBarEditItem1.EditHeight = 12;
-            this.progressBarEditItem1.EditWidth = 150;
-            this.progressBarEditItem1.Id = 53;
-            this.progressBarEditItem1.Name = "progressBarEditItem1";
-            this.progressBarEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.printPreviewBarItem55.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem55.Caption = "Parameters";
+            this.printPreviewBarItem55.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Parameters;
+            this.printPreviewBarItem55.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem55.Enabled = false;
+            this.printPreviewBarItem55.Id = 59;
+            this.printPreviewBarItem55.Name = "printPreviewBarItem55";
+            superToolTip54.FixedTooltipWidth = true;
+            toolTipTitleItem54.Text = "Parameters";
+            toolTipItem54.LeftIndent = 6;
+            toolTipItem54.Text = "Open the Parameters pane, which allows you to enter values for report parameters." +
+    "";
+            superToolTip54.Items.Add(toolTipTitleItem54);
+            superToolTip54.Items.Add(toolTipItem54);
+            superToolTip54.MaxWidth = 210;
+            this.printPreviewBarItem55.SuperTip = superToolTip54;
             // 
-            // printPreviewBarItem52
+            // printPreviewBarItem56
             // 
-            this.printPreviewBarItem52.Caption = "Stop";
-            this.printPreviewBarItem52.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding;
-            this.printPreviewBarItem52.ContextSpecifier = this.documentViewerRibbonController1;
-            this.printPreviewBarItem52.Enabled = false;
-            this.printPreviewBarItem52.Hint = "Stop";
-            this.printPreviewBarItem52.Id = 54;
-            this.printPreviewBarItem52.Name = "printPreviewBarItem52";
-            this.printPreviewBarItem52.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.printPreviewBarItem56.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem56.Caption = "Find";
+            this.printPreviewBarItem56.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Find;
+            this.printPreviewBarItem56.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem56.Enabled = false;
+            this.printPreviewBarItem56.Id = 60;
+            this.printPreviewBarItem56.Name = "printPreviewBarItem56";
+            superToolTip55.FixedTooltipWidth = true;
+            toolTipTitleItem55.Text = "Find";
+            toolTipItem55.LeftIndent = 6;
+            toolTipItem55.Text = "Show the Find dialog to find text in the document.";
+            superToolTip55.Items.Add(toolTipTitleItem55);
+            superToolTip55.Items.Add(toolTipItem55);
+            superToolTip55.MaxWidth = 210;
+            this.printPreviewBarItem56.SuperTip = superToolTip55;
             // 
-            // printPreviewStaticItem2
+            // printPreviewBarItem57
             // 
-            this.printPreviewStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.printPreviewStaticItem2.AutoSize = DevExpress.XtraBars.BarStaticItemSize.None;
-            this.printPreviewStaticItem2.Caption = "100%";
-            this.printPreviewStaticItem2.Id = 55;
-            this.printPreviewStaticItem2.Name = "printPreviewStaticItem2";
-            this.printPreviewStaticItem2.Type = "ZoomFactorText";
+            this.printPreviewBarItem57.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem57.Caption = "Thumbnails";
+            this.printPreviewBarItem57.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Thumbnails;
+            this.printPreviewBarItem57.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem57.Enabled = false;
+            this.printPreviewBarItem57.Id = 61;
+            this.printPreviewBarItem57.Name = "printPreviewBarItem57";
+            superToolTip56.FixedTooltipWidth = true;
+            toolTipTitleItem56.Text = "Thumbnails";
+            toolTipItem56.LeftIndent = 6;
+            toolTipItem56.Text = "Open the Thumbnails, which allows you to navigate through the document.";
+            superToolTip56.Items.Add(toolTipTitleItem56);
+            superToolTip56.Items.Add(toolTipItem56);
+            superToolTip56.MaxWidth = 210;
+            this.printPreviewBarItem57.SuperTip = superToolTip56;
             // 
-            // repositoryItemZoomTrackBar1
+            // printPreviewBarItem58
             // 
-            this.repositoryItemZoomTrackBar1.Alignment = DevExpress.Utils.VertAlignment.Center;
-            this.repositoryItemZoomTrackBar1.AllowFocused = false;
-            this.repositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.repositoryItemZoomTrackBar1.Maximum = 180;
-            this.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1";
+            this.printPreviewBarItem58.Caption = "Options";
+            this.printPreviewBarItem58.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Customize;
+            this.printPreviewBarItem58.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem58.Enabled = false;
+            this.printPreviewBarItem58.Id = 62;
+            this.printPreviewBarItem58.Name = "printPreviewBarItem58";
+            superToolTip57.FixedTooltipWidth = true;
+            toolTipTitleItem57.Text = "Options";
+            toolTipItem57.LeftIndent = 6;
+            toolTipItem57.Text = "Open the Print Options dialog, in which you can change printing options.";
+            superToolTip57.Items.Add(toolTipTitleItem57);
+            superToolTip57.Items.Add(toolTipItem57);
+            superToolTip57.MaxWidth = 210;
+            this.printPreviewBarItem58.SuperTip = superToolTip57;
             // 
-            // zoomTrackBarEditItem1
+            // printPreviewBarItem59
             // 
-            this.zoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.zoomTrackBarEditItem1.ContextSpecifier = this.documentViewerRibbonController1;
-            this.zoomTrackBarEditItem1.Edit = this.repositoryItemZoomTrackBar1;
-            this.zoomTrackBarEditItem1.EditValue = 90;
-            this.zoomTrackBarEditItem1.EditWidth = 140;
-            this.zoomTrackBarEditItem1.Enabled = false;
-            this.zoomTrackBarEditItem1.Id = 56;
-            this.zoomTrackBarEditItem1.Name = "zoomTrackBarEditItem1";
-            this.zoomTrackBarEditItem1.Range = new int[] {
-        10,
-        500};
+            this.printPreviewBarItem59.Caption = "Print";
+            this.printPreviewBarItem59.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print;
+            this.printPreviewBarItem59.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem59.Enabled = false;
+            this.printPreviewBarItem59.Id = 63;
+            this.printPreviewBarItem59.Name = "printPreviewBarItem59";
+            superToolTip58.FixedTooltipWidth = true;
+            toolTipTitleItem58.Text = "Print (Ctrl+P)";
+            toolTipItem58.LeftIndent = 6;
+            toolTipItem58.Text = "Select a printer, number of copies and other printing options before printing.";
+            superToolTip58.Items.Add(toolTipTitleItem58);
+            superToolTip58.Items.Add(toolTipItem58);
+            superToolTip58.MaxWidth = 210;
+            this.printPreviewBarItem59.SuperTip = superToolTip58;
             // 
-            // ribbonPage1
+            // printPreviewBarItem60
             // 
-            this.ribbonPage1.ContextSpecifier = this.documentViewerRibbonController1;
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.printPreviewBarItem60.Caption = "Quick Print";
+            this.printPreviewBarItem60.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PrintDirect;
+            this.printPreviewBarItem60.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem60.Enabled = false;
+            this.printPreviewBarItem60.Id = 64;
+            this.printPreviewBarItem60.Name = "printPreviewBarItem60";
+            superToolTip59.FixedTooltipWidth = true;
+            toolTipTitleItem59.Text = "Quick Print";
+            toolTipItem59.LeftIndent = 6;
+            toolTipItem59.Text = "Send the document directly to the default printer without making changes.";
+            superToolTip59.Items.Add(toolTipTitleItem59);
+            superToolTip59.Items.Add(toolTipItem59);
+            superToolTip59.MaxWidth = 210;
+            this.printPreviewBarItem60.SuperTip = superToolTip59;
+            // 
+            // printPreviewBarItem61
+            // 
+            this.printPreviewBarItem61.Caption = "Custom Margins...";
+            this.printPreviewBarItem61.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageSetup;
+            this.printPreviewBarItem61.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem61.Enabled = false;
+            this.printPreviewBarItem61.Id = 65;
+            this.printPreviewBarItem61.Name = "printPreviewBarItem61";
+            superToolTip60.FixedTooltipWidth = true;
+            toolTipTitleItem60.Text = "Page Setup";
+            toolTipItem60.LeftIndent = 6;
+            toolTipItem60.Text = "Show the Page Setup dialog.";
+            superToolTip60.Items.Add(toolTipTitleItem60);
+            superToolTip60.Items.Add(toolTipItem60);
+            superToolTip60.MaxWidth = 210;
+            this.printPreviewBarItem61.SuperTip = superToolTip60;
+            // 
+            // printPreviewBarItem62
+            // 
+            this.printPreviewBarItem62.Caption = "Header/Footer";
+            this.printPreviewBarItem62.Command = DevExpress.XtraPrinting.PrintingSystemCommand.EditPageHF;
+            this.printPreviewBarItem62.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem62.Enabled = false;
+            this.printPreviewBarItem62.Id = 66;
+            this.printPreviewBarItem62.Name = "printPreviewBarItem62";
+            superToolTip61.FixedTooltipWidth = true;
+            toolTipTitleItem61.Text = "Header and Footer";
+            toolTipItem61.LeftIndent = 6;
+            toolTipItem61.Text = "Edit the header and footer of the document.";
+            superToolTip61.Items.Add(toolTipTitleItem61);
+            superToolTip61.Items.Add(toolTipItem61);
+            superToolTip61.MaxWidth = 210;
+            this.printPreviewBarItem62.SuperTip = superToolTip61;
+            // 
+            // printPreviewBarItem63
+            // 
+            this.printPreviewBarItem63.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem63.Caption = "Scale";
+            this.printPreviewBarItem63.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Scale;
+            this.printPreviewBarItem63.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem63.Enabled = false;
+            this.printPreviewBarItem63.Id = 67;
+            this.printPreviewBarItem63.Name = "printPreviewBarItem63";
+            superToolTip62.FixedTooltipWidth = true;
+            toolTipTitleItem62.Text = "Scale";
+            toolTipItem62.LeftIndent = 6;
+            toolTipItem62.Text = "Stretch or shrink the printed output to a percentage of its actual size.";
+            superToolTip62.Items.Add(toolTipTitleItem62);
+            superToolTip62.Items.Add(toolTipItem62);
+            superToolTip62.MaxWidth = 210;
+            this.printPreviewBarItem63.SuperTip = superToolTip62;
+            // 
+            // printPreviewBarItem64
+            // 
+            this.printPreviewBarItem64.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem64.Caption = "Pointer";
+            this.printPreviewBarItem64.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Pointer;
+            this.printPreviewBarItem64.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem64.Enabled = false;
+            this.printPreviewBarItem64.GroupIndex = 1;
+            this.printPreviewBarItem64.Id = 68;
+            this.printPreviewBarItem64.Name = "printPreviewBarItem64";
+            this.printPreviewBarItem64.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
+            superToolTip63.FixedTooltipWidth = true;
+            toolTipTitleItem63.Text = "Mouse Pointer";
+            toolTipItem63.LeftIndent = 6;
+            toolTipItem63.Text = "Show the mouse pointer.";
+            superToolTip63.Items.Add(toolTipTitleItem63);
+            superToolTip63.Items.Add(toolTipItem63);
+            superToolTip63.MaxWidth = 210;
+            this.printPreviewBarItem64.SuperTip = superToolTip63;
+            // 
+            // printPreviewBarItem65
+            // 
+            this.printPreviewBarItem65.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem65.Caption = "Hand Tool";
+            this.printPreviewBarItem65.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HandTool;
+            this.printPreviewBarItem65.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem65.Enabled = false;
+            this.printPreviewBarItem65.GroupIndex = 1;
+            this.printPreviewBarItem65.Id = 69;
+            this.printPreviewBarItem65.Name = "printPreviewBarItem65";
+            this.printPreviewBarItem65.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
+            superToolTip64.FixedTooltipWidth = true;
+            toolTipTitleItem64.Text = "Hand Tool";
+            toolTipItem64.LeftIndent = 6;
+            toolTipItem64.Text = "Invoke the Hand tool to manually scroll through pages.";
+            superToolTip64.Items.Add(toolTipTitleItem64);
+            superToolTip64.Items.Add(toolTipItem64);
+            superToolTip64.MaxWidth = 210;
+            this.printPreviewBarItem65.SuperTip = superToolTip64;
+            // 
+            // printPreviewBarItem66
+            // 
+            this.printPreviewBarItem66.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check;
+            this.printPreviewBarItem66.Caption = "Magnifier";
+            this.printPreviewBarItem66.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Magnifier;
+            this.printPreviewBarItem66.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem66.Enabled = false;
+            this.printPreviewBarItem66.GroupIndex = 1;
+            this.printPreviewBarItem66.Id = 70;
+            this.printPreviewBarItem66.Name = "printPreviewBarItem66";
+            this.printPreviewBarItem66.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
+            superToolTip65.FixedTooltipWidth = true;
+            toolTipTitleItem65.Text = "Magnifier";
+            toolTipItem65.LeftIndent = 6;
+            toolTipItem65.Text = "Invoke the Magnifier tool.\r\n\r\nClicking once on a document zooms it so that a sing" +
+    "le page becomes entirely visible, while clicking another time zooms it to 100% o" +
+    "f the normal size.";
+            superToolTip65.Items.Add(toolTipTitleItem65);
+            superToolTip65.Items.Add(toolTipItem65);
+            superToolTip65.MaxWidth = 210;
+            this.printPreviewBarItem66.SuperTip = superToolTip65;
+            // 
+            // printPreviewBarItem67
+            // 
+            this.printPreviewBarItem67.Caption = "Zoom Out";
+            this.printPreviewBarItem67.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomOut;
+            this.printPreviewBarItem67.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem67.Enabled = false;
+            this.printPreviewBarItem67.Id = 71;
+            this.printPreviewBarItem67.Name = "printPreviewBarItem67";
+            superToolTip66.FixedTooltipWidth = true;
+            toolTipTitleItem66.Text = "Zoom Out";
+            toolTipItem66.LeftIndent = 6;
+            toolTipItem66.Text = "Zoom out to see more of the page at a reduced size.";
+            superToolTip66.Items.Add(toolTipTitleItem66);
+            superToolTip66.Items.Add(toolTipItem66);
+            superToolTip66.MaxWidth = 210;
+            this.printPreviewBarItem67.SuperTip = superToolTip66;
+            // 
+            // printPreviewBarItem68
+            // 
+            this.printPreviewBarItem68.Caption = "Zoom In";
+            this.printPreviewBarItem68.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomIn;
+            this.printPreviewBarItem68.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem68.Enabled = false;
+            this.printPreviewBarItem68.Id = 72;
+            this.printPreviewBarItem68.Name = "printPreviewBarItem68";
+            superToolTip67.FixedTooltipWidth = true;
+            toolTipTitleItem67.Text = "Zoom In";
+            toolTipItem67.LeftIndent = 6;
+            toolTipItem67.Text = "Zoom in to get a close-up view of the document.";
+            superToolTip67.Items.Add(toolTipTitleItem67);
+            superToolTip67.Items.Add(toolTipItem67);
+            superToolTip67.MaxWidth = 210;
+            this.printPreviewBarItem68.SuperTip = superToolTip67;
+            // 
+            // printPreviewBarItem69
+            // 
+            this.printPreviewBarItem69.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem69.Caption = "Zoom";
+            this.printPreviewBarItem69.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Zoom;
+            this.printPreviewBarItem69.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem69.Enabled = false;
+            this.printPreviewBarItem69.Id = 73;
+            this.printPreviewBarItem69.Name = "printPreviewBarItem69";
+            superToolTip68.FixedTooltipWidth = true;
+            toolTipTitleItem68.Text = "Zoom";
+            toolTipItem68.LeftIndent = 6;
+            toolTipItem68.Text = "Change the zoom level of the document preview.";
+            superToolTip68.Items.Add(toolTipTitleItem68);
+            superToolTip68.Items.Add(toolTipItem68);
+            superToolTip68.MaxWidth = 210;
+            this.printPreviewBarItem69.SuperTip = superToolTip68;
+            // 
+            // printPreviewBarItem70
+            // 
+            this.printPreviewBarItem70.Caption = "First Page";
+            this.printPreviewBarItem70.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowFirstPage;
+            this.printPreviewBarItem70.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem70.Enabled = false;
+            this.printPreviewBarItem70.Id = 74;
+            this.printPreviewBarItem70.Name = "printPreviewBarItem70";
+            superToolTip69.FixedTooltipWidth = true;
+            toolTipTitleItem69.Text = "First Page (Home)";
+            toolTipItem69.LeftIndent = 6;
+            toolTipItem69.Text = "Navigate to the first page of the document.";
+            superToolTip69.Items.Add(toolTipTitleItem69);
+            superToolTip69.Items.Add(toolTipItem69);
+            superToolTip69.MaxWidth = 210;
+            this.printPreviewBarItem70.SuperTip = superToolTip69;
+            // 
+            // printPreviewBarItem71
+            // 
+            this.printPreviewBarItem71.Caption = "Previous Page";
+            this.printPreviewBarItem71.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowPrevPage;
+            this.printPreviewBarItem71.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem71.Enabled = false;
+            this.printPreviewBarItem71.Id = 75;
+            this.printPreviewBarItem71.Name = "printPreviewBarItem71";
+            superToolTip70.FixedTooltipWidth = true;
+            toolTipTitleItem70.Text = "Previous Page (Left Arrow)";
+            toolTipItem70.LeftIndent = 6;
+            toolTipItem70.Text = "Navigate to the previous page of the document.";
+            superToolTip70.Items.Add(toolTipTitleItem70);
+            superToolTip70.Items.Add(toolTipItem70);
+            superToolTip70.MaxWidth = 210;
+            this.printPreviewBarItem71.SuperTip = superToolTip70;
+            // 
+            // printPreviewBarItem72
+            // 
+            this.printPreviewBarItem72.Caption = "Next  Page ";
+            this.printPreviewBarItem72.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowNextPage;
+            this.printPreviewBarItem72.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem72.Enabled = false;
+            this.printPreviewBarItem72.Id = 76;
+            this.printPreviewBarItem72.Name = "printPreviewBarItem72";
+            superToolTip71.FixedTooltipWidth = true;
+            toolTipTitleItem71.Text = "Next Page (Right Arrow)";
+            toolTipItem71.LeftIndent = 6;
+            toolTipItem71.Text = "Navigate to the next page of the document.";
+            superToolTip71.Items.Add(toolTipTitleItem71);
+            superToolTip71.Items.Add(toolTipItem71);
+            superToolTip71.MaxWidth = 210;
+            this.printPreviewBarItem72.SuperTip = superToolTip71;
+            // 
+            // printPreviewBarItem73
+            // 
+            this.printPreviewBarItem73.Caption = "Last  Page ";
+            this.printPreviewBarItem73.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowLastPage;
+            this.printPreviewBarItem73.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem73.Enabled = false;
+            this.printPreviewBarItem73.Id = 77;
+            this.printPreviewBarItem73.Name = "printPreviewBarItem73";
+            superToolTip72.FixedTooltipWidth = true;
+            toolTipTitleItem72.Text = "Last Page (End)";
+            toolTipItem72.LeftIndent = 6;
+            toolTipItem72.Text = "Navigate to the last page of the document.";
+            superToolTip72.Items.Add(toolTipTitleItem72);
+            superToolTip72.Items.Add(toolTipItem72);
+            superToolTip72.MaxWidth = 210;
+            this.printPreviewBarItem73.SuperTip = superToolTip72;
+            // 
+            // printPreviewBarItem74
+            // 
+            this.printPreviewBarItem74.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem74.Caption = "Many Pages";
+            this.printPreviewBarItem74.Command = DevExpress.XtraPrinting.PrintingSystemCommand.MultiplePages;
+            this.printPreviewBarItem74.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem74.Enabled = false;
+            this.printPreviewBarItem74.Id = 78;
+            this.printPreviewBarItem74.Name = "printPreviewBarItem74";
+            superToolTip73.FixedTooltipWidth = true;
+            toolTipTitleItem73.Text = "View Many Pages";
+            toolTipItem73.LeftIndent = 6;
+            toolTipItem73.Text = "Choose the page layout to arrange the document pages in preview.";
+            superToolTip73.Items.Add(toolTipTitleItem73);
+            superToolTip73.Items.Add(toolTipItem73);
+            superToolTip73.MaxWidth = 210;
+            this.printPreviewBarItem74.SuperTip = superToolTip73;
+            // 
+            // printPreviewBarItem75
+            // 
+            this.printPreviewBarItem75.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem75.Caption = "Page Color";
+            this.printPreviewBarItem75.Command = DevExpress.XtraPrinting.PrintingSystemCommand.FillBackground;
+            this.printPreviewBarItem75.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem75.Enabled = false;
+            this.printPreviewBarItem75.Id = 79;
+            this.printPreviewBarItem75.Name = "printPreviewBarItem75";
+            superToolTip74.FixedTooltipWidth = true;
+            toolTipTitleItem74.Text = "Background Color";
+            toolTipItem74.LeftIndent = 6;
+            toolTipItem74.Text = "Choose a color for the background of the document pages.";
+            superToolTip74.Items.Add(toolTipTitleItem74);
+            superToolTip74.Items.Add(toolTipItem74);
+            superToolTip74.MaxWidth = 210;
+            this.printPreviewBarItem75.SuperTip = superToolTip74;
+            // 
+            // printPreviewBarItem76
+            // 
+            this.printPreviewBarItem76.Caption = "Watermark";
+            this.printPreviewBarItem76.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Watermark;
+            this.printPreviewBarItem76.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem76.Enabled = false;
+            this.printPreviewBarItem76.Id = 80;
+            this.printPreviewBarItem76.Name = "printPreviewBarItem76";
+            superToolTip75.FixedTooltipWidth = true;
+            toolTipTitleItem75.Text = "Watermark";
+            toolTipItem75.LeftIndent = 6;
+            toolTipItem75.Text = "Insert ghosted text or image behind the content of a page.\r\n\r\nThis is often used " +
+    "to indicate that a document is to be treated specially.";
+            superToolTip75.Items.Add(toolTipTitleItem75);
+            superToolTip75.Items.Add(toolTipItem75);
+            superToolTip75.MaxWidth = 210;
+            this.printPreviewBarItem76.SuperTip = superToolTip75;
+            // 
+            // printPreviewBarItem77
+            // 
+            this.printPreviewBarItem77.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem77.Caption = "Export To";
+            this.printPreviewBarItem77.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportFile;
+            this.printPreviewBarItem77.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem77.Enabled = false;
+            this.printPreviewBarItem77.Id = 81;
+            this.printPreviewBarItem77.Name = "printPreviewBarItem77";
+            superToolTip76.FixedTooltipWidth = true;
+            toolTipTitleItem76.Text = "Export To...";
+            toolTipItem76.LeftIndent = 6;
+            toolTipItem76.Text = "Export the current document in one of the available formats, and save it to the f" +
+    "ile on a disk.";
+            superToolTip76.Items.Add(toolTipTitleItem76);
+            superToolTip76.Items.Add(toolTipItem76);
+            superToolTip76.MaxWidth = 210;
+            this.printPreviewBarItem77.SuperTip = superToolTip76;
+            // 
+            // printPreviewBarItem78
+            // 
+            this.printPreviewBarItem78.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem78.Caption = "E-Mail As";
+            this.printPreviewBarItem78.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendFile;
+            this.printPreviewBarItem78.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem78.Enabled = false;
+            this.printPreviewBarItem78.Id = 82;
+            this.printPreviewBarItem78.Name = "printPreviewBarItem78";
+            superToolTip77.FixedTooltipWidth = true;
+            toolTipTitleItem77.Text = "E-Mail As...";
+            toolTipItem77.LeftIndent = 6;
+            toolTipItem77.Text = "Export the current document in one of the available formats, and attach it to the" +
+    " e-mail.";
+            superToolTip77.Items.Add(toolTipTitleItem77);
+            superToolTip77.Items.Add(toolTipItem77);
+            superToolTip77.MaxWidth = 210;
+            this.printPreviewBarItem78.SuperTip = superToolTip77;
+            // 
+            // printPreviewBarItem79
+            // 
+            this.printPreviewBarItem79.Caption = "Close";
+            this.printPreviewBarItem79.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ClosePreview;
+            this.printPreviewBarItem79.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem79.Enabled = false;
+            this.printPreviewBarItem79.Id = 83;
+            this.printPreviewBarItem79.Name = "printPreviewBarItem79";
+            superToolTip78.FixedTooltipWidth = true;
+            toolTipTitleItem78.Text = "Close Print Preview";
+            toolTipItem78.LeftIndent = 6;
+            toolTipItem78.Text = "Close Print Preview of the document.";
+            superToolTip78.Items.Add(toolTipTitleItem78);
+            superToolTip78.Items.Add(toolTipItem78);
+            superToolTip78.MaxWidth = 210;
+            this.printPreviewBarItem79.SuperTip = superToolTip78;
+            // 
+            // printPreviewBarItem80
+            // 
+            this.printPreviewBarItem80.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem80.Caption = "Orientation";
+            this.printPreviewBarItem80.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageOrientation;
+            this.printPreviewBarItem80.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem80.Enabled = false;
+            this.printPreviewBarItem80.Id = 84;
+            this.printPreviewBarItem80.Name = "printPreviewBarItem80";
+            superToolTip79.FixedTooltipWidth = true;
+            toolTipTitleItem79.Text = "Page Orientation";
+            toolTipItem79.LeftIndent = 6;
+            toolTipItem79.Text = "Switch the pages between portrait and landscape layouts.";
+            superToolTip79.Items.Add(toolTipTitleItem79);
+            superToolTip79.Items.Add(toolTipItem79);
+            superToolTip79.MaxWidth = 210;
+            this.printPreviewBarItem80.SuperTip = superToolTip79;
+            // 
+            // printPreviewBarItem81
+            // 
+            this.printPreviewBarItem81.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem81.Caption = "Size";
+            this.printPreviewBarItem81.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PaperSize;
+            this.printPreviewBarItem81.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem81.Enabled = false;
+            this.printPreviewBarItem81.Id = 85;
+            this.printPreviewBarItem81.Name = "printPreviewBarItem81";
+            superToolTip80.FixedTooltipWidth = true;
+            toolTipTitleItem80.Text = "Page Size";
+            toolTipItem80.LeftIndent = 6;
+            toolTipItem80.Text = "Choose the paper size of the document.";
+            superToolTip80.Items.Add(toolTipTitleItem80);
+            superToolTip80.Items.Add(toolTipItem80);
+            superToolTip80.MaxWidth = 210;
+            this.printPreviewBarItem81.SuperTip = superToolTip80;
+            // 
+            // printPreviewBarItem82
+            // 
+            this.printPreviewBarItem82.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.printPreviewBarItem82.Caption = "Margins";
+            this.printPreviewBarItem82.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageMargins;
+            this.printPreviewBarItem82.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem82.Enabled = false;
+            this.printPreviewBarItem82.Id = 86;
+            this.printPreviewBarItem82.Name = "printPreviewBarItem82";
+            superToolTip81.FixedTooltipWidth = true;
+            toolTipTitleItem81.Text = "Page Margins";
+            toolTipItem81.LeftIndent = 6;
+            toolTipItem81.Text = "Select the margin sizes for the entire document.\r\n\r\nTo apply specific margin size" +
+    "s to the document, click Custom Margins.";
+            superToolTip81.Items.Add(toolTipTitleItem81);
+            superToolTip81.Items.Add(toolTipItem81);
+            superToolTip81.MaxWidth = 210;
+            this.printPreviewBarItem82.SuperTip = superToolTip81;
+            // 
+            // printPreviewBarItem83
+            // 
+            this.printPreviewBarItem83.Caption = "PDF File";
+            this.printPreviewBarItem83.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendPdf;
+            this.printPreviewBarItem83.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem83.Enabled = false;
+            this.printPreviewBarItem83.Id = 87;
+            this.printPreviewBarItem83.Name = "printPreviewBarItem83";
+            superToolTip82.FixedTooltipWidth = true;
+            toolTipTitleItem82.Text = "E-Mail As PDF";
+            toolTipItem82.LeftIndent = 6;
+            toolTipItem82.Text = "Export the document to PDF and attach it to the e-mail.";
+            superToolTip82.Items.Add(toolTipTitleItem82);
+            superToolTip82.Items.Add(toolTipItem82);
+            superToolTip82.MaxWidth = 210;
+            this.printPreviewBarItem83.SuperTip = superToolTip82;
+            // 
+            // printPreviewBarItem84
+            // 
+            this.printPreviewBarItem84.Caption = "Text File";
+            this.printPreviewBarItem84.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendTxt;
+            this.printPreviewBarItem84.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem84.Enabled = false;
+            this.printPreviewBarItem84.Id = 88;
+            this.printPreviewBarItem84.Name = "printPreviewBarItem84";
+            superToolTip83.FixedTooltipWidth = true;
+            toolTipTitleItem83.Text = "E-Mail As Text";
+            toolTipItem83.LeftIndent = 6;
+            toolTipItem83.Text = "Export the document to Text and attach it to the e-mail.";
+            superToolTip83.Items.Add(toolTipTitleItem83);
+            superToolTip83.Items.Add(toolTipItem83);
+            superToolTip83.MaxWidth = 210;
+            this.printPreviewBarItem84.SuperTip = superToolTip83;
+            // 
+            // printPreviewBarItem85
+            // 
+            this.printPreviewBarItem85.Caption = "CSV File";
+            this.printPreviewBarItem85.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendCsv;
+            this.printPreviewBarItem85.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem85.Enabled = false;
+            this.printPreviewBarItem85.Id = 89;
+            this.printPreviewBarItem85.Name = "printPreviewBarItem85";
+            superToolTip84.FixedTooltipWidth = true;
+            toolTipTitleItem84.Text = "E-Mail As CSV";
+            toolTipItem84.LeftIndent = 6;
+            toolTipItem84.Text = "Export the document to CSV and attach it to the e-mail.";
+            superToolTip84.Items.Add(toolTipTitleItem84);
+            superToolTip84.Items.Add(toolTipItem84);
+            superToolTip84.MaxWidth = 210;
+            this.printPreviewBarItem85.SuperTip = superToolTip84;
+            // 
+            // printPreviewBarItem86
+            // 
+            this.printPreviewBarItem86.Caption = "MHT File";
+            this.printPreviewBarItem86.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendMht;
+            this.printPreviewBarItem86.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem86.Enabled = false;
+            this.printPreviewBarItem86.Id = 90;
+            this.printPreviewBarItem86.Name = "printPreviewBarItem86";
+            superToolTip85.FixedTooltipWidth = true;
+            toolTipTitleItem85.Text = "E-Mail As MHT";
+            toolTipItem85.LeftIndent = 6;
+            toolTipItem85.Text = "Export the document to MHT and attach it to the e-mail.";
+            superToolTip85.Items.Add(toolTipTitleItem85);
+            superToolTip85.Items.Add(toolTipItem85);
+            superToolTip85.MaxWidth = 210;
+            this.printPreviewBarItem86.SuperTip = superToolTip85;
+            // 
+            // printPreviewBarItem87
+            // 
+            this.printPreviewBarItem87.Caption = "XLS File";
+            this.printPreviewBarItem87.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXls;
+            this.printPreviewBarItem87.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem87.Enabled = false;
+            this.printPreviewBarItem87.Id = 91;
+            this.printPreviewBarItem87.Name = "printPreviewBarItem87";
+            superToolTip86.FixedTooltipWidth = true;
+            toolTipTitleItem86.Text = "E-Mail As XLS";
+            toolTipItem86.LeftIndent = 6;
+            toolTipItem86.Text = "Export the document to XLS and attach it to the e-mail.";
+            superToolTip86.Items.Add(toolTipTitleItem86);
+            superToolTip86.Items.Add(toolTipItem86);
+            superToolTip86.MaxWidth = 210;
+            this.printPreviewBarItem87.SuperTip = superToolTip86;
+            // 
+            // printPreviewBarItem88
+            // 
+            this.printPreviewBarItem88.Caption = "XLSX File";
+            this.printPreviewBarItem88.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXlsx;
+            this.printPreviewBarItem88.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem88.Enabled = false;
+            this.printPreviewBarItem88.Id = 92;
+            this.printPreviewBarItem88.Name = "printPreviewBarItem88";
+            superToolTip87.FixedTooltipWidth = true;
+            toolTipTitleItem87.Text = "E-Mail As XLSX";
+            toolTipItem87.LeftIndent = 6;
+            toolTipItem87.Text = "Export the document to XLSX and attach it to the e-mail.";
+            superToolTip87.Items.Add(toolTipTitleItem87);
+            superToolTip87.Items.Add(toolTipItem87);
+            superToolTip87.MaxWidth = 210;
+            this.printPreviewBarItem88.SuperTip = superToolTip87;
+            // 
+            // printPreviewBarItem89
+            // 
+            this.printPreviewBarItem89.Caption = "RTF File";
+            this.printPreviewBarItem89.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendRtf;
+            this.printPreviewBarItem89.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem89.Enabled = false;
+            this.printPreviewBarItem89.Id = 93;
+            this.printPreviewBarItem89.Name = "printPreviewBarItem89";
+            superToolTip88.FixedTooltipWidth = true;
+            toolTipTitleItem88.Text = "E-Mail As RTF";
+            toolTipItem88.LeftIndent = 6;
+            toolTipItem88.Text = "Export the document to RTF and attach it to the e-mail.";
+            superToolTip88.Items.Add(toolTipTitleItem88);
+            superToolTip88.Items.Add(toolTipItem88);
+            superToolTip88.MaxWidth = 210;
+            this.printPreviewBarItem89.SuperTip = superToolTip88;
+            // 
+            // printPreviewBarItem90
+            // 
+            this.printPreviewBarItem90.Caption = "DOCX File";
+            this.printPreviewBarItem90.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendDocx;
+            this.printPreviewBarItem90.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem90.Enabled = false;
+            this.printPreviewBarItem90.Id = 94;
+            this.printPreviewBarItem90.Name = "printPreviewBarItem90";
+            superToolTip89.FixedTooltipWidth = true;
+            toolTipTitleItem89.Text = "E-Mail As DOCX";
+            toolTipItem89.LeftIndent = 6;
+            toolTipItem89.Text = "Export the document to DOCX and attach it to the e-mail.";
+            superToolTip89.Items.Add(toolTipTitleItem89);
+            superToolTip89.Items.Add(toolTipItem89);
+            superToolTip89.MaxWidth = 210;
+            this.printPreviewBarItem90.SuperTip = superToolTip89;
+            // 
+            // printPreviewBarItem91
+            // 
+            this.printPreviewBarItem91.Caption = "Image File";
+            this.printPreviewBarItem91.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendGraphic;
+            this.printPreviewBarItem91.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem91.Enabled = false;
+            this.printPreviewBarItem91.Id = 95;
+            this.printPreviewBarItem91.Name = "printPreviewBarItem91";
+            superToolTip90.FixedTooltipWidth = true;
+            toolTipTitleItem90.Text = "E-Mail As Image";
+            toolTipItem90.LeftIndent = 6;
+            toolTipItem90.Text = "Export the document to Image and attach it to the e-mail.";
+            superToolTip90.Items.Add(toolTipTitleItem90);
+            superToolTip90.Items.Add(toolTipItem90);
+            superToolTip90.MaxWidth = 210;
+            this.printPreviewBarItem91.SuperTip = superToolTip90;
+            // 
+            // printPreviewBarItem92
+            // 
+            this.printPreviewBarItem92.Caption = "PDF File";
+            this.printPreviewBarItem92.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportPdf;
+            this.printPreviewBarItem92.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem92.Enabled = false;
+            this.printPreviewBarItem92.Id = 96;
+            this.printPreviewBarItem92.Name = "printPreviewBarItem92";
+            superToolTip91.FixedTooltipWidth = true;
+            toolTipTitleItem91.Text = "Export to PDF";
+            toolTipItem91.LeftIndent = 6;
+            toolTipItem91.Text = "Export the document to PDF and save it to the file on a disk.";
+            superToolTip91.Items.Add(toolTipTitleItem91);
+            superToolTip91.Items.Add(toolTipItem91);
+            superToolTip91.MaxWidth = 210;
+            this.printPreviewBarItem92.SuperTip = superToolTip91;
+            // 
+            // printPreviewBarItem93
+            // 
+            this.printPreviewBarItem93.Caption = "HTML File";
+            this.printPreviewBarItem93.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportHtm;
+            this.printPreviewBarItem93.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem93.Enabled = false;
+            this.printPreviewBarItem93.Id = 97;
+            this.printPreviewBarItem93.Name = "printPreviewBarItem93";
+            superToolTip92.FixedTooltipWidth = true;
+            toolTipTitleItem92.Text = "Export to HTML";
+            toolTipItem92.LeftIndent = 6;
+            toolTipItem92.Text = "Export the document to HTML and save it to the file on a disk.";
+            superToolTip92.Items.Add(toolTipTitleItem92);
+            superToolTip92.Items.Add(toolTipItem92);
+            superToolTip92.MaxWidth = 210;
+            this.printPreviewBarItem93.SuperTip = superToolTip92;
+            // 
+            // printPreviewBarItem94
+            // 
+            this.printPreviewBarItem94.Caption = "Text File";
+            this.printPreviewBarItem94.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportTxt;
+            this.printPreviewBarItem94.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem94.Enabled = false;
+            this.printPreviewBarItem94.Id = 98;
+            this.printPreviewBarItem94.Name = "printPreviewBarItem94";
+            superToolTip93.FixedTooltipWidth = true;
+            toolTipTitleItem93.Text = "Export to Text";
+            toolTipItem93.LeftIndent = 6;
+            toolTipItem93.Text = "Export the document to Text and save it to the file on a disk.";
+            superToolTip93.Items.Add(toolTipTitleItem93);
+            superToolTip93.Items.Add(toolTipItem93);
+            superToolTip93.MaxWidth = 210;
+            this.printPreviewBarItem94.SuperTip = superToolTip93;
+            // 
+            // printPreviewBarItem95
+            // 
+            this.printPreviewBarItem95.Caption = "CSV File";
+            this.printPreviewBarItem95.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportCsv;
+            this.printPreviewBarItem95.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem95.Enabled = false;
+            this.printPreviewBarItem95.Id = 99;
+            this.printPreviewBarItem95.Name = "printPreviewBarItem95";
+            superToolTip94.FixedTooltipWidth = true;
+            toolTipTitleItem94.Text = "Export to CSV";
+            toolTipItem94.LeftIndent = 6;
+            toolTipItem94.Text = "Export the document to CSV and save it to the file on a disk.";
+            superToolTip94.Items.Add(toolTipTitleItem94);
+            superToolTip94.Items.Add(toolTipItem94);
+            superToolTip94.MaxWidth = 210;
+            this.printPreviewBarItem95.SuperTip = superToolTip94;
+            // 
+            // printPreviewBarItem96
+            // 
+            this.printPreviewBarItem96.Caption = "MHT File";
+            this.printPreviewBarItem96.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportMht;
+            this.printPreviewBarItem96.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem96.Enabled = false;
+            this.printPreviewBarItem96.Id = 100;
+            this.printPreviewBarItem96.Name = "printPreviewBarItem96";
+            superToolTip95.FixedTooltipWidth = true;
+            toolTipTitleItem95.Text = "Export to MHT";
+            toolTipItem95.LeftIndent = 6;
+            toolTipItem95.Text = "Export the document to MHT and save it to the file on a disk.";
+            superToolTip95.Items.Add(toolTipTitleItem95);
+            superToolTip95.Items.Add(toolTipItem95);
+            superToolTip95.MaxWidth = 210;
+            this.printPreviewBarItem96.SuperTip = superToolTip95;
+            // 
+            // printPreviewBarItem97
+            // 
+            this.printPreviewBarItem97.Caption = "XLS File";
+            this.printPreviewBarItem97.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXls;
+            this.printPreviewBarItem97.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem97.Enabled = false;
+            this.printPreviewBarItem97.Id = 101;
+            this.printPreviewBarItem97.Name = "printPreviewBarItem97";
+            superToolTip96.FixedTooltipWidth = true;
+            toolTipTitleItem96.Text = "Export to XLS";
+            toolTipItem96.LeftIndent = 6;
+            toolTipItem96.Text = "Export the document to XLS and save it to the file on a disk.";
+            superToolTip96.Items.Add(toolTipTitleItem96);
+            superToolTip96.Items.Add(toolTipItem96);
+            superToolTip96.MaxWidth = 210;
+            this.printPreviewBarItem97.SuperTip = superToolTip96;
+            // 
+            // printPreviewBarItem98
+            // 
+            this.printPreviewBarItem98.Caption = "XLSX File";
+            this.printPreviewBarItem98.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXlsx;
+            this.printPreviewBarItem98.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem98.Enabled = false;
+            this.printPreviewBarItem98.Id = 102;
+            this.printPreviewBarItem98.Name = "printPreviewBarItem98";
+            superToolTip97.FixedTooltipWidth = true;
+            toolTipTitleItem97.Text = "Export to XLSX";
+            toolTipItem97.LeftIndent = 6;
+            toolTipItem97.Text = "Export the document to XLSX and save it to the file on a disk.";
+            superToolTip97.Items.Add(toolTipTitleItem97);
+            superToolTip97.Items.Add(toolTipItem97);
+            superToolTip97.MaxWidth = 210;
+            this.printPreviewBarItem98.SuperTip = superToolTip97;
+            // 
+            // printPreviewBarItem99
+            // 
+            this.printPreviewBarItem99.Caption = "RTF File";
+            this.printPreviewBarItem99.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportRtf;
+            this.printPreviewBarItem99.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem99.Enabled = false;
+            this.printPreviewBarItem99.Id = 103;
+            this.printPreviewBarItem99.Name = "printPreviewBarItem99";
+            superToolTip98.FixedTooltipWidth = true;
+            toolTipTitleItem98.Text = "Export to RTF";
+            toolTipItem98.LeftIndent = 6;
+            toolTipItem98.Text = "Export the document to RTF and save it to the file on a disk.";
+            superToolTip98.Items.Add(toolTipTitleItem98);
+            superToolTip98.Items.Add(toolTipItem98);
+            superToolTip98.MaxWidth = 210;
+            this.printPreviewBarItem99.SuperTip = superToolTip98;
+            // 
+            // printPreviewBarItem100
+            // 
+            this.printPreviewBarItem100.Caption = "DOCX File";
+            this.printPreviewBarItem100.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportDocx;
+            this.printPreviewBarItem100.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem100.Enabled = false;
+            this.printPreviewBarItem100.Id = 104;
+            this.printPreviewBarItem100.Name = "printPreviewBarItem100";
+            superToolTip99.FixedTooltipWidth = true;
+            toolTipTitleItem99.Text = "Export to DOCX";
+            toolTipItem99.LeftIndent = 6;
+            toolTipItem99.Text = "Export the document to DOCX and save it to the file on a disk.";
+            superToolTip99.Items.Add(toolTipTitleItem99);
+            superToolTip99.Items.Add(toolTipItem99);
+            superToolTip99.MaxWidth = 210;
+            this.printPreviewBarItem100.SuperTip = superToolTip99;
+            // 
+            // printPreviewBarItem101
+            // 
+            this.printPreviewBarItem101.Caption = "Image File";
+            this.printPreviewBarItem101.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportGraphic;
+            this.printPreviewBarItem101.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem101.Enabled = false;
+            this.printPreviewBarItem101.Id = 105;
+            this.printPreviewBarItem101.Name = "printPreviewBarItem101";
+            superToolTip100.FixedTooltipWidth = true;
+            toolTipTitleItem100.Text = "Export to Image";
+            toolTipItem100.LeftIndent = 6;
+            toolTipItem100.Text = "Export the document to Image and save it to the file on a disk.";
+            superToolTip100.Items.Add(toolTipTitleItem100);
+            superToolTip100.Items.Add(toolTipItem100);
+            superToolTip100.MaxWidth = 210;
+            this.printPreviewBarItem101.SuperTip = superToolTip100;
+            // 
+            // printPreviewBarItem102
+            // 
+            this.printPreviewBarItem102.Caption = "Open";
+            this.printPreviewBarItem102.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Open;
+            this.printPreviewBarItem102.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem102.Enabled = false;
+            this.printPreviewBarItem102.Id = 106;
+            this.printPreviewBarItem102.Name = "printPreviewBarItem102";
+            superToolTip101.FixedTooltipWidth = true;
+            toolTipTitleItem101.Text = "Open (Ctrl + O)";
+            toolTipItem101.LeftIndent = 6;
+            toolTipItem101.Text = "Open a document.";
+            superToolTip101.Items.Add(toolTipTitleItem101);
+            superToolTip101.Items.Add(toolTipItem101);
+            superToolTip101.MaxWidth = 210;
+            this.printPreviewBarItem102.SuperTip = superToolTip101;
+            // 
+            // printPreviewBarItem103
+            // 
+            this.printPreviewBarItem103.Caption = "Save";
+            this.printPreviewBarItem103.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Save;
+            this.printPreviewBarItem103.ContextSpecifier = this.documentViewerRibbonController2;
+            this.printPreviewBarItem103.Enabled = false;
+            this.printPreviewBarItem103.Id = 107;
+            this.printPreviewBarItem103.Name = "printPreviewBarItem103";
+            superToolTip102.FixedTooltipWidth = true;
+            toolTipTitleItem102.Text = "Save (Ctrl + S)";
+            toolTipItem102.LeftIndent = 6;
+            toolTipItem102.Text = "Save the document.";
+            superToolTip102.Items.Add(toolTipTitleItem102);
+            superToolTip102.Items.Add(toolTipItem102);
+            superToolTip102.MaxWidth = 210;
+            this.printPreviewBarItem103.SuperTip = superToolTip102;
+            // 
+            // New_item
+            // 
+            this.New_item.Caption = "New";
+            this.New_item.Id = 111;
+            this.New_item.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("New_item.ImageOptions.Image")));
+            this.New_item.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("New_item.ImageOptions.LargeImage")));
+            this.New_item.Name = "New_item";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Save";
+            this.barButtonItem1.Id = 112;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Save As";
+            this.barButtonItem2.Id = 113;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Find";
+            this.barButtonItem3.Id = 114;
+            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Close";
+            this.barButtonItem4.Id = 115;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // GridControlPage
+            // 
+            this.GridControlPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.RibbonPageGroup1,
+            this.Format_data});
+            this.GridControlPage.Name = "GridControlPage";
+            this.GridControlPage.Text = "Gird Control";
+            // 
+            // RibbonPageGroup1
+            // 
+            this.RibbonPageGroup1.ItemLinks.Add(this.New_item);
+            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
+            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
+            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+            this.RibbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.RibbonPageGroup1.Name = "RibbonPageGroup1";
+            this.RibbonPageGroup1.Text = "File";
+            // 
+            // Format_data
+            // 
+            this.Format_data.ItemLinks.Add(this.barSubItem1);
+            this.Format_data.ItemLinks.Add(this.barButtonGroup1);
+            this.Format_data.Name = "Format_data";
+            this.Format_data.Text = "Format";
+            // 
+            // PreviewRibbonPage
+            // 
+            this.PreviewRibbonPage.ContextSpecifier = this.documentViewerRibbonController1;
+            this.PreviewRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.printPreviewRibbonPageGroup1,
             this.printPreviewRibbonPageGroup2,
             this.printPreviewRibbonPageGroup3,
@@ -1342,8 +2879,8 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup6,
             this.printPreviewRibbonPageGroup7,
             this.printPreviewRibbonPageGroup8});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Print Preview";
+            this.PreviewRibbonPage.Name = "PreviewRibbonPage";
+            this.PreviewRibbonPage.Text = "Print Preview";
             // 
             // printPreviewRibbonPageGroup1
             // 
@@ -1380,14 +2917,14 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup3.ItemLinks.Add(this.printPreviewBarItem29);
             this.printPreviewRibbonPageGroup3.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.PageSetup;
             this.printPreviewRibbonPageGroup3.Name = "printPreviewRibbonPageGroup3";
-            superToolTip52.FixedTooltipWidth = true;
-            toolTipTitleItem52.Text = "Page Setup";
-            toolTipItem52.LeftIndent = 6;
-            toolTipItem52.Text = "Show the Page Setup dialog.";
-            superToolTip52.Items.Add(toolTipTitleItem52);
-            superToolTip52.Items.Add(toolTipItem52);
-            superToolTip52.MaxWidth = 210;
-            this.printPreviewRibbonPageGroup3.SuperTip = superToolTip52;
+            superToolTip103.FixedTooltipWidth = true;
+            toolTipTitleItem103.Text = "Page Setup";
+            toolTipItem103.LeftIndent = 6;
+            toolTipItem103.Text = "Show the Page Setup dialog.";
+            superToolTip103.Items.Add(toolTipTitleItem103);
+            superToolTip103.Items.Add(toolTipItem103);
+            superToolTip103.MaxWidth = 210;
+            this.printPreviewRibbonPageGroup3.SuperTip = superToolTip103;
             this.printPreviewRibbonPageGroup3.Text = "Page Setup";
             // 
             // printPreviewRibbonPageGroup4
@@ -1455,20 +2992,62 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup8.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup8.Text = "Close";
             // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // employeeTableAdapter
+            // 
+            this.employeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Open";
+            this.barButtonItem5.Id = 116;
+            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Id = 117;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // barButtonGroup1
+            // 
+            this.barButtonGroup1.Caption = "barButtonGroup1";
+            this.barButtonGroup1.Id = 118;
+            this.barButtonGroup1.Name = "barButtonGroup1";
+            // 
             // PrintList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 735);
-            this.Controls.Add(this.documentViewer1);
+            this.ClientSize = new System.Drawing.Size(1227, 688);
+            this.Controls.Add(this.DocumentViewer_Employee);
+            this.Controls.Add(this.GridControl_Data);
             this.Controls.Add(this.ribbonStatusBar1);
-            this.Controls.Add(this.ribbonControl1);
+            this.Controls.Add(this.RibbonControl);
             this.Name = "PrintList";
+            this.Ribbon = this.RibbonControl;
+            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "PrintList";
-            ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            this.Load += new System.EventHandler(this.PrintList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PrintingSystem_DataEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridControl_Data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1476,10 +3055,45 @@ namespace General_Manager.Form
 
         #endregion
 
-        private DevExpress.XtraPrinting.Preview.DocumentViewer documentViewer1;
-        private DevExpress.XtraPrinting.Preview.DocumentViewerRibbonController documentViewerRibbonController1;
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private DevExpress.XtraBars.Ribbon.RibbonControl RibbonControl;
+        private DevExpress.XtraBars.Ribbon.RibbonPage GridControlPage;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup RibbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup Format_data;
+        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraGrid.GridControl GridControl_Data;
+        private System.Windows.Forms.BindingSource hotelManagementDataSetBindingSource;
+        private Hotel_ManagementDataSet hotel_ManagementDataSet;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.BindingSource employeeBindingSource;
+        private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private DevExpress.XtraGrid.Columns.GridColumn colpassword;
+        private DevExpress.XtraGrid.Columns.GridColumn colfname;
+        private DevExpress.XtraGrid.Columns.GridColumn collname;
+        private DevExpress.XtraGrid.Columns.GridColumn colCMND;
+        private DevExpress.XtraGrid.Columns.GridColumn colbdate;
+        private DevExpress.XtraGrid.Columns.GridColumn coladdress;
+        private DevExpress.XtraGrid.Columns.GridColumn colphone;
+        private DevExpress.XtraGrid.Columns.GridColumn colemail;
+        private DevExpress.XtraGrid.Columns.GridColumn colsalary;
+        private DevExpress.XtraGrid.Columns.GridColumn colrole;
+        private DevExpress.XtraGrid.Columns.GridColumn coldaywork;
+        private DevExpress.XtraGrid.Columns.GridColumn colwork;
+        private DevExpress.XtraGrid.Columns.GridColumn colpicture;
+        private DevExpress.XtraGrid.Columns.GridColumn colgender;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem1;
+        private DevExpress.XtraPrinting.Preview.DocumentViewerRibbonController documentViewerRibbonController1;
+        private DevExpress.XtraPrinting.Preview.DocumentViewer DocumentViewer_Employee;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem1;
+        private DevExpress.XtraPrinting.Preview.ProgressBarEditItem progressBarEditItem1;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem52;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem2;
+        private DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem zoomTrackBarEditItem1;
+        private DevExpress.XtraPrinting.Preview.ProgressBarEditItem progressBarEditItem2;
+        private DevExpress.XtraPrinting.Preview.DocumentViewerRibbonController documentViewerRibbonController2;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem104;
+        private DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem zoomTrackBarEditItem2;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem2;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem3;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem4;
@@ -1530,14 +3144,58 @@ namespace General_Manager.Form
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem49;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem50;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem51;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem1;
-        private DevExpress.XtraPrinting.Preview.ProgressBarEditItem progressBarEditItem1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem52;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem2;
-        private DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem zoomTrackBarEditItem1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar1;
-        private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage ribbonPage1;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem53;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem54;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem55;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem56;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem57;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem58;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem59;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem60;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem61;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem62;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem63;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem64;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem65;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem66;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem67;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem68;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem69;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem70;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem71;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem72;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem73;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem74;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem75;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem76;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem77;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem78;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem79;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem80;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem81;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem82;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem83;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem84;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem85;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem86;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem87;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem88;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem89;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem90;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem91;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem92;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem93;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem94;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem95;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem96;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem97;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem98;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem99;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem100;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem101;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem102;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem printPreviewBarItem103;
+        private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage PreviewRibbonPage;
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup1;
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup2;
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup3;
@@ -1546,6 +3204,19 @@ namespace General_Manager.Form
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup6;
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup7;
         private DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup printPreviewRibbonPageGroup8;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
+        private DevExpress.XtraBars.BarButtonItem New_item;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar3;
+        private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar3;
+        private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar repositoryItemZoomTrackBar1;
+        private DevExpress.XtraPrinting.PrintingSystem PrintingSystem_DataEmployee;
+        private DevExpress.XtraPrinting.PrintableComponentLink printableComponentLink1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarSubItem barSubItem1;
+        private DevExpress.XtraBars.BarButtonGroup barButtonGroup1;
     }
 }

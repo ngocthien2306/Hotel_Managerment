@@ -147,5 +147,11 @@ namespace General_Manager.Form
         {            
             
         }
+
+        private void M030101_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            PrintList print = new PrintList();
+            print.ShowDialog();
+        }
     }
 }
