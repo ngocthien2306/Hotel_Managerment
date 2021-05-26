@@ -565,6 +565,7 @@ SELECT pos_num, pos_name FROM Position WHERE (pos_num = @pos_num)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="shift" msprop:Generator_ColumnVarNameInTable="columnshift" msprop:Generator_ColumnPropNameInRow="shift" msprop:Generator_ColumnPropNameInTable="shiftColumn" msprop:Generator_UserColumnName="shift" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

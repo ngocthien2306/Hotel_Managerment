@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-
+using General_Manager.Form;
 namespace General_Manager.Form
 {
     static class Program
@@ -19,7 +19,7 @@ namespace General_Manager.Form
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new Login());
+            Application.Run(new Schedule());
         }
     }
 }

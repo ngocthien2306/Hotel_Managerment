@@ -47,27 +47,16 @@ namespace General_Manager.Form
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.employeesNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.hotel_ManagementDataSet1 = new General_Manager.Hotel_ManagementDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colpassword = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colfname = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.collname = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCMND = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colbdate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coladdress = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colphone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colemail = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colsalary = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colrole = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.coldaywork = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colwork = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colpicture = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colgender = new DevExpress.XtraGrid.Columns.GridColumn();
             this.employeesLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.customersNavigationPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
+            this.hotel_ManagementDataSet1 = new General_Manager.Hotel_ManagementDataSet();
             this.employeeTableAdapter1 = new General_Manager.Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Setshift = new DevExpress.XtraBars.BarButtonItem();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
@@ -76,9 +65,9 @@ namespace General_Manager.Form
             this.navigationFrame.SuspendLayout();
             this.employeesNavigationPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.customersNavigationPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -90,17 +79,18 @@ namespace General_Manager.Form
             this.skinRibbonGalleryBarItem,
             this.barSubItemNavigation,
             this.employeesBarButtonItem,
-            this.customersBarButtonItem});
+            this.customersBarButtonItem,
+            this.Setshift});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(5);
-            this.ribbonControl.MaxItemId = 46;
+            this.ribbonControl.MaxItemId = 47;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(1053, 185);
+            this.ribbonControl.Size = new System.Drawing.Size(1361, 185);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -137,7 +127,8 @@ namespace General_Manager.Form
             // 
             this.ribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroupNavigation,
-            this.ribbonPageGroup});
+            this.ribbonPageGroup,
+            this.ribbonPageGroup1});
             this.ribbonPage.Name = "ribbonPage";
             this.ribbonPage.Text = "View";
             // 
@@ -157,20 +148,20 @@ namespace General_Manager.Form
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 753);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 782);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(5);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1053, 30);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1361, 30);
             // 
             // officeNavigationBar
             // 
             this.officeNavigationBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.officeNavigationBar.Location = new System.Drawing.Point(0, 719);
+            this.officeNavigationBar.Location = new System.Drawing.Point(0, 748);
             this.officeNavigationBar.Margin = new System.Windows.Forms.Padding(5);
             this.officeNavigationBar.Name = "officeNavigationBar";
             this.officeNavigationBar.NavigationClient = this.navBarControl;
-            this.officeNavigationBar.Size = new System.Drawing.Size(1053, 34);
+            this.officeNavigationBar.Size = new System.Drawing.Size(1361, 34);
             this.officeNavigationBar.TabIndex = 1;
             this.officeNavigationBar.Text = "officeNavigationBar";
             // 
@@ -186,7 +177,7 @@ namespace General_Manager.Form
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 219;
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl.Size = new System.Drawing.Size(219, 534);
+            this.navBarControl.Size = new System.Drawing.Size(219, 563);
             this.navBarControl.TabIndex = 0;
             this.navBarControl.Text = "navBarControl";
             this.navBarControl.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl_ActiveGroupChanged);
@@ -217,7 +208,7 @@ namespace General_Manager.Form
             this.customersNavigationPage});
             this.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always;
             this.navigationFrame.SelectedPage = this.employeesNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(834, 534);
+            this.navigationFrame.Size = new System.Drawing.Size(1142, 563);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
@@ -227,182 +218,24 @@ namespace General_Manager.Form
             this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
             this.employeesNavigationPage.Margin = new System.Windows.Forms.Padding(5);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
-            this.employeesNavigationPage.Size = new System.Drawing.Size(834, 534);
+            this.employeesNavigationPage.Size = new System.Drawing.Size(1142, 563);
             // 
             // gridControl1
             // 
-            this.gridControl1.DataMember = "Employee";
-            this.gridControl1.DataSource = this.hotel_ManagementDataSet1;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.ribbonControl;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(834, 534);
+            this.gridControl1.Size = new System.Drawing.Size(1142, 563);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // hotel_ManagementDataSet1
-            // 
-            this.hotel_ManagementDataSet1.DataSetName = "Hotel_ManagementDataSet";
-            this.hotel_ManagementDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // gridView1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colId,
-            this.colpassword,
-            this.colfname,
-            this.collname,
-            this.colCMND,
-            this.colbdate,
-            this.coladdress,
-            this.colphone,
-            this.colemail,
-            this.colsalary,
-            this.colrole,
-            this.coldaywork,
-            this.colwork,
-            this.colpicture,
-            this.colgender});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            // 
-            // colId
-            // 
-            this.colId.FieldName = "Id";
-            this.colId.MinWidth = 25;
-            this.colId.Name = "colId";
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 0;
-            this.colId.Width = 94;
-            // 
-            // colpassword
-            // 
-            this.colpassword.FieldName = "password";
-            this.colpassword.MinWidth = 25;
-            this.colpassword.Name = "colpassword";
-            this.colpassword.Visible = true;
-            this.colpassword.VisibleIndex = 1;
-            this.colpassword.Width = 94;
-            // 
-            // colfname
-            // 
-            this.colfname.FieldName = "fname";
-            this.colfname.MinWidth = 25;
-            this.colfname.Name = "colfname";
-            this.colfname.Visible = true;
-            this.colfname.VisibleIndex = 2;
-            this.colfname.Width = 94;
-            // 
-            // collname
-            // 
-            this.collname.FieldName = "lname";
-            this.collname.MinWidth = 25;
-            this.collname.Name = "collname";
-            this.collname.Visible = true;
-            this.collname.VisibleIndex = 3;
-            this.collname.Width = 94;
-            // 
-            // colCMND
-            // 
-            this.colCMND.FieldName = "CMND";
-            this.colCMND.MinWidth = 25;
-            this.colCMND.Name = "colCMND";
-            this.colCMND.Visible = true;
-            this.colCMND.VisibleIndex = 4;
-            this.colCMND.Width = 94;
-            // 
-            // colbdate
-            // 
-            this.colbdate.FieldName = "bdate";
-            this.colbdate.MinWidth = 25;
-            this.colbdate.Name = "colbdate";
-            this.colbdate.Visible = true;
-            this.colbdate.VisibleIndex = 5;
-            this.colbdate.Width = 94;
-            // 
-            // coladdress
-            // 
-            this.coladdress.FieldName = "address";
-            this.coladdress.MinWidth = 25;
-            this.coladdress.Name = "coladdress";
-            this.coladdress.Visible = true;
-            this.coladdress.VisibleIndex = 6;
-            this.coladdress.Width = 94;
-            // 
-            // colphone
-            // 
-            this.colphone.FieldName = "phone";
-            this.colphone.MinWidth = 25;
-            this.colphone.Name = "colphone";
-            this.colphone.Visible = true;
-            this.colphone.VisibleIndex = 7;
-            this.colphone.Width = 94;
-            // 
-            // colemail
-            // 
-            this.colemail.FieldName = "email";
-            this.colemail.MinWidth = 25;
-            this.colemail.Name = "colemail";
-            this.colemail.Visible = true;
-            this.colemail.VisibleIndex = 8;
-            this.colemail.Width = 94;
-            // 
-            // colsalary
-            // 
-            this.colsalary.FieldName = "salary";
-            this.colsalary.MinWidth = 25;
-            this.colsalary.Name = "colsalary";
-            this.colsalary.Visible = true;
-            this.colsalary.VisibleIndex = 9;
-            this.colsalary.Width = 94;
-            // 
-            // colrole
-            // 
-            this.colrole.FieldName = "role";
-            this.colrole.MinWidth = 25;
-            this.colrole.Name = "colrole";
-            this.colrole.Visible = true;
-            this.colrole.VisibleIndex = 10;
-            this.colrole.Width = 94;
-            // 
-            // coldaywork
-            // 
-            this.coldaywork.FieldName = "daywork";
-            this.coldaywork.MinWidth = 25;
-            this.coldaywork.Name = "coldaywork";
-            this.coldaywork.Visible = true;
-            this.coldaywork.VisibleIndex = 11;
-            this.coldaywork.Width = 94;
-            // 
-            // colwork
-            // 
-            this.colwork.FieldName = "work";
-            this.colwork.MinWidth = 25;
-            this.colwork.Name = "colwork";
-            this.colwork.Visible = true;
-            this.colwork.VisibleIndex = 12;
-            this.colwork.Width = 94;
-            // 
-            // colpicture
-            // 
-            this.colpicture.FieldName = "picture";
-            this.colpicture.MinWidth = 25;
-            this.colpicture.Name = "colpicture";
-            this.colpicture.Visible = true;
-            this.colpicture.VisibleIndex = 13;
-            this.colpicture.Width = 94;
-            // 
-            // colgender
-            // 
-            this.colgender.FieldName = "gender";
-            this.colgender.MinWidth = 25;
-            this.colgender.Name = "colgender";
-            this.colgender.Visible = true;
-            this.colgender.VisibleIndex = 14;
-            this.colgender.Width = 94;
             // 
             // employeesLabelControl
             // 
@@ -418,7 +251,7 @@ namespace General_Manager.Form
             this.employeesLabelControl.Location = new System.Drawing.Point(0, 0);
             this.employeesLabelControl.Margin = new System.Windows.Forms.Padding(5);
             this.employeesLabelControl.Name = "employeesLabelControl";
-            this.employeesLabelControl.Size = new System.Drawing.Size(834, 534);
+            this.employeesLabelControl.Size = new System.Drawing.Size(1142, 563);
             this.employeesLabelControl.TabIndex = 0;
             this.employeesLabelControl.Text = "Employees";
             // 
@@ -427,7 +260,7 @@ namespace General_Manager.Form
             this.customersNavigationPage.Controls.Add(this.customersLabelControl);
             this.customersNavigationPage.Margin = new System.Windows.Forms.Padding(5);
             this.customersNavigationPage.Name = "customersNavigationPage";
-            this.customersNavigationPage.Size = new System.Drawing.Size(834, 534);
+            this.customersNavigationPage.Size = new System.Drawing.Size(1142, 563);
             // 
             // customersLabelControl
             // 
@@ -443,19 +276,57 @@ namespace General_Manager.Form
             this.customersLabelControl.Location = new System.Drawing.Point(0, 0);
             this.customersLabelControl.Margin = new System.Windows.Forms.Padding(5);
             this.customersLabelControl.Name = "customersLabelControl";
-            this.customersLabelControl.Size = new System.Drawing.Size(834, 534);
+            this.customersLabelControl.Size = new System.Drawing.Size(1142, 563);
             this.customersLabelControl.TabIndex = 1;
             this.customersLabelControl.Text = "Customers";
+            // 
+            // hotel_ManagementDataSet1
+            // 
+            this.hotel_ManagementDataSet1.DataSetName = "Hotel_ManagementDataSet";
+            this.hotel_ManagementDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // employeeTableAdapter1
             // 
             this.employeeTableAdapter1.ClearBeforeFill = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(387, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 19);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.Setshift);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // Setshift
+            // 
+            this.Setshift.Caption = "Reload ";
+            this.Setshift.Id = 46;
+            this.Setshift.Name = "Setshift";
+            this.Setshift.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Setshift_ItemClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(414, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 783);
+            this.ClientSize = new System.Drawing.Size(1361, 812);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.navBarControl);
             this.Controls.Add(this.officeNavigationBar);
@@ -465,6 +336,7 @@ namespace General_Manager.Form
             this.Name = "Schedule";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
+            this.Load += new System.EventHandler(this.Schedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).EndInit();
@@ -473,9 +345,9 @@ namespace General_Manager.Form
             this.navigationFrame.ResumeLayout(false);
             this.employeesNavigationPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.customersNavigationPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -501,24 +373,13 @@ namespace General_Manager.Form
         private DevExpress.XtraEditors.LabelControl customersLabelControl;
         private DevExpress.XtraBars.BarButtonItem employeesBarButtonItem;
         private DevExpress.XtraBars.BarButtonItem customersBarButtonItem;
+        private Hotel_ManagementDataSet hotel_ManagementDataSet1;
+        private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter1;
+        public System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private Hotel_ManagementDataSet hotel_ManagementDataSet1;
-        private DevExpress.XtraGrid.Columns.GridColumn colId;
-        private DevExpress.XtraGrid.Columns.GridColumn colpassword;
-        private DevExpress.XtraGrid.Columns.GridColumn colfname;
-        private DevExpress.XtraGrid.Columns.GridColumn collname;
-        private DevExpress.XtraGrid.Columns.GridColumn colCMND;
-        private DevExpress.XtraGrid.Columns.GridColumn colbdate;
-        private DevExpress.XtraGrid.Columns.GridColumn coladdress;
-        private DevExpress.XtraGrid.Columns.GridColumn colphone;
-        private DevExpress.XtraGrid.Columns.GridColumn colemail;
-        private DevExpress.XtraGrid.Columns.GridColumn colsalary;
-        private DevExpress.XtraGrid.Columns.GridColumn colrole;
-        private DevExpress.XtraGrid.Columns.GridColumn coldaywork;
-        private DevExpress.XtraGrid.Columns.GridColumn colwork;
-        private DevExpress.XtraGrid.Columns.GridColumn colpicture;
-        private DevExpress.XtraGrid.Columns.GridColumn colgender;
-        private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter1;
+        private DevExpress.XtraBars.BarButtonItem Setshift;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private System.Windows.Forms.Button button1;
     }
 }

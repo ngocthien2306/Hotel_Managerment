@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace General_Manager.Form
 {
-    class User
+    class EmployeeHotel
     {
         
         public int ID { get; set; }
@@ -29,7 +29,7 @@ namespace General_Manager.Form
         public int Daywork { get; set; }
         public int Work { get; set; }
         public MemoryStream Picture { get; set; }
-        public User(int id = 0, string pass = "", string fname = "", string lname = "", int cmnd = 0, DateTime bday = default, string address = "",
+        public EmployeeHotel(int id = 0, string pass = "", string fname = "", string lname = "", int cmnd = 0, DateTime bday = default, string address = "",
            int phone = 0, string email = "", string gender = "", double salary = 0, string role = "", int daywork = 0, int work = 0, MemoryStream picture = null)
         {
             this.ID = id;
@@ -47,6 +47,51 @@ namespace General_Manager.Form
             this.Daywork = daywork;
             this.Work = work;
             this.Picture = picture;
+        }
+        public object GetNumberOfManager()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand command = new SqlCommand(@"Select count(*) from employee where role = 'Manager'", data.GetConnection);
+                data.OpenConnection();
+                command.CommandText = @"Select count(*) from employee where role = 'Manager'";
+                return command.ExecuteScalar();
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public object GetNumberReceptionist()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand command = new SqlCommand(@"Select count(*) from employee where role = 'Receptionist'", data.GetConnection);
+                data.OpenConnection();
+                command.CommandText = @"Select count(*) from employee where role = 'Receptionist'";
+                return command.ExecuteScalar();
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public object GetNumberJanior()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand command = new SqlCommand(@"Select count(*) from employee where role = 'Janior'", data.GetConnection);
+                data.OpenConnection();
+                command.CommandText = @"Select count(*) from employee where role = 'Janior'";
+                return command.ExecuteScalar();
+            }
+            catch
+            {
+                return false;
+            }
         }
         public bool GetLogin()
         {

@@ -27,10 +27,6 @@ namespace General_Manager.Form
             //GridControl.DataSource = dbContext.Employees.Local.ToBindingList();
         }
         Hotel_Management_Entities db;
-
-        private void ExitProgram() {
-
-        }
         public void Skin()
         {
             //DevExpress.LookAndFeel.DefaultLookAndFeel theme = new DevExpress.LookAndFeel.DefaultLookAndFeel();
@@ -105,8 +101,16 @@ namespace General_Manager.Form
 
         private void M010503_ItemClick(object sender, ItemClickEventArgs e)
         {
-            db.SaveChanges();
-            XtraMessageBox.Show("You data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                int id = Convert.ToInt32(IdTextEdit.Text);
+                db.SaveChanges();
+                XtraMessageBox.Show("You data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                XtraMessageBox.Show("ID already exist in list! Please change another ID", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void M010502_ItemClick(object sender, ItemClickEventArgs e)
@@ -114,10 +118,10 @@ namespace General_Manager.Form
             if (XtraMessageBox.Show("Are you sure want to remove this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 employeeBindingSource1.RemoveCurrent();
         }
-
+        OpenFileDialog open;
         private void PicturePictureEdit_Click_1(object sender, EventArgs e)
         {
-            OpenFileDialog open = new OpenFileDialog();
+            open = new OpenFileDialog();
             open.Filter = "Select Image(*.jpg;*.png;*.gif)|*.jpg;*.pnq;*.gif";
             if (open.ShowDialog() == DialogResult.OK)
             {
@@ -125,12 +129,6 @@ namespace General_Manager.Form
             }
 
         }
-
-        private void m010401_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            this.ReloadData();
-        }
-
         private void Room_item_ItemClick(object sender, ItemClickEventArgs e)
         {
             Book_Room BR = new Book_Room();
@@ -153,6 +151,17 @@ namespace General_Manager.Form
         {
             Statics sta = new Statics();
             sta.ShowDialog();
+        }
+
+        private void M010301_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Schedule s = new Schedule();
+            s.ShowDialog();
+        }
+
+        private void M010401_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.ReloadData();
         }
     }
 }

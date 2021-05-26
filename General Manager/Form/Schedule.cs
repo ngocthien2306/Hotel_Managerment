@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace General_Manager.Form
 {
     public partial class Schedule : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -27,6 +27,33 @@ namespace General_Manager.Form
         {
             int barItemIndex = barSubItemNavigation.ItemLinks.IndexOf(e.Link);
             navBarControl.ActiveGroup = navBarControl.Groups[barItemIndex];
+        }
+        public void GetNumber()
+        {
+            EmployeeHotel user = new EmployeeHotel();
+            double manager = Convert.ToDouble(user.GetNumberOfManager());
+            label1.Text = "Manager: " +  manager.ToString();
+        }
+
+        private void Schedule_Load(object sender, EventArgs e)
+        {
+            this.ShiftWork();
+            this.GetNumber();
+        }
+        public void ShiftWork()
+        {
+            Database data = new Database();
+            WorkShift w = new WorkShift();
+            //User user = new User();
+            //SqlCommand command = new SqlCommand("Select Id, fname, lname, shift from Employee", data.GetConnection);
+            gridControl1.DataSource = w.ShowShift();
+        }
+
+        private void Setshift_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            WorkShift w = new WorkShift();
+            gridControl1.DataSource = w.ShowShift();
+           
         }
     }
 }

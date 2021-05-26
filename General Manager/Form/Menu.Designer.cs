@@ -37,7 +37,7 @@ namespace General_Manager.Form
             this.M010201 = new DevExpress.XtraBars.BarButtonItem();
             this.M010202 = new DevExpress.XtraBars.BarButtonItem();
             this.M010203 = new DevExpress.XtraBars.BarButtonItem();
-            this.m010301 = new DevExpress.XtraBars.BarButtonItem();
+            this.M010301 = new DevExpress.XtraBars.BarButtonItem();
             this.m010302 = new DevExpress.XtraBars.BarButtonItem();
             this.m010303 = new DevExpress.XtraBars.BarButtonItem();
             this.M010401 = new DevExpress.XtraBars.BarButtonItem();
@@ -66,7 +66,6 @@ namespace General_Manager.Form
             this.RibbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotel_ManagementDataSet = new General_Manager.Hotel_ManagementDataSet();
             this.employeeTableAdapter = new General_Manager.Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
@@ -133,7 +132,6 @@ namespace General_Manager.Form
             this.PictureUser = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel_Info)).BeginInit();
@@ -197,7 +195,7 @@ namespace General_Manager.Form
             this.M010201,
             this.M010202,
             this.M010203,
-            this.m010301,
+            this.M010301,
             this.m010302,
             this.m010303,
             this.M010401,
@@ -267,12 +265,13 @@ namespace General_Manager.Form
             this.M010203.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010203.ImageOptions.LargeImage")));
             this.M010203.Name = "M010203";
             // 
-            // m010301
+            // M010301
             // 
-            this.m010301.Caption = "Work-Schedule";
-            this.m010301.Id = 7;
-            this.m010301.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010301.ImageOptions.SvgImage")));
-            this.m010301.Name = "m010301";
+            this.M010301.Caption = "Work-Schedule";
+            this.M010301.Id = 7;
+            this.M010301.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M010301.ImageOptions.SvgImage")));
+            this.M010301.Name = "M010301";
+            this.M010301.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010301_ItemClick);
             // 
             // m010302
             // 
@@ -293,15 +292,15 @@ namespace General_Manager.Form
             // 
             this.M010401.Caption = "Employee";
             this.M010401.Id = 10;
-            this.M010401.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010401.ImageOptions.SvgImage")));
+            this.M010401.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M010401.ImageOptions.SvgImage")));
             this.M010401.Name = "M010401";
-            this.M010401.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m010401_ItemClick);
+            this.M010401.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010401_ItemClick);
             // 
             // M010402
             // 
             this.M010402.Caption = "Finance";
             this.M010402.Id = 11;
-            this.M010402.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010402.ImageOptions.SvgImage")));
+            this.M010402.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M010402.ImageOptions.SvgImage")));
             this.M010402.Name = "M010402";
             this.M010402.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010402_ItemClick);
             // 
@@ -309,7 +308,7 @@ namespace General_Manager.Form
             // 
             this.M010403.Caption = "Times";
             this.M010403.Id = 12;
-            this.M010403.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010403.ImageOptions.SvgImage")));
+            this.M010403.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("M010403.ImageOptions.SvgImage")));
             this.M010403.Name = "M010403";
             // 
             // M010501
@@ -414,7 +413,7 @@ namespace General_Manager.Form
             // 
             // m0103
             // 
-            this.m0103.ItemLinks.Add(this.m010301);
+            this.m0103.ItemLinks.Add(this.M010301);
             this.m0103.ItemLinks.Add(this.m010302);
             this.m0103.ItemLinks.Add(this.m010303);
             this.m0103.ItemLinks.Add(this.Room_item);
@@ -488,11 +487,6 @@ namespace General_Manager.Form
             this.layoutControlGroup2.Location = new System.Drawing.Point(352, 104);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Size = new System.Drawing.Size(353, 228);
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.hotel_ManagementDataSet;
             // 
             // hotel_ManagementDataSet
             // 
@@ -1184,7 +1178,6 @@ namespace General_Manager.Form
             this.Load += new System.EventHandler(this.Manager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel_Info)).EndInit();
@@ -1252,7 +1245,7 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.BarButtonItem M010201;
         private DevExpress.XtraBars.BarButtonItem M010202;
         private DevExpress.XtraBars.BarButtonItem M010203;
-        private DevExpress.XtraBars.BarButtonItem m010301;
+        private DevExpress.XtraBars.BarButtonItem M010301;
         private DevExpress.XtraBars.BarButtonItem m010302;
         private DevExpress.XtraBars.BarButtonItem m010303;
         private DevExpress.XtraBars.BarButtonItem M010401;
@@ -1273,7 +1266,6 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0108;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private Hotel_ManagementDataSet hotel_ManagementDataSet;
-        private System.Windows.Forms.BindingSource employeeBindingSource;
         private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.PanelControl Panel_Info;

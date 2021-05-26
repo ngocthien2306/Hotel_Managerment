@@ -1159,6 +1159,8 @@ namespace General_Manager {
             
             private global::System.Data.DataColumn columngender;
             
+            private global::System.Data.DataColumn columnshift;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public EmployeeDataTable() {
@@ -1314,6 +1316,14 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn shiftColumn {
+                get {
+                    return this.columnshift;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1349,7 +1359,23 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EmployeeRow AddEmployeeRow(int Id, string password, string fname, string lname, string CMND, System.DateTime bdate, string address, int phone, string email, decimal salary, string role, System.DateTime daywork, int work, byte[] picture, string gender) {
+            public EmployeeRow AddEmployeeRow(
+                        int Id, 
+                        string password, 
+                        string fname, 
+                        string lname, 
+                        string CMND, 
+                        System.DateTime bdate, 
+                        string address, 
+                        int phone, 
+                        string email, 
+                        decimal salary, 
+                        string role, 
+                        System.DateTime daywork, 
+                        int work, 
+                        byte[] picture, 
+                        string gender, 
+                        string shift) {
                 EmployeeRow rowEmployeeRow = ((EmployeeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -1366,7 +1392,8 @@ namespace General_Manager {
                         daywork,
                         work,
                         picture,
-                        gender};
+                        gender,
+                        shift};
                 rowEmployeeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEmployeeRow);
                 return rowEmployeeRow;
@@ -1411,6 +1438,7 @@ namespace General_Manager {
                 this.columnwork = base.Columns["work"];
                 this.columnpicture = base.Columns["picture"];
                 this.columngender = base.Columns["gender"];
+                this.columnshift = base.Columns["shift"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1446,6 +1474,8 @@ namespace General_Manager {
                 base.Columns.Add(this.columnpicture);
                 this.columngender = new global::System.Data.DataColumn("gender", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columngender);
+                this.columnshift = new global::System.Data.DataColumn("shift", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnshift);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AllowDBNull = false;
@@ -3158,6 +3188,22 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string shift {
+                get {
+                    try {
+                        return ((string)(this[this.tableEmployee.shiftColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'shift\' in table \'Employee\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEmployee.shiftColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IspasswordNull() {
                 return this.IsNull(this.tableEmployee.passwordColumn);
             }
@@ -3322,6 +3368,18 @@ namespace General_Manager {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetgenderNull() {
                 this[this.tableEmployee.genderColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsshiftNull() {
+                return this.IsNull(this.tableEmployee.shiftColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetshiftNull() {
+                this[this.tableEmployee.shiftColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

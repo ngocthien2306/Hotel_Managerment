@@ -229,7 +229,7 @@
       <DependentUpon>Book_Room.cs</DependentUpon>
     </Compile>
     <Compile Include="Room.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="EmployeeHotel.cs" />
     <Compile Include="WorkShift.cs" />
     <EmbeddedResource Include="Form\Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
