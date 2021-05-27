@@ -31,29 +31,49 @@ namespace General_Manager.Form
         public void GetNumber()
         {
             EmployeeHotel user = new EmployeeHotel();
+            WorkShift w = new WorkShift();
             double manager = Convert.ToDouble(user.GetNumberOfManager());
-            label1.Text = "Manager: " +  manager.ToString();
+            label1.Text = "Manager: " + manager.ToString();
+
         }
 
         private void Schedule_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'hotel_ManagementDataSet11.Schedule' table. You can move, or remove it, as needed.
+            this.scheduleTableAdapter.Fill(this.hotel_ManagementDataSet11.Schedule);
             this.ShiftWork();
+            WorkShift s = new WorkShift();
+            s.DeleteData();
+            s.InsertShift();
             this.GetNumber();
         }
         public void ShiftWork()
         {
-            Database data = new Database();
             WorkShift w = new WorkShift();
-            //User user = new User();
-            //SqlCommand command = new SqlCommand("Select Id, fname, lname, shift from Employee", data.GetConnection);
-            gridControl1.DataSource = w.ShowShift();
+            GridControl_DisplayShift.DataSource = w.ShowShift();
         }
 
         private void Setshift_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             WorkShift w = new WorkShift();
-            gridControl1.DataSource = w.ShowShift();
+            GridControl_DisplayShift.DataSource = w.ShowReloadShift();
            
+        }
+
+        private void RibbonControl_SelectedPageChanged(object sender, EventArgs e)
+        {
+            switch (RibbonControl.SelectedPage.Name)
+            {
+                case "GridControlData":
+                    DocumentViewer_DataShift.Visible = false;
+                    GridControl_DisplayShift.Visible = true;
+                    break;
+                case "PreviewRibbonPage":
+                    GridControl_DisplayShift.Visible = false;
+                    DocumentViewer_DataShift.Visible = true;
+                    printableComponentLink1.CreateDocument();
+                    break;
+            }
         }
     }
 }

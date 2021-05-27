@@ -156,6 +156,10 @@ namespace General_Manager.Form
         private void M010301_ItemClick(object sender, ItemClickEventArgs e)
         {
             Schedule s = new Schedule();
+            WorkShift w = new WorkShift();
+            w.DeleteData();
+            w.InsertShift();
+            s.GridControl_DisplayShift.DataSource = w.ShowReloadShift();
             s.ShowDialog();
         }
 
