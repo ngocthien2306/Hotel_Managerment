@@ -43,9 +43,7 @@ namespace General_Manager.Form
             this.scheduleTableAdapter.Fill(this.hotel_ManagementDataSet11.Schedule);
             this.ShiftWork();
             WorkShift s = new WorkShift();
-            s.DeleteData();
-            s.InsertShift();
-            this.GetNumber();
+            //this.GetNumber();
         }
         public void ShiftWork()
         {
@@ -57,7 +55,6 @@ namespace General_Manager.Form
         {
             WorkShift w = new WorkShift();
             GridControl_DisplayShift.DataSource = w.ShowReloadShift();
-           
         }
 
         private void RibbonControl_SelectedPageChanged(object sender, EventArgs e)
