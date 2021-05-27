@@ -33,7 +33,7 @@ namespace General_Manager.Form
             EmployeeHotel user = new EmployeeHotel();
             WorkShift w = new WorkShift();
             double manager = Convert.ToDouble(user.GetNumberOfManager());
-            label1.Text = "Manager: " + manager.ToString();
+            Getnum.Text = "Manager: " + manager.ToString();
 
         }
 
@@ -74,6 +74,24 @@ namespace General_Manager.Form
                     printableComponentLink1.CreateDocument();
                     break;
             }
+        }
+
+        private void BarFind_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            gridView1.OptionsFind.AlwaysVisible = true;
+        }
+
+        private void BarCardView_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            cardView1.ShowFindPanel();
+        }
+
+        private void RemoveSchedule_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            WorkShift s = new WorkShift();
+            s.DeleteData();
+            s.InsertShift();
+            GridControl_DisplayShift.DataSource = s.ShowShift();
         }
     }
 }

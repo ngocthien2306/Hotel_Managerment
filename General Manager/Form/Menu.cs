@@ -36,7 +36,7 @@ namespace General_Manager.Form
 
         private void M010103_ItemClick(object sender,DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            DialogResult delete = MessageBox.Show("Are you sure close program?", "Close Program", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult delete = XtraMessageBox.Show("Are you sure close program?", "Close Program", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (delete == DialogResult.Yes)
             {
                 Application.Exit();
@@ -156,10 +156,6 @@ namespace General_Manager.Form
         private void M010301_ItemClick(object sender, ItemClickEventArgs e)
         {
             Schedule s = new Schedule();
-            WorkShift w = new WorkShift();
-            w.DeleteData();
-            w.InsertShift();
-            s.GridControl_DisplayShift.DataSource = w.ShowReloadShift();
             s.ShowDialog();
         }
 

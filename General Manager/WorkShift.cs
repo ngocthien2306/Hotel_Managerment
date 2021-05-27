@@ -5,12 +5,15 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
+using DevExpress.XtraEditors;
 
 namespace General_Manager.Form
 {
     class WorkShift
     {
-        Database db = new Database();
+        Database db = new Database(); 
+       
+             
         public bool InsertId(int id)
         {
             SqlCommand command = new SqlCommand("Insert into WorkShift (Id) VALUES (@ID)", db.GetConnection);
@@ -27,6 +30,17 @@ namespace General_Manager.Form
                 return false;
             }
         }
+        public DataTable Showfull()
+        {
+            Database data = new Database();
+            SqlCommand command = new SqlCommand();
+            command.Connection = data.GetConnection;
+            command.CommandText = "Select monday, tuesday, wednesday thusday, friday, satusday, sunday from Schedule";
+            SqlDataAdapter SDA = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            SDA.Fill(table);
+            return table;
+        }
         public DataTable Show()
         {
             Database data = new Database();
@@ -38,28 +52,36 @@ namespace General_Manager.Form
             SDA.Fill(table);
             return table;
         }
-        public int GetIdEmployee()
+        public int ReturnShiftManager()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand command = new SqlCommand(@"Select count(*) from employee where role = 'Manager'", data.GetConnection);
+                data.OpenConnection();
+                command.CommandText = @"Select count(*) from employee where role = 'Manager'";
+                return (int)command.ExecuteScalar();
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+        public void GetIdEmployee()
         {
             DataTable table = this.Show();
             EmployeeHotel employee = new EmployeeHotel();
             int[] ID = new int[20];
+            int[] Shirt = new int[20];
             int id;
-            Random rand = new Random();
+            int count = 0;
             int total = Convert.ToInt32(employee.GetNumberJanior()) + Convert.ToInt32(employee.GetNumberOfManager()) + Convert.ToInt32(employee.GetNumberReceptionist());
             for (int i = 0; i < total; i++)
             {
                 id = Convert.ToInt32(table.Rows[i]["id"].ToString().Trim());
                 ID[i] = id;               
             }
-            int index = rand.Next(ID.Length);
-            return ID[index];
-        }
-        public void GetShift()
-        {
-            //EmployeeHotel employee = new EmployeeHotel();
-            //int manager = Convert.ToInt32(employee.GetNumberOfManager());
-            //int receptionist = Convert.ToInt32(employee.GetNumberReceptionist());
-            //int janior = Convert.ToInt32(employee.GetNumberJanior());
+            int index = 0;
             Random ran = new Random();
             for (int i = 0; i < 20; i++)
             {
@@ -70,9 +92,26 @@ namespace General_Manager.Form
                 int ch5 = ran.Next(1, 4);
                 int ch6 = ran.Next(1, 4);
                 int ch7 = ran.Next(1, 4);
-                int id = this.GetIdEmployee();
-                this.UppdateShift(ch1, ch2, ch3, ch4, ch5, ch6, ch7, id);
+                this.UppdateShift(ch1, ch2, ch3, ch4, ch5, ch6, ch7, ID[index++]);
             }
+            DataTable table1 = this.Showfull();
+            for (int i = 0; i < total; i++)
+            {
+                int m = Convert.ToInt32(table1.Rows[i]["monday"].ToString().Trim());
+                if (m == 1)
+                {
+                    count += count;
+                }
+                Shirt[0] = count;
+            }
+        }
+        public void GetShift()
+        {
+            //EmployeeHotel employee = new EmployeeHotel();
+            //int manager = Convert.ToInt32(employee.GetNumberOfManager());
+            //int receptionist = Convert.ToInt32(employee.GetNumberReceptionist());
+            //int janior = Convert.ToInt32(employee.GetNumberJanior());
+
         }
         public bool DeleteData()
         {
@@ -148,7 +187,7 @@ namespace General_Manager.Form
             Database data = new Database();
             try
             {
-                this.GetShift();
+                this.GetIdEmployee();
                 SqlCommand command = new SqlCommand();
                 data.OpenConnection();
                 command.Connection = data.GetConnection;
@@ -161,7 +200,6 @@ namespace General_Manager.Form
             {
                 return table;
             }
-
         }
         public DataTable WorkTime(int Id)
         {

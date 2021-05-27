@@ -19,7 +19,7 @@ namespace General_Manager.Form
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new Schedule());
+            Application.Run(new Menu());
         }
     }
 }
