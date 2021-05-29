@@ -218,6 +218,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Hotel_ManagementDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Hotel_ManagementDataSet1.cs">
+      <DependentUpon>Hotel_ManagementDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Hotel_ManagementDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

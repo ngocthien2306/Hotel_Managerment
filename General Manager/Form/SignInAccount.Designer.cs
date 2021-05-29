@@ -232,6 +232,7 @@ namespace General_Manager.Form
             this.HyperlinkLabelControl.Size = new System.Drawing.Size(205, 17);
             this.HyperlinkLabelControl.TabIndex = 14;
             this.HyperlinkLabelControl.Text = "I have a account <login now?>";
+            this.HyperlinkLabelControl.Click += new System.EventHandler(this.HyperlinkLabelControl_Click);
             // 
             // SignInAccount
             // 

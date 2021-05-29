@@ -58,5 +58,12 @@ namespace General_Manager.Form
                 PictureUser.Image = Image.FromFile(open.FileName);
             }
         }
+
+        private void HyperlinkLabelControl_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

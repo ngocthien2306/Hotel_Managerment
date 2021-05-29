@@ -22,6 +22,8 @@ namespace General_Manager.Form
 
         private void Book_Room_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'hotel_ManagementDataSet.Room' table. You can move, or remove it, as needed.
+            this.roomTableAdapter.Fill(this.hotel_ManagementDataSet.Room);
             // TODO: This line of code loads data into the 'hotelDataSet.Room' table. You can move, or remove it, as needed.
             RoomTypeLoad();
         }
@@ -56,40 +58,6 @@ namespace General_Manager.Form
             }
         }
 
-        private void book_btn_Click(object sender, EventArgs e)
-        {
-            if(verify())
-            {
-                int rid = Int32.Parse(roomid_tb.Text);
-                string cname = name_tb.Text;
-                DateTime cbdate = bdate_picker.Value;
-                string caddress = address_tb.Text;
-                int cphone = Int32.Parse(phone_tb.Text);
-                string rtype = roomtype_cb.SelectedValue.ToString();
-                DateTime rcheckin = checkin_picker.Value;
-                DateTime rcheckout = checkout_picker.Value;
-                if(ro.checkRoomID(rid))
-                {
-                    MessageBox.Show("Room ID already exits", "Book Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    if(ro.addRoom(rid,cname,cbdate,caddress,cphone,rtype,rcheckin,rcheckout))
-                    {
-                        MessageBox.Show("Room has been booked successfully", "Book Room", MessageBoxButtons.OK);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("No blank allowed", "Book Room", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void cancel_btn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
 
         private void roomtype_cb_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -106,7 +74,9 @@ namespace General_Manager.Form
             catch { }
         }
 
-        private void update_btn_Click(object sender, EventArgs e)
+
+
+        private void Book_btn_Click_1(object sender, EventArgs e)
         {
             if (verify())
             {
@@ -118,15 +88,51 @@ namespace General_Manager.Form
                 string rtype = roomtype_cb.SelectedValue.ToString();
                 DateTime rcheckin = checkin_picker.Value;
                 DateTime rcheckout = checkout_picker.Value;
-                    if (ro.updateRoom(rid, cname, cbdate, caddress, cphone, rtype, rcheckin, rcheckout))
+                if (ro.checkRoomID(rid))
+                {
+                    MessageBox.Show("Room ID already exits", "Book Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    if (ro.addRoom(rid, cname, cbdate, caddress, cphone, rtype, rcheckin, rcheckout))
                     {
-                        MessageBox.Show("Room's information has been updated", "Book Room", MessageBoxButtons.OK);
+                        MessageBox.Show("Room has been booked successfully", "Book Room", MessageBoxButtons.OK);
                     }
+                }
             }
             else
             {
                 MessageBox.Show("No blank allowed", "Book Room", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+
+        private void Update_btn_Click_1(object sender, EventArgs e)
+        {
+            if (verify())
+            {
+                int rid = Int32.Parse(roomid_tb.Text);
+                string cname = name_tb.Text;
+                DateTime cbdate = bdate_picker.Value;
+                string caddress = address_tb.Text;
+                int cphone = Int32.Parse(phone_tb.Text);
+                string rtype = roomtype_cb.SelectedValue.ToString();
+                DateTime rcheckin = checkin_picker.Value;
+                DateTime rcheckout = checkout_picker.Value;
+                if (ro.updateRoom(rid, cname, cbdate, caddress, cphone, rtype, rcheckin, rcheckout))
+                {
+                    MessageBox.Show("Room's information has been updated", "Book Room", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No blank allowed", "Book Room", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void Cancel_btn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
