@@ -32,9 +32,9 @@ namespace General_Manager.Form
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Display_User));
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.customerGridControl = new DevExpress.XtraGrid.GridControl();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotel_ManagementDataSet1 = new General_Manager.Hotel_ManagementDataSet1();
-            this.customerGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfullname = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,39 +55,35 @@ namespace General_Manager.Form
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForId = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForfullname = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForpicture = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForbirthday = new DevExpress.XtraLayout.LayoutControlItem();
+            this.LayoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForpassword = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForusername = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForCMND = new DevExpress.XtraLayout.LayoutControlItem();
             this.customerTableAdapter = new General_Manager.Hotel_ManagementDataSet1TableAdapters.CustomerTableAdapter();
             this.tableAdapterManager = new General_Manager.Hotel_ManagementDataSet1TableAdapters.TableAdapterManager();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.M010101 = new DevExpress.XtraBars.BarButtonItem();
+            this.M010102 = new DevExpress.XtraBars.BarButtonItem();
             this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.M0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.customerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.customerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.LayoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.M010101 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.ItemForpicture = new DevExpress.XtraLayout.LayoutControlItem();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.M0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Addnew_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.Delete_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.Save_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.M0103 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Close_btn = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
@@ -103,15 +99,15 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForfullname)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForbirthday)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LayoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForusername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCMND)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).BeginInit();
-            this.customerBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LayoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -122,12 +118,24 @@ namespace General_Manager.Form
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.customerGridControl);
             this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.customerBindingNavigator);
             this.splitContainerControl1.Panel2.Controls.Add(this.dataLayoutControl1);
+            this.splitContainerControl1.Panel2.Controls.Add(this.xtraTabControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1154, 471);
-            this.splitContainerControl1.SplitterPosition = 516;
+            this.splitContainerControl1.Size = new System.Drawing.Size(1276, 542);
+            this.splitContainerControl1.SplitterPosition = 625;
             this.splitContainerControl1.TabIndex = 0;
+            // 
+            // customerGridControl
+            // 
+            this.customerGridControl.DataSource = this.customerBindingSource;
+            this.customerGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerGridControl.Location = new System.Drawing.Point(0, 0);
+            this.customerGridControl.MainView = this.gridView1;
+            this.customerGridControl.Name = "customerGridControl";
+            this.customerGridControl.Size = new System.Drawing.Size(625, 542);
+            this.customerGridControl.TabIndex = 0;
+            this.customerGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
             // customerBindingSource
             // 
@@ -138,18 +146,6 @@ namespace General_Manager.Form
             // 
             this.hotel_ManagementDataSet1.DataSetName = "Hotel_ManagementDataSet1";
             this.hotel_ManagementDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerGridControl
-            // 
-            this.customerGridControl.DataSource = this.customerBindingSource;
-            this.customerGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerGridControl.Location = new System.Drawing.Point(0, 0);
-            this.customerGridControl.MainView = this.gridView1;
-            this.customerGridControl.Name = "customerGridControl";
-            this.customerGridControl.Size = new System.Drawing.Size(516, 471);
-            this.customerGridControl.TabIndex = 0;
-            this.customerGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
             // 
             // gridView1
             // 
@@ -237,10 +233,11 @@ namespace General_Manager.Form
             this.dataLayoutControl1.Controls.Add(this.usernameTextEdit);
             this.dataLayoutControl1.Controls.Add(this.CMNDTextEdit);
             this.dataLayoutControl1.DataSource = this.customerBindingSource;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(-2, 36);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 8);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
+            this.dataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1108, 285, 812, 500);
             this.dataLayoutControl1.Root = this.Root;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(642, 425);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(642, 359);
             this.dataLayoutControl1.TabIndex = 1;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -273,7 +270,7 @@ namespace General_Manager.Form
             this.picturePictureEdit.Location = new System.Drawing.Point(78, 96);
             this.picturePictureEdit.Name = "picturePictureEdit";
             this.picturePictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.picturePictureEdit.Size = new System.Drawing.Size(241, 317);
+            this.picturePictureEdit.Size = new System.Drawing.Size(241, 251);
             this.picturePictureEdit.StyleController = this.dataLayoutControl1;
             this.picturePictureEdit.TabIndex = 6;
             // 
@@ -330,7 +327,7 @@ namespace General_Manager.Form
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(642, 425);
+            this.Root.Size = new System.Drawing.Size(642, 359);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -346,7 +343,7 @@ namespace General_Manager.Form
             this.ItemForCMND});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(622, 405);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(622, 339);
             // 
             // ItemForId
             // 
@@ -366,16 +363,6 @@ namespace General_Manager.Form
             this.ItemForfullname.Text = "fullname";
             this.ItemForfullname.TextSize = new System.Drawing.Size(63, 17);
             // 
-            // ItemForpicture
-            // 
-            this.ItemForpicture.Control = this.picturePictureEdit;
-            this.ItemForpicture.Location = new System.Drawing.Point(0, 84);
-            this.ItemForpicture.Name = "ItemForpicture";
-            this.ItemForpicture.Size = new System.Drawing.Size(311, 321);
-            this.ItemForpicture.StartNewLine = true;
-            this.ItemForpicture.Text = "picture";
-            this.ItemForpicture.TextSize = new System.Drawing.Size(63, 17);
-            // 
             // ItemForbirthday
             // 
             this.ItemForbirthday.Control = this.birthdayDateEdit;
@@ -385,12 +372,22 @@ namespace General_Manager.Form
             this.ItemForbirthday.Text = "birthday";
             this.ItemForbirthday.TextSize = new System.Drawing.Size(63, 17);
             // 
+            // LayoutControlGroup2
+            // 
+            this.LayoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForpassword,
+            this.ItemForusername});
+            this.LayoutControlGroup2.Location = new System.Drawing.Point(311, 56);
+            this.LayoutControlGroup2.Name = "LayoutControlGroup2";
+            this.LayoutControlGroup2.Size = new System.Drawing.Size(311, 283);
+            this.LayoutControlGroup2.Text = "Account User";
+            // 
             // ItemForpassword
             // 
             this.ItemForpassword.Control = this.passwordTextEdit;
             this.ItemForpassword.Location = new System.Drawing.Point(0, 28);
             this.ItemForpassword.Name = "ItemForpassword";
-            this.ItemForpassword.Size = new System.Drawing.Size(287, 271);
+            this.ItemForpassword.Size = new System.Drawing.Size(287, 205);
             this.ItemForpassword.Text = "password";
             this.ItemForpassword.TextSize = new System.Drawing.Size(63, 17);
             // 
@@ -430,174 +427,18 @@ namespace General_Manager.Form
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
             this.M010101,
-            this.barButtonItem1});
+            this.M010102,
+            this.Addnew_btn,
+            this.Delete_btn,
+            this.Save_btn,
+            this.Close_btn});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 3;
+            this.ribbonControl1.MaxItemId = 7;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.M01});
-            this.ribbonControl1.Size = new System.Drawing.Size(1154, 185);
+            this.ribbonControl1.Size = new System.Drawing.Size(1276, 185);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
-            // 
-            // M01
-            // 
-            this.M01.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.M0101});
-            this.M01.Name = "M01";
-            this.M01.Text = "Home";
-            // 
-            // M0101
-            // 
-            this.M0101.ItemLinks.Add(this.M010101);
-            this.M0101.ItemLinks.Add(this.barButtonItem1);
-            this.M0101.Name = "M0101";
-            this.M0101.Text = "                Task                    ";
-            // 
-            // ribbonStatusBar1
-            // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 656);
-            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
-            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1154, 30);
-            // 
-            // ribbonPage2
-            // 
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "ribbonPage2";
-            // 
-            // customerBindingNavigator
-            // 
-            this.customerBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.customerBindingNavigator.BindingSource = this.customerBindingSource;
-            this.customerBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.customerBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.customerBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.customerBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.customerBindingNavigatorSaveItem});
-            this.customerBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.customerBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.customerBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.customerBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.customerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.customerBindingNavigator.Name = "customerBindingNavigator";
-            this.customerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customerBindingNavigator.Size = new System.Drawing.Size(629, 27);
-            this.customerBindingNavigator.TabIndex = 4;
-            this.customerBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // customerBindingNavigatorSaveItem
-            // 
-            this.customerBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.customerBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("customerBindingNavigatorSaveItem.Image")));
-            this.customerBindingNavigatorSaveItem.Name = "customerBindingNavigatorSaveItem";
-            this.customerBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.customerBindingNavigatorSaveItem.Text = "Save Data";
-            // 
-            // LayoutControlGroup2
-            // 
-            this.LayoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForpassword,
-            this.ItemForusername});
-            this.LayoutControlGroup2.Location = new System.Drawing.Point(311, 56);
-            this.LayoutControlGroup2.Name = "LayoutControlGroup2";
-            this.LayoutControlGroup2.Size = new System.Drawing.Size(311, 349);
-            this.LayoutControlGroup2.Text = "Account User";
             // 
             // M010101
             // 
@@ -607,17 +448,127 @@ namespace General_Manager.Form
             this.M010101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010101.ImageOptions.LargeImage")));
             this.M010101.Name = "M010101";
             // 
-            // barButtonItem1
+            // M010102
             // 
-            this.barButtonItem1.Caption = "barButtonItem1";
-            this.barButtonItem1.Id = 2;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.M010102.Caption = "Find";
+            this.M010102.Id = 2;
+            this.M010102.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M010102.ImageOptions.Image")));
+            this.M010102.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010102.ImageOptions.LargeImage")));
+            this.M010102.Name = "M010102";
+            // 
+            // M01
+            // 
+            this.M01.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.M0101,
+            this.M0102,
+            this.M0103});
+            this.M01.Name = "M01";
+            this.M01.Text = "Home";
+            // 
+            // M0101
+            // 
+            this.M0101.ItemLinks.Add(this.M010101);
+            this.M0101.ItemLinks.Add(this.M010102);
+            this.M0101.Name = "M0101";
+            this.M0101.Text = "                Task                    ";
+            // 
+            // ribbonStatusBar1
+            // 
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 727);
+            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
+            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1276, 30);
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // ItemForpicture
+            // 
+            this.ItemForpicture.Control = this.picturePictureEdit;
+            this.ItemForpicture.Location = new System.Drawing.Point(0, 84);
+            this.ItemForpicture.Name = "ItemForpicture";
+            this.ItemForpicture.Size = new System.Drawing.Size(311, 255);
+            this.ItemForpicture.StartNewLine = true;
+            this.ItemForpicture.Text = "picture";
+            this.ItemForpicture.TextSize = new System.Drawing.Size(63, 17);
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(613, 147);
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(486, 125);
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Location = new System.Drawing.Point(13, 373);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(617, 163);
+            this.xtraTabControl1.TabIndex = 2;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2});
+            // 
+            // M0102
+            // 
+            this.M0102.ItemLinks.Add(this.Addnew_btn);
+            this.M0102.ItemLinks.Add(this.Delete_btn);
+            this.M0102.ItemLinks.Add(this.Save_btn);
+            this.M0102.Name = "M0102";
+            this.M0102.Text = "CRUD";
+            // 
+            // Addnew_btn
+            // 
+            this.Addnew_btn.Caption = "Add User";
+            this.Addnew_btn.Id = 3;
+            this.Addnew_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Addnew_btn.ImageOptions.Image")));
+            this.Addnew_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Addnew_btn.ImageOptions.LargeImage")));
+            this.Addnew_btn.Name = "Addnew_btn";
+            this.Addnew_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Addnew_btn_ItemClick);
+            // 
+            // Delete_btn
+            // 
+            this.Delete_btn.Caption = "Delete";
+            this.Delete_btn.Id = 4;
+            this.Delete_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.Delete_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.Delete_btn.Name = "Delete_btn";
+            this.Delete_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Delete_btn_ItemClick);
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Caption = "Save";
+            this.Save_btn.Id = 5;
+            this.Save_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.Save_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Save_btn_ItemClick);
+            // 
+            // M0103
+            // 
+            this.M0103.ItemLinks.Add(this.Close_btn);
+            this.M0103.Name = "M0103";
+            this.M0103.Text = "Close";
+            // 
+            // Close_btn
+            // 
+            this.Close_btn.Caption = "Close";
+            this.Close_btn.Id = 6;
+            this.Close_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Close_btn.ImageOptions.SvgImage")));
+            this.Close_btn.Name = "Close_btn";
+            this.Close_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Close_btn_ItemClick);
             // 
             // Display_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 686);
+            this.ClientSize = new System.Drawing.Size(1276, 757);
             this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
@@ -629,9 +580,9 @@ namespace General_Manager.Form
             this.Load += new System.EventHandler(this.Display_User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.customerGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
@@ -647,16 +598,15 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForfullname)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForbirthday)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LayoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForusername)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCMND)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).EndInit();
-            this.customerBindingNavigator.ResumeLayout(false);
-            this.customerBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LayoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -690,7 +640,6 @@ namespace General_Manager.Form
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForId;
         private DevExpress.XtraLayout.LayoutControlItem ItemForfullname;
-        private DevExpress.XtraLayout.LayoutControlItem ItemForpicture;
         private DevExpress.XtraLayout.LayoutControlItem ItemForbirthday;
         private DevExpress.XtraLayout.LayoutControlItem ItemForpassword;
         private DevExpress.XtraLayout.LayoutControlItem ItemForusername;
@@ -700,21 +649,18 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0101;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private System.Windows.Forms.BindingNavigator customerBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton customerBindingNavigatorSaveItem;
         private DevExpress.XtraLayout.LayoutControlGroup LayoutControlGroup2;
         private DevExpress.XtraBars.BarButtonItem M010101;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem M010102;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForpicture;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private DevExpress.XtraBars.BarButtonItem Addnew_btn;
+        private DevExpress.XtraBars.BarButtonItem Delete_btn;
+        private DevExpress.XtraBars.BarButtonItem Save_btn;
+        private DevExpress.XtraBars.BarButtonItem Close_btn;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0102;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0103;
     }
 }

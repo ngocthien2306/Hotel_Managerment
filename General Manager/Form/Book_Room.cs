@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 namespace General_Manager.Form
 {
-    public partial class Book_Room : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
+    public partial class Book_Room : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         Database db = new Database();
         Room ro = new Room();
@@ -74,9 +74,7 @@ namespace General_Manager.Form
             catch { }
         }
 
-
-
-        private void Book_btn_Click_1(object sender, EventArgs e)
+        private void Book_btn_ItemClick(object sender, ItemClickEventArgs e)
         {
             if (verify())
             {
@@ -106,8 +104,7 @@ namespace General_Manager.Form
             }
         }
 
-
-        private void Update_btn_Click_1(object sender, EventArgs e)
+        private void Update_btn_ItemClick(object sender, ItemClickEventArgs e)
         {
             if (verify())
             {
@@ -130,7 +127,7 @@ namespace General_Manager.Form
             }
         }
 
-        private void Cancel_btn_Click_1(object sender, EventArgs e)
+        private void Close_btn_ItemClick(object sender, ItemClickEventArgs e)
         {
             this.Hide();
         }
