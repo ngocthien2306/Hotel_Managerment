@@ -51,16 +51,30 @@ namespace General_Manager.Form
         {
             DateTime checkin = DateTime.Now;
             TimeSpan ts1 = checkin - Convert.ToDateTime(StartTime);
-            int duration = Convert.ToInt32(ts1.TotalMinutes);
-            XtraMessageBox.Show(duration.ToString());
+            int iduration = Convert.ToInt32(ts1.TotalMinutes);
+            if ( iduration < 0 )
+            {
+                XtraMessageBox.Show("Your workshift hasn't started yet! ");
+            }
+            else
+            {
+                XtraMessageBox.Show("You are " + iduration.ToString() + " late");
+            }
         }
 
         private void CheckOut_btn_Click_1(object sender, EventArgs e)
         {
-            DateTime checkin = DateTime.Now;
-            TimeSpan ts2 = checkin - Convert.ToDateTime(EndTime);
-            int duration = Convert.ToInt32(ts2.TotalMinutes);
-            XtraMessageBox.Show(duration.ToString());
+            DateTime checkout = DateTime.Now;
+            TimeSpan ts2 = checkout - Convert.ToDateTime(EndTime);
+            int oduration = Convert.ToInt32(ts2.TotalMinutes);
+            if (oduration < 0)
+            {
+                XtraMessageBox.Show("Your workshift hasn't ended yet! [" + oduration.ToString() +" ] soon");
+            }
+            else
+            {
+                XtraMessageBox.Show("Thanks for working hard today");
+            }
         }
     }
 }
