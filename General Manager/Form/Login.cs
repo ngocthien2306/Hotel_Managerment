@@ -114,7 +114,7 @@ namespace General_Manager.Form
                         {
 
                         }
-                        else if (user.GetLogin() && role == "Janior" && Janitor_rbt.Checked == true)
+                        else if (user.GetLogin() && role == "Janitor" && Janitor_rbt.Checked == true)
                         {
 
                         }

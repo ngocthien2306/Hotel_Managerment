@@ -41,13 +41,13 @@
               <Mapping SourceColumn="firstname" DataSetColumn="firstname" />
               <Mapping SourceColumn="lastname" DataSetColumn="lastname" />
               <Mapping SourceColumn="role" DataSetColumn="role" />
-              <Mapping SourceColumn="monday" DataSetColumn="monday" />
-              <Mapping SourceColumn="tuesday" DataSetColumn="tuesday" />
-              <Mapping SourceColumn="wednesday" DataSetColumn="wednesday" />
-              <Mapping SourceColumn="thusday" DataSetColumn="thusday" />
-              <Mapping SourceColumn="friday" DataSetColumn="friday" />
-              <Mapping SourceColumn="satusday" DataSetColumn="satusday" />
-              <Mapping SourceColumn="sunday" DataSetColumn="sunday" />
+              <Mapping SourceColumn="monday" DataSetColumn="Monday" />
+              <Mapping SourceColumn="tuesday" DataSetColumn="Tuesday" />
+              <Mapping SourceColumn="wednesday" DataSetColumn="Wednesday" />
+              <Mapping SourceColumn="thusday" DataSetColumn="Thursday" />
+              <Mapping SourceColumn="friday" DataSetColumn="Friday" />
+              <Mapping SourceColumn="satusday" DataSetColumn="Saturday" />
+              <Mapping SourceColumn="sunday" DataSetColumn="Sunday" />
             </Mappings>
             <Sources>
               <DbSource ConnectionRef="Hotel_ManagementConnectionString (Settings)" DbObjectName="[Hotel Management].dbo.Schedule" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
@@ -149,7 +149,7 @@ SELECT Id, fullname, picture, birthday, password, username, CMND FROM Customer W
   <xs:element name="Hotel_ManagementDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Hotel_ManagementDataSet1" msprop:Generator_UserDSName="Hotel_ManagementDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Schedule" msprop:Generator_TableClassName="ScheduleDataTable" msprop:Generator_TableVarName="tableSchedule" msprop:Generator_TablePropName="Schedule" msprop:Generator_RowDeletingName="ScheduleRowDeleting" msprop:Generator_RowChangingName="ScheduleRowChanging" msprop:Generator_RowEvHandlerName="ScheduleRowChangeEventHandler" msprop:Generator_RowDeletedName="ScheduleRowDeleted" msprop:Generator_UserTableName="Schedule" msprop:Generator_RowChangedName="ScheduleRowChanged" msprop:Generator_RowEvArgName="ScheduleRowChangeEvent" msprop:Generator_RowClassName="ScheduleRow">
+        <xs:element name="Schedule" msprop:Generator_TableClassName="ScheduleDataTable" msprop:Generator_TableVarName="tableSchedule" msprop:Generator_RowChangedName="ScheduleRowChanged" msprop:Generator_TablePropName="Schedule" msprop:Generator_RowDeletingName="ScheduleRowDeleting" msprop:Generator_RowChangingName="ScheduleRowChanging" msprop:Generator_RowEvHandlerName="ScheduleRowChangeEventHandler" msprop:Generator_RowDeletedName="ScheduleRowDeleted" msprop:Generator_RowClassName="ScheduleRow" msprop:Generator_UserTableName="Schedule" msprop:Generator_RowEvArgName="ScheduleRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
@@ -174,49 +174,49 @@ SELECT Id, fullname, picture, birthday, password, username, CMND FROM Customer W
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="monday" msprop:Generator_ColumnVarNameInTable="columnmonday" msprop:Generator_ColumnPropNameInRow="monday" msprop:Generator_ColumnPropNameInTable="mondayColumn" msprop:Generator_UserColumnName="monday" minOccurs="0">
+              <xs:element name="Monday" msprop:Generator_ColumnVarNameInTable="columnMonday" msprop:Generator_ColumnPropNameInRow="Monday" msprop:Generator_ColumnPropNameInTable="MondayColumn" msprop:Generator_UserColumnName="Monday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="tuesday" msprop:Generator_ColumnVarNameInTable="columntuesday" msprop:Generator_ColumnPropNameInRow="tuesday" msprop:Generator_ColumnPropNameInTable="tuesdayColumn" msprop:Generator_UserColumnName="tuesday" minOccurs="0">
+              <xs:element name="Tuesday" msprop:Generator_ColumnVarNameInTable="columnTuesday" msprop:Generator_ColumnPropNameInRow="Tuesday" msprop:Generator_ColumnPropNameInTable="TuesdayColumn" msprop:Generator_UserColumnName="Tuesday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="wednesday" msprop:Generator_ColumnVarNameInTable="columnwednesday" msprop:Generator_ColumnPropNameInRow="wednesday" msprop:Generator_ColumnPropNameInTable="wednesdayColumn" msprop:Generator_UserColumnName="wednesday" minOccurs="0">
+              <xs:element name="Wednesday" msprop:Generator_ColumnVarNameInTable="columnWednesday" msprop:Generator_ColumnPropNameInRow="Wednesday" msprop:Generator_ColumnPropNameInTable="WednesdayColumn" msprop:Generator_UserColumnName="Wednesday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="thusday" msprop:Generator_ColumnVarNameInTable="columnthusday" msprop:Generator_ColumnPropNameInRow="thusday" msprop:Generator_ColumnPropNameInTable="thusdayColumn" msprop:Generator_UserColumnName="thusday" minOccurs="0">
+              <xs:element name="Thursday" msprop:Generator_ColumnVarNameInTable="columnThursday" msprop:Generator_ColumnPropNameInRow="Thursday" msprop:Generator_ColumnPropNameInTable="ThursdayColumn" msprop:Generator_UserColumnName="Thursday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="friday" msprop:Generator_ColumnVarNameInTable="columnfriday" msprop:Generator_ColumnPropNameInRow="friday" msprop:Generator_ColumnPropNameInTable="fridayColumn" msprop:Generator_UserColumnName="friday" minOccurs="0">
+              <xs:element name="Friday" msprop:Generator_ColumnVarNameInTable="columnFriday" msprop:Generator_ColumnPropNameInRow="Friday" msprop:Generator_ColumnPropNameInTable="FridayColumn" msprop:Generator_UserColumnName="Friday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="satusday" msprop:Generator_ColumnVarNameInTable="columnsatusday" msprop:Generator_ColumnPropNameInRow="satusday" msprop:Generator_ColumnPropNameInTable="satusdayColumn" msprop:Generator_UserColumnName="satusday" minOccurs="0">
+              <xs:element name="Saturday" msprop:Generator_ColumnVarNameInTable="columnSaturday" msprop:Generator_ColumnPropNameInRow="Saturday" msprop:Generator_ColumnPropNameInTable="SaturdayColumn" msprop:Generator_UserColumnName="Saturday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="sunday" msprop:Generator_ColumnVarNameInTable="columnsunday" msprop:Generator_ColumnPropNameInRow="sunday" msprop:Generator_ColumnPropNameInTable="sundayColumn" msprop:Generator_UserColumnName="sunday" minOccurs="0">
+              <xs:element name="Sunday" msprop:Generator_ColumnVarNameInTable="columnSunday" msprop:Generator_ColumnPropNameInRow="Sunday" msprop:Generator_ColumnPropNameInTable="SundayColumn" msprop:Generator_UserColumnName="Sunday" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />

@@ -38,14 +38,14 @@ namespace General_Manager.Form
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.Time_tb = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.CheckOut_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.CheckIn_btn = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.End_lb = new DevExpress.XtraEditors.LabelControl();
             this.Start_lb = new DevExpress.XtraEditors.LabelControl();
             this.End_tb = new DevExpress.XtraEditors.TextEdit();
             this.Start_tb = new DevExpress.XtraEditors.TextEdit();
-            this.CheckIn_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.CheckOut_btn = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ID_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Date_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Time_tb.Properties)).BeginInit();
@@ -62,7 +62,7 @@ namespace General_Manager.Form
             // ID_tb
             // 
             this.ID_tb.Enabled = false;
-            this.ID_tb.Location = new System.Drawing.Point(171, 19);
+            this.ID_tb.Location = new System.Drawing.Point(114, 18);
             this.ID_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ID_tb.Name = "ID_tb";
             this.ID_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,17 +77,17 @@ namespace General_Manager.Form
             this.ID_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.ID_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.ID_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.ID_tb.Size = new System.Drawing.Size(257, 26);
+            this.ID_tb.Size = new System.Drawing.Size(257, 22);
             this.ID_tb.TabIndex = 0;
             // 
             // ID_lb
             // 
             this.ID_lb.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.ID_lb.Appearance.Options.UseFont = true;
-            this.ID_lb.Location = new System.Drawing.Point(9, 18);
+            this.ID_lb.Location = new System.Drawing.Point(20, 18);
             this.ID_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ID_lb.Name = "ID_lb";
-            this.ID_lb.Size = new System.Drawing.Size(94, 24);
+            this.ID_lb.Size = new System.Drawing.Size(75, 19);
             this.ID_lb.TabIndex = 1;
             this.ID_lb.Text = "Current ID";
             // 
@@ -97,17 +97,17 @@ namespace General_Manager.Form
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.labelControl2.Appearance.Options.UseBackColor = true;
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(310, 27);
+            this.labelControl2.Location = new System.Drawing.Point(333, 23);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(118, 24);
+            this.labelControl2.Size = new System.Drawing.Size(95, 19);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Current Time";
             // 
             // Date_tb
             // 
             this.Date_tb.Enabled = false;
-            this.Date_tb.Location = new System.Drawing.Point(257, 61);
+            this.Date_tb.Location = new System.Drawing.Point(261, 61);
             this.Date_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Date_tb.Name = "Date_tb";
             this.Date_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
@@ -122,7 +122,7 @@ namespace General_Manager.Form
             this.Date_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.Date_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Date_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Date_tb.Size = new System.Drawing.Size(227, 30);
+            this.Date_tb.Size = new System.Drawing.Size(243, 26);
             this.Date_tb.TabIndex = 3;
             // 
             // timer
@@ -133,7 +133,7 @@ namespace General_Manager.Form
             // Time_tb
             // 
             this.Time_tb.Enabled = false;
-            this.Time_tb.Location = new System.Drawing.Point(257, 107);
+            this.Time_tb.Location = new System.Drawing.Point(261, 106);
             this.Time_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Time_tb.Name = "Time_tb";
             this.Time_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
@@ -148,7 +148,7 @@ namespace General_Manager.Form
             this.Time_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.Time_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Time_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Time_tb.Size = new System.Drawing.Size(227, 30);
+            this.Time_tb.Size = new System.Drawing.Size(243, 26);
             this.Time_tb.TabIndex = 4;
             // 
             // panelControl1
@@ -161,8 +161,34 @@ namespace General_Manager.Form
             this.panelControl1.Location = new System.Drawing.Point(21, 151);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(831, 188);
+            this.panelControl1.Size = new System.Drawing.Size(781, 188);
             this.panelControl1.TabIndex = 7;
+            // 
+            // CheckOut_btn
+            // 
+            this.CheckOut_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckOut_btn.Appearance.Options.UseFont = true;
+            this.CheckOut_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CheckOut_btn.ImageOptions.Image")));
+            this.CheckOut_btn.Location = new System.Drawing.Point(579, 64);
+            this.CheckOut_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckOut_btn.Name = "CheckOut_btn";
+            this.CheckOut_btn.Size = new System.Drawing.Size(134, 78);
+            this.CheckOut_btn.TabIndex = 8;
+            this.CheckOut_btn.Text = "Check Out";
+            this.CheckOut_btn.Click += new System.EventHandler(this.CheckOut_btn_Click_1);
+            // 
+            // CheckIn_btn
+            // 
+            this.CheckIn_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckIn_btn.Appearance.Options.UseFont = true;
+            this.CheckIn_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CheckIn_btn.ImageOptions.Image")));
+            this.CheckIn_btn.Location = new System.Drawing.Point(61, 64);
+            this.CheckIn_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckIn_btn.Name = "CheckIn_btn";
+            this.CheckIn_btn.Size = new System.Drawing.Size(134, 78);
+            this.CheckIn_btn.TabIndex = 7;
+            this.CheckIn_btn.Text = "Check In";
+            this.CheckIn_btn.Click += new System.EventHandler(this.CheckIn_btn_Click_1);
             // 
             // panelControl2
             // 
@@ -171,7 +197,7 @@ namespace General_Manager.Form
             this.panelControl2.Location = new System.Drawing.Point(21, 37);
             this.panelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(453, 68);
+            this.panelControl2.Size = new System.Drawing.Size(390, 68);
             this.panelControl2.TabIndex = 8;
             // 
             // panelControl3
@@ -180,7 +206,7 @@ namespace General_Manager.Form
             this.panelControl3.Controls.Add(this.Start_lb);
             this.panelControl3.Controls.Add(this.End_tb);
             this.panelControl3.Controls.Add(this.Start_tb);
-            this.panelControl3.Location = new System.Drawing.Point(483, 18);
+            this.panelControl3.Location = new System.Drawing.Point(432, 14);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(370, 102);
@@ -190,10 +216,10 @@ namespace General_Manager.Form
             // 
             this.End_lb.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.End_lb.Appearance.Options.UseFont = true;
-            this.End_lb.Location = new System.Drawing.Point(9, 58);
+            this.End_lb.Location = new System.Drawing.Point(21, 58);
             this.End_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.End_lb.Name = "End_lb";
-            this.End_lb.Size = new System.Drawing.Size(34, 24);
+            this.End_lb.Size = new System.Drawing.Size(28, 19);
             this.End_lb.TabIndex = 11;
             this.End_lb.Text = "End";
             // 
@@ -201,10 +227,10 @@ namespace General_Manager.Form
             // 
             this.Start_lb.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
             this.Start_lb.Appearance.Options.UseFont = true;
-            this.Start_lb.Location = new System.Drawing.Point(9, 12);
+            this.Start_lb.Location = new System.Drawing.Point(21, 10);
             this.Start_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Start_lb.Name = "Start_lb";
-            this.Start_lb.Size = new System.Drawing.Size(46, 24);
+            this.Start_lb.Size = new System.Drawing.Size(36, 19);
             this.Start_lb.TabIndex = 10;
             this.Start_lb.Text = "Start";
             // 
@@ -226,7 +252,7 @@ namespace General_Manager.Form
             this.End_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.End_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.End_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.End_tb.Size = new System.Drawing.Size(271, 30);
+            this.End_tb.Size = new System.Drawing.Size(271, 26);
             this.End_tb.TabIndex = 5;
             // 
             // Start_tb
@@ -247,41 +273,15 @@ namespace General_Manager.Form
             this.Start_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.Start_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Start_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Start_tb.Size = new System.Drawing.Size(273, 30);
+            this.Start_tb.Size = new System.Drawing.Size(273, 26);
             this.Start_tb.TabIndex = 4;
-            // 
-            // CheckIn_btn
-            // 
-            this.CheckIn_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckIn_btn.Appearance.Options.UseFont = true;
-            this.CheckIn_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CheckIn_btn.ImageOptions.Image")));
-            this.CheckIn_btn.Location = new System.Drawing.Point(61, 64);
-            this.CheckIn_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CheckIn_btn.Name = "CheckIn_btn";
-            this.CheckIn_btn.Size = new System.Drawing.Size(134, 78);
-            this.CheckIn_btn.TabIndex = 7;
-            this.CheckIn_btn.Text = "Check In";
-            this.CheckIn_btn.Click += new System.EventHandler(this.CheckIn_btn_Click_1);
-            // 
-            // CheckOut_btn
-            // 
-            this.CheckOut_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckOut_btn.Appearance.Options.UseFont = true;
-            this.CheckOut_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CheckOut_btn.ImageOptions.Image")));
-            this.CheckOut_btn.Location = new System.Drawing.Point(540, 64);
-            this.CheckOut_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CheckOut_btn.Name = "CheckOut_btn";
-            this.CheckOut_btn.Size = new System.Drawing.Size(134, 78);
-            this.CheckOut_btn.TabIndex = 8;
-            this.CheckOut_btn.Text = "Check Out";
-            this.CheckOut_btn.Click += new System.EventHandler(this.CheckOut_btn_Click_1);
             // 
             // Attendance
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 384);
+            this.ClientSize = new System.Drawing.Size(826, 384);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);

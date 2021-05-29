@@ -35,11 +35,11 @@ namespace General_Manager.Form
             this.Exit_bt = new DevExpress.XtraEditors.SimpleButton();
             this.Login_bt = new DevExpress.XtraEditors.SimpleButton();
             this.GroupBox_role = new DevExpress.XtraEditors.GroupControl();
+            this.Radio_Customer = new System.Windows.Forms.RadioButton();
             this.Janitor_rbt = new System.Windows.Forms.RadioButton();
             this.Receptionist_rbt = new System.Windows.Forms.RadioButton();
             this.Manager_rbt = new System.Windows.Forms.RadioButton();
             this.Label_login = new System.Windows.Forms.Label();
-            this.Radio_Customer = new System.Windows.Forms.RadioButton();
             this.HyperlinkLabelControl_create = new DevExpress.XtraEditors.HyperlinkLabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.Username_tb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Password_tb.Properties)).BeginInit();
@@ -49,40 +49,40 @@ namespace General_Manager.Form
             // 
             // Username_tb
             // 
-            this.Username_tb.Location = new System.Drawing.Point(216, 95);
-            this.Username_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Username_tb.Location = new System.Drawing.Point(162, 84);
+            this.Username_tb.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Username_tb.Name = "Username_tb";
             this.Username_tb.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Username_tb.Properties.ContextImageOptions.SvgImage")));
-            this.Username_tb.Size = new System.Drawing.Size(411, 44);
+            this.Username_tb.Size = new System.Drawing.Size(308, 36);
             this.Username_tb.TabIndex = 2;
             // 
             // Password_tb
             // 
-            this.Password_tb.Location = new System.Drawing.Point(216, 164);
-            this.Password_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Password_tb.Location = new System.Drawing.Point(162, 145);
+            this.Password_tb.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Password_tb.Name = "Password_tb";
             this.Password_tb.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Password_tb.Properties.ContextImageOptions.SvgImage")));
-            this.Password_tb.Size = new System.Drawing.Size(411, 44);
+            this.Password_tb.Size = new System.Drawing.Size(308, 36);
             this.Password_tb.TabIndex = 3;
             // 
             // Exit_bt
             // 
             this.Exit_bt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Exit_bt.ImageOptions.Image")));
-            this.Exit_bt.Location = new System.Drawing.Point(35, 434);
-            this.Exit_bt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Exit_bt.Location = new System.Drawing.Point(11, 384);
+            this.Exit_bt.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Exit_bt.Name = "Exit_bt";
             this.Exit_bt.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.Exit_bt.Size = new System.Drawing.Size(115, 75);
+            this.Exit_bt.Size = new System.Drawing.Size(86, 66);
             this.Exit_bt.TabIndex = 4;
             this.Exit_bt.Text = "Exit";
             this.Exit_bt.Click += new System.EventHandler(this.Exit_bt_Click);
             // 
             // Login_bt
             // 
-            this.Login_bt.Location = new System.Drawing.Point(216, 358);
-            this.Login_bt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Login_bt.Location = new System.Drawing.Point(162, 316);
+            this.Login_bt.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Login_bt.Name = "Login_bt";
-            this.Login_bt.Size = new System.Drawing.Size(411, 51);
+            this.Login_bt.Size = new System.Drawing.Size(308, 45);
             this.Login_bt.TabIndex = 5;
             this.Login_bt.Text = "Login";
             this.Login_bt.Click += new System.EventHandler(this.Login_bt_Click);
@@ -93,19 +93,32 @@ namespace General_Manager.Form
             this.GroupBox_role.Controls.Add(this.Janitor_rbt);
             this.GroupBox_role.Controls.Add(this.Receptionist_rbt);
             this.GroupBox_role.Controls.Add(this.Manager_rbt);
-            this.GroupBox_role.Location = new System.Drawing.Point(216, 246);
+            this.GroupBox_role.Location = new System.Drawing.Point(162, 217);
+            this.GroupBox_role.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupBox_role.Name = "GroupBox_role";
-            this.GroupBox_role.Size = new System.Drawing.Size(411, 73);
+            this.GroupBox_role.Size = new System.Drawing.Size(308, 64);
             this.GroupBox_role.TabIndex = 9;
             this.GroupBox_role.Text = "Roles";
+            // 
+            // Radio_Customer
+            // 
+            this.Radio_Customer.AutoSize = true;
+            this.Radio_Customer.Location = new System.Drawing.Point(230, 28);
+            this.Radio_Customer.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.Radio_Customer.Name = "Radio_Customer";
+            this.Radio_Customer.Size = new System.Drawing.Size(77, 20);
+            this.Radio_Customer.TabIndex = 6;
+            this.Radio_Customer.Text = "Customer";
+            this.Radio_Customer.UseVisualStyleBackColor = true;
+            this.Radio_Customer.CheckedChanged += new System.EventHandler(this.Radio_Customer_CheckedChanged);
             // 
             // Janitor_rbt
             // 
             this.Janitor_rbt.AutoSize = true;
-            this.Janitor_rbt.Location = new System.Drawing.Point(228, 32);
-            this.Janitor_rbt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Janitor_rbt.Location = new System.Drawing.Point(171, 28);
+            this.Janitor_rbt.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Janitor_rbt.Name = "Janitor_rbt";
-            this.Janitor_rbt.Size = new System.Drawing.Size(77, 23);
+            this.Janitor_rbt.Size = new System.Drawing.Size(62, 20);
             this.Janitor_rbt.TabIndex = 5;
             this.Janitor_rbt.Text = "Janitor";
             this.Janitor_rbt.UseVisualStyleBackColor = true;
@@ -114,10 +127,10 @@ namespace General_Manager.Form
             // Receptionist_rbt
             // 
             this.Receptionist_rbt.AutoSize = true;
-            this.Receptionist_rbt.Location = new System.Drawing.Point(107, 32);
-            this.Receptionist_rbt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Receptionist_rbt.Location = new System.Drawing.Point(80, 28);
+            this.Receptionist_rbt.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Receptionist_rbt.Name = "Receptionist_rbt";
-            this.Receptionist_rbt.Size = new System.Drawing.Size(115, 23);
+            this.Receptionist_rbt.Size = new System.Drawing.Size(92, 20);
             this.Receptionist_rbt.TabIndex = 4;
             this.Receptionist_rbt.Text = "Receptionist";
             this.Receptionist_rbt.UseVisualStyleBackColor = true;
@@ -127,10 +140,10 @@ namespace General_Manager.Form
             // 
             this.Manager_rbt.AutoSize = true;
             this.Manager_rbt.Checked = true;
-            this.Manager_rbt.Location = new System.Drawing.Point(5, 32);
-            this.Manager_rbt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Manager_rbt.Location = new System.Drawing.Point(4, 28);
+            this.Manager_rbt.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Manager_rbt.Name = "Manager_rbt";
-            this.Manager_rbt.Size = new System.Drawing.Size(94, 23);
+            this.Manager_rbt.Size = new System.Drawing.Size(77, 20);
             this.Manager_rbt.TabIndex = 3;
             this.Manager_rbt.TabStop = true;
             this.Manager_rbt.Text = "Manager";
@@ -141,29 +154,21 @@ namespace General_Manager.Form
             // 
             this.Label_login.AutoSize = true;
             this.Label_login.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_login.Location = new System.Drawing.Point(367, 9);
+            this.Label_login.Location = new System.Drawing.Point(275, 27);
+            this.Label_login.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_login.Name = "Label_login";
-            this.Label_login.Size = new System.Drawing.Size(90, 30);
+            this.Label_login.Size = new System.Drawing.Size(72, 22);
             this.Label_login.TabIndex = 10;
             this.Label_login.Text = "LOGIN";
             // 
-            // Radio_Customer
-            // 
-            this.Radio_Customer.AutoSize = true;
-            this.Radio_Customer.Location = new System.Drawing.Point(307, 32);
-            this.Radio_Customer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Radio_Customer.Name = "Radio_Customer";
-            this.Radio_Customer.Size = new System.Drawing.Size(95, 23);
-            this.Radio_Customer.TabIndex = 6;
-            this.Radio_Customer.Text = "Custumer";
-            this.Radio_Customer.UseVisualStyleBackColor = true;
-            this.Radio_Customer.CheckedChanged += new System.EventHandler(this.Radio_Customer_CheckedChanged);
-            // 
             // HyperlinkLabelControl_create
             // 
-            this.HyperlinkLabelControl_create.Location = new System.Drawing.Point(345, 460);
+            this.HyperlinkLabelControl_create.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HyperlinkLabelControl_create.Appearance.Options.UseFont = true;
+            this.HyperlinkLabelControl_create.Location = new System.Drawing.Point(250, 384);
+            this.HyperlinkLabelControl_create.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.HyperlinkLabelControl_create.Name = "HyperlinkLabelControl_create";
-            this.HyperlinkLabelControl_create.Size = new System.Drawing.Size(157, 17);
+            this.HyperlinkLabelControl_create.Size = new System.Drawing.Size(142, 17);
             this.HyperlinkLabelControl_create.TabIndex = 11;
             this.HyperlinkLabelControl_create.Text = "Create a new account?";
             this.HyperlinkLabelControl_create.Visible = false;
@@ -171,9 +176,9 @@ namespace General_Manager.Form
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 570);
+            this.ClientSize = new System.Drawing.Size(625, 453);
             this.Controls.Add(this.HyperlinkLabelControl_create);
             this.Controls.Add(this.Label_login);
             this.Controls.Add(this.GroupBox_role);
@@ -182,7 +187,7 @@ namespace General_Manager.Form
             this.Controls.Add(this.Password_tb);
             this.Controls.Add(this.Username_tb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "77";

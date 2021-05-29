@@ -322,19 +322,19 @@ namespace General_Manager {
             
             private global::System.Data.DataColumn columnrole;
             
-            private global::System.Data.DataColumn columnmonday;
+            private global::System.Data.DataColumn columnMonday;
             
-            private global::System.Data.DataColumn columntuesday;
+            private global::System.Data.DataColumn columnTuesday;
             
-            private global::System.Data.DataColumn columnwednesday;
+            private global::System.Data.DataColumn columnWednesday;
             
-            private global::System.Data.DataColumn columnthusday;
+            private global::System.Data.DataColumn columnThursday;
             
-            private global::System.Data.DataColumn columnfriday;
+            private global::System.Data.DataColumn columnFriday;
             
-            private global::System.Data.DataColumn columnsatusday;
+            private global::System.Data.DataColumn columnSaturday;
             
-            private global::System.Data.DataColumn columnsunday;
+            private global::System.Data.DataColumn columnSunday;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -403,57 +403,57 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn mondayColumn {
+            public global::System.Data.DataColumn MondayColumn {
                 get {
-                    return this.columnmonday;
+                    return this.columnMonday;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn tuesdayColumn {
+            public global::System.Data.DataColumn TuesdayColumn {
                 get {
-                    return this.columntuesday;
+                    return this.columnTuesday;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn wednesdayColumn {
+            public global::System.Data.DataColumn WednesdayColumn {
                 get {
-                    return this.columnwednesday;
+                    return this.columnWednesday;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn thusdayColumn {
+            public global::System.Data.DataColumn ThursdayColumn {
                 get {
-                    return this.columnthusday;
+                    return this.columnThursday;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn fridayColumn {
+            public global::System.Data.DataColumn FridayColumn {
                 get {
-                    return this.columnfriday;
+                    return this.columnFriday;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn satusdayColumn {
+            public global::System.Data.DataColumn SaturdayColumn {
                 get {
-                    return this.columnsatusday;
+                    return this.columnSaturday;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sundayColumn {
+            public global::System.Data.DataColumn SundayColumn {
                 get {
-                    return this.columnsunday;
+                    return this.columnSunday;
                 }
             }
             
@@ -494,20 +494,20 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ScheduleRow AddScheduleRow(int Id, string firstname, string lastname, string role, string monday, string tuesday, string wednesday, string thusday, string friday, string satusday, string sunday) {
+            public ScheduleRow AddScheduleRow(int Id, string firstname, string lastname, string role, string Monday, string Tuesday, string Wednesday, string Thursday, string Friday, string Saturday, string Sunday) {
                 ScheduleRow rowScheduleRow = ((ScheduleRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
                         firstname,
                         lastname,
                         role,
-                        monday,
-                        tuesday,
-                        wednesday,
-                        thusday,
-                        friday,
-                        satusday,
-                        sunday};
+                        Monday,
+                        Tuesday,
+                        Wednesday,
+                        Thursday,
+                        Friday,
+                        Saturday,
+                        Sunday};
                 rowScheduleRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowScheduleRow);
                 return rowScheduleRow;
@@ -534,13 +534,13 @@ namespace General_Manager {
                 this.columnfirstname = base.Columns["firstname"];
                 this.columnlastname = base.Columns["lastname"];
                 this.columnrole = base.Columns["role"];
-                this.columnmonday = base.Columns["monday"];
-                this.columntuesday = base.Columns["tuesday"];
-                this.columnwednesday = base.Columns["wednesday"];
-                this.columnthusday = base.Columns["thusday"];
-                this.columnfriday = base.Columns["friday"];
-                this.columnsatusday = base.Columns["satusday"];
-                this.columnsunday = base.Columns["sunday"];
+                this.columnMonday = base.Columns["Monday"];
+                this.columnTuesday = base.Columns["Tuesday"];
+                this.columnWednesday = base.Columns["Wednesday"];
+                this.columnThursday = base.Columns["Thursday"];
+                this.columnFriday = base.Columns["Friday"];
+                this.columnSaturday = base.Columns["Saturday"];
+                this.columnSunday = base.Columns["Sunday"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -554,30 +554,30 @@ namespace General_Manager {
                 base.Columns.Add(this.columnlastname);
                 this.columnrole = new global::System.Data.DataColumn("role", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrole);
-                this.columnmonday = new global::System.Data.DataColumn("monday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmonday);
-                this.columntuesday = new global::System.Data.DataColumn("tuesday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntuesday);
-                this.columnwednesday = new global::System.Data.DataColumn("wednesday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnwednesday);
-                this.columnthusday = new global::System.Data.DataColumn("thusday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnthusday);
-                this.columnfriday = new global::System.Data.DataColumn("friday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfriday);
-                this.columnsatusday = new global::System.Data.DataColumn("satusday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsatusday);
-                this.columnsunday = new global::System.Data.DataColumn("sunday", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsunday);
+                this.columnMonday = new global::System.Data.DataColumn("Monday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMonday);
+                this.columnTuesday = new global::System.Data.DataColumn("Tuesday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTuesday);
+                this.columnWednesday = new global::System.Data.DataColumn("Wednesday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWednesday);
+                this.columnThursday = new global::System.Data.DataColumn("Thursday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnThursday);
+                this.columnFriday = new global::System.Data.DataColumn("Friday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFriday);
+                this.columnSaturday = new global::System.Data.DataColumn("Saturday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSaturday);
+                this.columnSunday = new global::System.Data.DataColumn("Sunday", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSunday);
                 this.columnfirstname.MaxLength = 50;
                 this.columnlastname.MaxLength = 50;
                 this.columnrole.MaxLength = 50;
-                this.columnmonday.MaxLength = 10;
-                this.columntuesday.MaxLength = 10;
-                this.columnwednesday.MaxLength = 10;
-                this.columnthusday.MaxLength = 10;
-                this.columnfriday.MaxLength = 10;
-                this.columnsatusday.MaxLength = 10;
-                this.columnsunday.MaxLength = 10;
+                this.columnMonday.MaxLength = 10;
+                this.columnTuesday.MaxLength = 10;
+                this.columnWednesday.MaxLength = 10;
+                this.columnThursday.MaxLength = 10;
+                this.columnFriday.MaxLength = 10;
+                this.columnSaturday.MaxLength = 10;
+                this.columnSunday.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1129,113 +1129,113 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string monday {
+            public string Monday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.mondayColumn]));
+                        return ((string)(this[this.tableSchedule.MondayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'monday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Monday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.mondayColumn] = value;
+                    this[this.tableSchedule.MondayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string tuesday {
+            public string Tuesday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.tuesdayColumn]));
+                        return ((string)(this[this.tableSchedule.TuesdayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'tuesday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Tuesday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.tuesdayColumn] = value;
+                    this[this.tableSchedule.TuesdayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string wednesday {
+            public string Wednesday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.wednesdayColumn]));
+                        return ((string)(this[this.tableSchedule.WednesdayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'wednesday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Wednesday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.wednesdayColumn] = value;
+                    this[this.tableSchedule.WednesdayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string thusday {
+            public string Thursday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.thusdayColumn]));
+                        return ((string)(this[this.tableSchedule.ThursdayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'thusday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Thursday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.thusdayColumn] = value;
+                    this[this.tableSchedule.ThursdayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string friday {
+            public string Friday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.fridayColumn]));
+                        return ((string)(this[this.tableSchedule.FridayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'friday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Friday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.fridayColumn] = value;
+                    this[this.tableSchedule.FridayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string satusday {
+            public string Saturday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.satusdayColumn]));
+                        return ((string)(this[this.tableSchedule.SaturdayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'satusday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Saturday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.satusdayColumn] = value;
+                    this[this.tableSchedule.SaturdayColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sunday {
+            public string Sunday {
                 get {
                     try {
-                        return ((string)(this[this.tableSchedule.sundayColumn]));
+                        return ((string)(this[this.tableSchedule.SundayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'sunday\' in table \'Schedule\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Sunday\' in table \'Schedule\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSchedule.sundayColumn] = value;
+                    this[this.tableSchedule.SundayColumn] = value;
                 }
             }
             
@@ -1289,86 +1289,86 @@ namespace General_Manager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsmondayNull() {
-                return this.IsNull(this.tableSchedule.mondayColumn);
+            public bool IsMondayNull() {
+                return this.IsNull(this.tableSchedule.MondayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetmondayNull() {
-                this[this.tableSchedule.mondayColumn] = global::System.Convert.DBNull;
+            public void SetMondayNull() {
+                this[this.tableSchedule.MondayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IstuesdayNull() {
-                return this.IsNull(this.tableSchedule.tuesdayColumn);
+            public bool IsTuesdayNull() {
+                return this.IsNull(this.tableSchedule.TuesdayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SettuesdayNull() {
-                this[this.tableSchedule.tuesdayColumn] = global::System.Convert.DBNull;
+            public void SetTuesdayNull() {
+                this[this.tableSchedule.TuesdayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IswednesdayNull() {
-                return this.IsNull(this.tableSchedule.wednesdayColumn);
+            public bool IsWednesdayNull() {
+                return this.IsNull(this.tableSchedule.WednesdayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetwednesdayNull() {
-                this[this.tableSchedule.wednesdayColumn] = global::System.Convert.DBNull;
+            public void SetWednesdayNull() {
+                this[this.tableSchedule.WednesdayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsthusdayNull() {
-                return this.IsNull(this.tableSchedule.thusdayColumn);
+            public bool IsThursdayNull() {
+                return this.IsNull(this.tableSchedule.ThursdayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetthusdayNull() {
-                this[this.tableSchedule.thusdayColumn] = global::System.Convert.DBNull;
+            public void SetThursdayNull() {
+                this[this.tableSchedule.ThursdayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsfridayNull() {
-                return this.IsNull(this.tableSchedule.fridayColumn);
+            public bool IsFridayNull() {
+                return this.IsNull(this.tableSchedule.FridayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetfridayNull() {
-                this[this.tableSchedule.fridayColumn] = global::System.Convert.DBNull;
+            public void SetFridayNull() {
+                this[this.tableSchedule.FridayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssatusdayNull() {
-                return this.IsNull(this.tableSchedule.satusdayColumn);
+            public bool IsSaturdayNull() {
+                return this.IsNull(this.tableSchedule.SaturdayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsatusdayNull() {
-                this[this.tableSchedule.satusdayColumn] = global::System.Convert.DBNull;
+            public void SetSaturdayNull() {
+                this[this.tableSchedule.SaturdayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IssundayNull() {
-                return this.IsNull(this.tableSchedule.sundayColumn);
+            public bool IsSundayNull() {
+                return this.IsNull(this.tableSchedule.SundayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetsundayNull() {
-                this[this.tableSchedule.sundayColumn] = global::System.Convert.DBNull;
+            public void SetSundayNull() {
+                this[this.tableSchedule.SundayColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1763,13 +1763,13 @@ namespace General_Manager.Hotel_ManagementDataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("firstname", "firstname");
             tableMapping.ColumnMappings.Add("lastname", "lastname");
             tableMapping.ColumnMappings.Add("role", "role");
-            tableMapping.ColumnMappings.Add("monday", "monday");
-            tableMapping.ColumnMappings.Add("tuesday", "tuesday");
-            tableMapping.ColumnMappings.Add("wednesday", "wednesday");
-            tableMapping.ColumnMappings.Add("thusday", "thusday");
-            tableMapping.ColumnMappings.Add("friday", "friday");
-            tableMapping.ColumnMappings.Add("satusday", "satusday");
-            tableMapping.ColumnMappings.Add("sunday", "sunday");
+            tableMapping.ColumnMappings.Add("monday", "Monday");
+            tableMapping.ColumnMappings.Add("tuesday", "Tuesday");
+            tableMapping.ColumnMappings.Add("wednesday", "Wednesday");
+            tableMapping.ColumnMappings.Add("thusday", "Thursday");
+            tableMapping.ColumnMappings.Add("friday", "Friday");
+            tableMapping.ColumnMappings.Add("satusday", "Saturday");
+            tableMapping.ColumnMappings.Add("sunday", "Sunday");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;

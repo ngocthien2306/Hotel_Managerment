@@ -67,6 +67,8 @@ namespace General_Manager.Form
 
         private void Manager_Load(object sender, EventArgs e)
         {
+            WorkShift ws = new WorkShift();
+            ws.UpdateWorkShift();
             this.ReloadData();
         }
 

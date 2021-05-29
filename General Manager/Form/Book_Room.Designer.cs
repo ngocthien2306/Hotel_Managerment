@@ -109,24 +109,25 @@ namespace General_Manager.Form
             // 
             this.fluentDesignFormContainer1.Controls.Add(this.splitContainerControl1);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 185);
-            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(4);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 152);
+            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1457, 623);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1093, 560);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.GroupControl_Customer);
             this.splitContainerControl1.Panel1.Controls.Add(this.groupControl1);
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1457, 623);
-            this.splitContainerControl1.SplitterPosition = 674;
+            this.splitContainerControl1.Size = new System.Drawing.Size(1093, 560);
+            this.splitContainerControl1.SplitterPosition = 505;
             this.splitContainerControl1.TabIndex = 0;
             // 
             // GroupControl_Customer
@@ -139,9 +140,10 @@ namespace General_Manager.Form
             this.GroupControl_Customer.Controls.Add(this.phone_tb);
             this.GroupControl_Customer.Controls.Add(this.name_lb);
             this.GroupControl_Customer.Controls.Add(this.name_tb);
-            this.GroupControl_Customer.Location = new System.Drawing.Point(26, 352);
+            this.GroupControl_Customer.Location = new System.Drawing.Point(20, 311);
+            this.GroupControl_Customer.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupControl_Customer.Name = "GroupControl_Customer";
-            this.GroupControl_Customer.Size = new System.Drawing.Size(629, 251);
+            this.GroupControl_Customer.Size = new System.Drawing.Size(472, 221);
             this.GroupControl_Customer.TabIndex = 4;
             this.GroupControl_Customer.Text = "CUSTOMER";
             // 
@@ -150,13 +152,13 @@ namespace General_Manager.Form
             this.bdate_picker.CustomFormat = "  dd / MM / yyyy ";
             this.bdate_picker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bdate_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdate_picker.Location = new System.Drawing.Point(32, 181);
-            this.bdate_picker.Margin = new System.Windows.Forms.Padding(4);
+            this.bdate_picker.Location = new System.Drawing.Point(24, 160);
+            this.bdate_picker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bdate_picker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.bdate_picker.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.bdate_picker.Name = "bdate_picker";
             this.bdate_picker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bdate_picker.Size = new System.Drawing.Size(255, 26);
+            this.bdate_picker.Size = new System.Drawing.Size(192, 22);
             this.bdate_picker.TabIndex = 17;
             // 
             // address_lb
@@ -165,21 +167,21 @@ namespace General_Manager.Form
             this.address_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.address_lb.Appearance.Options.UseFont = true;
             this.address_lb.Appearance.Options.UseForeColor = true;
-            this.address_lb.Location = new System.Drawing.Point(321, 143);
-            this.address_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.address_lb.Location = new System.Drawing.Point(241, 126);
+            this.address_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.address_lb.Name = "address_lb";
-            this.address_lb.Size = new System.Drawing.Size(58, 20);
+            this.address_lb.Size = new System.Drawing.Size(47, 17);
             this.address_lb.TabIndex = 16;
             this.address_lb.Text = "Address";
             // 
             // address_tb
             // 
-            this.address_tb.Location = new System.Drawing.Point(322, 183);
-            this.address_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.address_tb.Location = new System.Drawing.Point(242, 161);
+            this.address_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.address_tb.Name = "address_tb";
             this.address_tb.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.address_tb.Properties.Appearance.Options.UseFont = true;
-            this.address_tb.Size = new System.Drawing.Size(256, 26);
+            this.address_tb.Size = new System.Drawing.Size(192, 24);
             this.address_tb.TabIndex = 15;
             // 
             // bdate_lb
@@ -188,10 +190,10 @@ namespace General_Manager.Form
             this.bdate_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.bdate_lb.Appearance.Options.UseFont = true;
             this.bdate_lb.Appearance.Options.UseForeColor = true;
-            this.bdate_lb.Location = new System.Drawing.Point(32, 143);
-            this.bdate_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.bdate_lb.Location = new System.Drawing.Point(24, 126);
+            this.bdate_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bdate_lb.Name = "bdate_lb";
-            this.bdate_lb.Size = new System.Drawing.Size(59, 20);
+            this.bdate_lb.Size = new System.Drawing.Size(48, 17);
             this.bdate_lb.TabIndex = 14;
             this.bdate_lb.Text = "Birthday";
             // 
@@ -201,21 +203,21 @@ namespace General_Manager.Form
             this.phone_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.phone_lb.Appearance.Options.UseFont = true;
             this.phone_lb.Appearance.Options.UseForeColor = true;
-            this.phone_lb.Location = new System.Drawing.Point(321, 49);
-            this.phone_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.phone_lb.Location = new System.Drawing.Point(241, 43);
+            this.phone_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phone_lb.Name = "phone_lb";
-            this.phone_lb.Size = new System.Drawing.Size(47, 20);
+            this.phone_lb.Size = new System.Drawing.Size(37, 17);
             this.phone_lb.TabIndex = 13;
             this.phone_lb.Text = "Phone";
             // 
             // phone_tb
             // 
-            this.phone_tb.Location = new System.Drawing.Point(321, 81);
-            this.phone_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.phone_tb.Location = new System.Drawing.Point(241, 71);
+            this.phone_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phone_tb.Name = "phone_tb";
             this.phone_tb.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_tb.Properties.Appearance.Options.UseFont = true;
-            this.phone_tb.Size = new System.Drawing.Size(256, 26);
+            this.phone_tb.Size = new System.Drawing.Size(192, 24);
             this.phone_tb.TabIndex = 12;
             // 
             // name_lb
@@ -224,10 +226,10 @@ namespace General_Manager.Form
             this.name_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.name_lb.Appearance.Options.UseFont = true;
             this.name_lb.Appearance.Options.UseForeColor = true;
-            this.name_lb.Location = new System.Drawing.Point(32, 49);
-            this.name_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.name_lb.Location = new System.Drawing.Point(24, 43);
+            this.name_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.name_lb.Name = "name_lb";
-            this.name_lb.Size = new System.Drawing.Size(44, 20);
+            this.name_lb.Size = new System.Drawing.Size(36, 17);
             this.name_lb.TabIndex = 11;
             this.name_lb.Text = "Name";
             // 
@@ -237,12 +239,12 @@ namespace General_Manager.Form
             this.name_tb.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.roomBindingSource1, "cname", true));
             this.name_tb.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomBindingSource1, "cname", true));
             this.name_tb.EditValue = "<Null>";
-            this.name_tb.Location = new System.Drawing.Point(32, 81);
-            this.name_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.name_tb.Location = new System.Drawing.Point(24, 71);
+            this.name_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.name_tb.Name = "name_tb";
             this.name_tb.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_tb.Properties.Appearance.Options.UseFont = true;
-            this.name_tb.Size = new System.Drawing.Size(256, 26);
+            this.name_tb.Size = new System.Drawing.Size(192, 24);
             this.name_tb.TabIndex = 10;
             // 
             // roomBindingSource1
@@ -269,9 +271,10 @@ namespace General_Manager.Form
             this.groupControl1.Controls.Add(this.roomtype_lb);
             this.groupControl1.Controls.Add(this.roomid_lb);
             this.groupControl1.Controls.Add(this.roomid_tb);
-            this.groupControl1.Location = new System.Drawing.Point(26, 22);
+            this.groupControl1.Location = new System.Drawing.Point(20, 19);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(629, 308);
+            this.groupControl1.Size = new System.Drawing.Size(472, 272);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "ROOM";
             // 
@@ -281,22 +284,22 @@ namespace General_Manager.Form
             this.max_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.max_lb.Appearance.Options.UseFont = true;
             this.max_lb.Appearance.Options.UseForeColor = true;
-            this.max_lb.Location = new System.Drawing.Point(322, 202);
-            this.max_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.max_lb.Location = new System.Drawing.Point(242, 178);
+            this.max_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.max_lb.Name = "max_lb";
-            this.max_lb.Size = new System.Drawing.Size(127, 20);
+            this.max_lb.Size = new System.Drawing.Size(103, 17);
             this.max_lb.TabIndex = 40;
             this.max_lb.Text = "Maximum people";
             // 
             // max_tb
             // 
-            this.max_tb.Enabled = false;
-            this.max_tb.Location = new System.Drawing.Point(322, 244);
-            this.max_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.max_tb.Location = new System.Drawing.Point(242, 215);
+            this.max_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.max_tb.Name = "max_tb";
             this.max_tb.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max_tb.Properties.Appearance.Options.UseFont = true;
-            this.max_tb.Size = new System.Drawing.Size(256, 26);
+            this.max_tb.Properties.ReadOnly = true;
+            this.max_tb.Size = new System.Drawing.Size(192, 24);
             this.max_tb.TabIndex = 39;
             // 
             // cost_lb
@@ -305,32 +308,32 @@ namespace General_Manager.Form
             this.cost_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.cost_lb.Appearance.Options.UseFont = true;
             this.cost_lb.Appearance.Options.UseForeColor = true;
-            this.cost_lb.Location = new System.Drawing.Point(33, 202);
-            this.cost_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.cost_lb.Location = new System.Drawing.Point(25, 178);
+            this.cost_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cost_lb.Name = "cost_lb";
-            this.cost_lb.Size = new System.Drawing.Size(33, 20);
+            this.cost_lb.Size = new System.Drawing.Size(27, 17);
             this.cost_lb.TabIndex = 38;
             this.cost_lb.Text = "Cost";
             // 
             // cost_tb
             // 
-            this.cost_tb.Enabled = false;
-            this.cost_tb.Location = new System.Drawing.Point(32, 244);
-            this.cost_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.cost_tb.Location = new System.Drawing.Point(24, 215);
+            this.cost_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cost_tb.Name = "cost_tb";
             this.cost_tb.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cost_tb.Properties.Appearance.Options.UseFont = true;
-            this.cost_tb.Size = new System.Drawing.Size(256, 26);
+            this.cost_tb.Properties.ReadOnly = true;
+            this.cost_tb.Size = new System.Drawing.Size(192, 24);
             this.cost_tb.TabIndex = 37;
             // 
             // roomtype_cb
             // 
             this.roomtype_cb.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomtype_cb.FormattingEnabled = true;
-            this.roomtype_cb.Location = new System.Drawing.Point(321, 63);
-            this.roomtype_cb.Margin = new System.Windows.Forms.Padding(4);
+            this.roomtype_cb.Location = new System.Drawing.Point(241, 56);
+            this.roomtype_cb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.roomtype_cb.Name = "roomtype_cb";
-            this.roomtype_cb.Size = new System.Drawing.Size(255, 28);
+            this.roomtype_cb.Size = new System.Drawing.Size(192, 25);
             this.roomtype_cb.TabIndex = 36;
             // 
             // checkout_picker
@@ -338,13 +341,13 @@ namespace General_Manager.Form
             this.checkout_picker.CustomFormat = "  dd / MM / yyyy ";
             this.checkout_picker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkout_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.checkout_picker.Location = new System.Drawing.Point(321, 151);
-            this.checkout_picker.Margin = new System.Windows.Forms.Padding(4);
+            this.checkout_picker.Location = new System.Drawing.Point(241, 133);
+            this.checkout_picker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkout_picker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.checkout_picker.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.checkout_picker.Name = "checkout_picker";
             this.checkout_picker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkout_picker.Size = new System.Drawing.Size(255, 26);
+            this.checkout_picker.Size = new System.Drawing.Size(192, 22);
             this.checkout_picker.TabIndex = 35;
             // 
             // checkout_lb
@@ -353,10 +356,10 @@ namespace General_Manager.Form
             this.checkout_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.checkout_lb.Appearance.Options.UseFont = true;
             this.checkout_lb.Appearance.Options.UseForeColor = true;
-            this.checkout_lb.Location = new System.Drawing.Point(321, 113);
-            this.checkout_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.checkout_lb.Location = new System.Drawing.Point(241, 100);
+            this.checkout_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkout_lb.Name = "checkout_lb";
-            this.checkout_lb.Size = new System.Drawing.Size(80, 20);
+            this.checkout_lb.Size = new System.Drawing.Size(63, 17);
             this.checkout_lb.TabIndex = 34;
             this.checkout_lb.Text = "Check Out";
             // 
@@ -365,13 +368,13 @@ namespace General_Manager.Form
             this.checkin_picker.CustomFormat = "  dd / MM / yyyy ";
             this.checkin_picker.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkin_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.checkin_picker.Location = new System.Drawing.Point(32, 151);
-            this.checkin_picker.Margin = new System.Windows.Forms.Padding(4);
+            this.checkin_picker.Location = new System.Drawing.Point(24, 133);
+            this.checkin_picker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkin_picker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.checkin_picker.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.checkin_picker.Name = "checkin_picker";
             this.checkin_picker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkin_picker.Size = new System.Drawing.Size(255, 26);
+            this.checkin_picker.Size = new System.Drawing.Size(192, 22);
             this.checkin_picker.TabIndex = 33;
             // 
             // checkin_lb
@@ -380,10 +383,10 @@ namespace General_Manager.Form
             this.checkin_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.checkin_lb.Appearance.Options.UseFont = true;
             this.checkin_lb.Appearance.Options.UseForeColor = true;
-            this.checkin_lb.Location = new System.Drawing.Point(32, 113);
-            this.checkin_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.checkin_lb.Location = new System.Drawing.Point(24, 100);
+            this.checkin_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkin_lb.Name = "checkin_lb";
-            this.checkin_lb.Size = new System.Drawing.Size(67, 20);
+            this.checkin_lb.Size = new System.Drawing.Size(51, 17);
             this.checkin_lb.TabIndex = 32;
             this.checkin_lb.Text = "Check In";
             // 
@@ -393,10 +396,10 @@ namespace General_Manager.Form
             this.roomtype_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.roomtype_lb.Appearance.Options.UseFont = true;
             this.roomtype_lb.Appearance.Options.UseForeColor = true;
-            this.roomtype_lb.Location = new System.Drawing.Point(321, 32);
-            this.roomtype_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.roomtype_lb.Location = new System.Drawing.Point(241, 28);
+            this.roomtype_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.roomtype_lb.Name = "roomtype_lb";
-            this.roomtype_lb.Size = new System.Drawing.Size(33, 20);
+            this.roomtype_lb.Size = new System.Drawing.Size(27, 17);
             this.roomtype_lb.TabIndex = 31;
             this.roomtype_lb.Text = "Type";
             // 
@@ -406,10 +409,10 @@ namespace General_Manager.Form
             this.roomid_lb.Appearance.ForeColor = System.Drawing.Color.Black;
             this.roomid_lb.Appearance.Options.UseFont = true;
             this.roomid_lb.Appearance.Options.UseForeColor = true;
-            this.roomid_lb.Location = new System.Drawing.Point(32, 32);
-            this.roomid_lb.Margin = new System.Windows.Forms.Padding(4);
+            this.roomid_lb.Location = new System.Drawing.Point(24, 28);
+            this.roomid_lb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.roomid_lb.Name = "roomid_lb";
-            this.roomid_lb.Size = new System.Drawing.Size(16, 20);
+            this.roomid_lb.Size = new System.Drawing.Size(12, 17);
             this.roomid_lb.TabIndex = 30;
             this.roomid_lb.Text = "ID";
             // 
@@ -418,28 +421,31 @@ namespace General_Manager.Form
             this.roomid_tb.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.roomBindingSource1, "rid", true));
             this.roomid_tb.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomBindingSource1, "rid", true));
             this.roomid_tb.DataBindings.Add(new System.Windows.Forms.Binding("ReadOnly", this.roomBindingSource1, "rid", true));
-            this.roomid_tb.Location = new System.Drawing.Point(32, 64);
-            this.roomid_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.roomid_tb.Location = new System.Drawing.Point(24, 56);
+            this.roomid_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.roomid_tb.Name = "roomid_tb";
             this.roomid_tb.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roomid_tb.Properties.Appearance.Options.UseFont = true;
-            this.roomid_tb.Size = new System.Drawing.Size(256, 26);
+            this.roomid_tb.Size = new System.Drawing.Size(192, 24);
             this.roomid_tb.TabIndex = 29;
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gridControl1.MenuManager = this.ribbonControl1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(774, 623);
+            this.gridControl1.Size = new System.Drawing.Size(581, 560);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 309;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
@@ -455,6 +461,7 @@ namespace General_Manager.Form
             this.barEditItem1,
             this.ribbonGalleryBarItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.barEditItem1);
@@ -462,15 +469,15 @@ namespace General_Manager.Form
             this.M01});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemAlignment1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1457, 185);
+            this.ribbonControl1.Size = new System.Drawing.Size(1093, 152);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // Book_btn
             // 
             this.Book_btn.Caption = "Book Room";
             this.Book_btn.Id = 1;
-            this.Book_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.Book_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.Book_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Book_btn.ImageOptions.Image")));
+            this.Book_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Book_btn.ImageOptions.LargeImage")));
             this.Book_btn.Name = "Book_btn";
             this.Book_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Book_btn_ItemClick);
             // 
@@ -478,8 +485,8 @@ namespace General_Manager.Form
             // 
             this.Update_btn.Caption = "Update";
             this.Update_btn.Id = 2;
-            this.Update_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.Update_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.Update_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Update_btn.ImageOptions.Image")));
+            this.Update_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Update_btn.ImageOptions.LargeImage")));
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Update_btn_ItemClick);
             // 
@@ -487,7 +494,7 @@ namespace General_Manager.Form
             // 
             this.Close_btn.Caption = "Close";
             this.Close_btn.Id = 3;
-            this.Close_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.Close_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Close_btn.ImageOptions.SvgImage")));
             this.Close_btn.Name = "Close_btn";
             this.Close_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Close_btn_ItemClick);
             // 
@@ -544,10 +551,11 @@ namespace General_Manager.Form
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 808);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 712);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1457, 30);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1093, 27);
             // 
             // roomBindingSource
             // 
@@ -569,9 +577,11 @@ namespace General_Manager.Form
             this.Group_Active.Controls.Add(this.Label_displayID);
             this.Group_Active.Controls.Add(this.Label_id);
             this.Group_Active.Controls.Add(this.Label_DisName);
-            this.Group_Active.Location = new System.Drawing.Point(1031, 74);
+            this.Group_Active.Location = new System.Drawing.Point(773, 65);
+            this.Group_Active.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Group_Active.Name = "Group_Active";
-            this.Group_Active.Size = new System.Drawing.Size(403, 104);
+            this.Group_Active.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Group_Active.Size = new System.Drawing.Size(302, 92);
             this.Group_Active.TabIndex = 3;
             this.Group_Active.TabStop = false;
             this.Group_Active.Text = "Status";
@@ -579,60 +589,65 @@ namespace General_Manager.Form
             // TimeEdit_Now
             // 
             this.TimeEdit_Now.EditValue = new System.DateTime(2021, 5, 29, 0, 0, 0, 0);
-            this.TimeEdit_Now.Location = new System.Drawing.Point(260, 20);
+            this.TimeEdit_Now.Location = new System.Drawing.Point(195, 18);
+            this.TimeEdit_Now.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.TimeEdit_Now.MenuManager = this.ribbonControl1;
             this.TimeEdit_Now.Name = "TimeEdit_Now";
             this.TimeEdit_Now.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.TimeEdit_Now.Size = new System.Drawing.Size(137, 24);
+            this.TimeEdit_Now.Size = new System.Drawing.Size(103, 22);
             this.TimeEdit_Now.TabIndex = 4;
             // 
             // PictureUser
             // 
-            this.PictureUser.Location = new System.Drawing.Point(6, 23);
+            this.PictureUser.Location = new System.Drawing.Point(4, 20);
+            this.PictureUser.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PictureUser.MenuManager = this.ribbonControl1;
             this.PictureUser.Name = "PictureUser";
             this.PictureUser.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.PictureUser.Size = new System.Drawing.Size(78, 72);
+            this.PictureUser.Size = new System.Drawing.Size(58, 64);
             this.PictureUser.TabIndex = 3;
             // 
             // Label_displayID
             // 
             this.Label_displayID.AutoSize = true;
-            this.Label_displayID.Location = new System.Drawing.Point(256, 67);
+            this.Label_displayID.Location = new System.Drawing.Point(192, 59);
+            this.Label_displayID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_displayID.Name = "Label_displayID";
-            this.Label_displayID.Size = new System.Drawing.Size(57, 19);
+            this.Label_displayID.Size = new System.Drawing.Size(44, 16);
             this.Label_displayID.TabIndex = 2;
             this.Label_displayID.Text = "000000";
             // 
             // Label_id
             // 
             this.Label_id.AutoSize = true;
-            this.Label_id.Location = new System.Drawing.Point(102, 67);
+            this.Label_id.Location = new System.Drawing.Point(76, 59);
+            this.Label_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_id.Name = "Label_id";
-            this.Label_id.Size = new System.Drawing.Size(30, 19);
+            this.Label_id.Size = new System.Drawing.Size(25, 16);
             this.Label_id.TabIndex = 1;
             this.Label_id.Text = "ID: ";
             // 
             // Label_DisName
             // 
             this.Label_DisName.AutoSize = true;
-            this.Label_DisName.Location = new System.Drawing.Point(102, 23);
+            this.Label_DisName.Location = new System.Drawing.Point(76, 20);
+            this.Label_DisName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_DisName.Name = "Label_DisName";
-            this.Label_DisName.Size = new System.Drawing.Size(79, 19);
+            this.Label_DisName.Size = new System.Drawing.Size(61, 16);
             this.Label_DisName.TabIndex = 0;
             this.Label_DisName.Text = "Wellcome";
             // 
             // Book_Room
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1457, 838);
+            this.ClientSize = new System.Drawing.Size(1093, 739);
             this.Controls.Add(this.Group_Active);
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Book_Room";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;

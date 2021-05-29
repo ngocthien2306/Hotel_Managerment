@@ -78,7 +78,7 @@ namespace General_Manager.Form
                 return false;
             }
         }
-        public object GetNumberJanior()
+        public object GetNumberJanitor()
         {
             try
             {
