@@ -40,7 +40,6 @@ namespace General_Manager.Form
         private void Schedule_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'hotel_ManagementDataSet11.Schedule' table. You can move, or remove it, as needed.
-            this.scheduleTableAdapter.Fill(this.hotel_ManagementDataSet11.Schedule);
             this.ShiftWork();
             WorkShift s = new WorkShift();
             s.DeleteData();
