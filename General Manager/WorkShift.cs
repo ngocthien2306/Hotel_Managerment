@@ -107,9 +107,9 @@ namespace General_Manager.Form
         {
             this.ReturnRoleID();
             EmployeeHotel employee = new EmployeeHotel();
-            int manager = 5 * Convert.ToInt32(employee.GetNumberOfManager());
-            int receptionist = 4 * Convert.ToInt32(employee.GetNumberReceptionist());
-            int janior =  6* Convert.ToInt32(employee.GetNumberJanior());
+            int manager = Convert.ToInt32(employee.GetNumberOfManager());
+            int receptionist = Convert.ToInt32(employee.GetNumberReceptionist());
+            int janior =  Convert.ToInt32(employee.GetNumberJanior());
             //Monday
             for (int i = 0; i < Total; i++)
             {
@@ -119,10 +119,13 @@ namespace General_Manager.Form
                     int s1 = random.Next(1, 4);
                     if (Check != s1)
                     {
+                        this.UppdateShiftColumn1(arrayID[i], 1);
+                    }
+                    else
+                    {
                         this.UppdateShiftColumn1(arrayID[i], s1);
                     }
-                    Check = s1;
-                    manager--;
+                    Check = 1;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -135,7 +138,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn1(arrayID[i], s1);
                     }
                     Check = s1;
-                    receptionist--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -148,7 +150,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn1(arrayID[i], s1);
                     }
                     Check = s1;
-                    janior--;
                 }
             }
             //Tuesday
@@ -163,7 +164,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn2(arrayID[i], s1);
                     }
                     Check = s1;
-                    manager--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -176,7 +176,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn2(arrayID[i], s1);
                     }
                     Check = s1;
-                    receptionist--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -189,7 +188,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn2(arrayID[i], s1);
                     }
                     Check = s1;
-                    janior--;
                 }
             }
 
@@ -205,7 +203,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn3(arrayID[i], s1);
                     }
                     Check = s1;
-                    manager--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -218,7 +215,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn3(arrayID[i], s1);
                     }
                     Check = s1;
-                    receptionist--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -231,7 +227,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn3(arrayID[i], s1);
                     }
                     Check = s1;
-                    janior--;
                 }
             }
             //Thusday
@@ -246,7 +241,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn4(arrayID[i], s1);
                     }
                     Check = s1;
-                    manager--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -259,7 +253,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn4(arrayID[i], s1);
                     }
                     Check = s1;
-                    receptionist--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -272,7 +265,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn4(arrayID[i], s1);
                     }
                     Check = s1;
-                    janior--;
                 }
             }
             //Friday
@@ -287,7 +279,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn5(arrayID[i], s1);
                     }
                     Check = s1;
-                    manager--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -300,7 +291,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn5(arrayID[i], s1);
                     }
                     Check = s1;
-                    receptionist--;
                 }
             }
             for (int i = 0; i < Total; i++)
@@ -313,7 +303,6 @@ namespace General_Manager.Form
                         this.UppdateShiftColumn5(arrayID[i], s1);
                     }
                     Check = s1;
-                    janior--;
                 }
             }
             //for (int i = 0; i < Total; i++)
