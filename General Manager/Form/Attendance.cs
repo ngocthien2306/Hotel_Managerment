@@ -65,10 +65,18 @@ namespace General_Manager.Form
             DateTime checkin = DateTime.Now;
             TimeSpan ts2 = checkin - Convert.ToDateTime(EndTime);
             int duration = Convert.ToInt32(ts2.TotalMinutes);
-            XtraMessageBox.Show(duration.ToString());
-            EmployeeHotel em = new EmployeeHotel();
-            em.Description = "Check out" + DateTime.Now.ToString();
-            em.SaveHistoryCheckINandOut();
+            DialogResult CheckOutCheck = MessageBox.Show("Do you want to check-out now?", "Check out", MessageBoxButtons.YesNo);
+            if (CheckOutCheck == DialogResult.Yes)
+            {
+                XtraMessageBox.Show(duration.ToString());
+                EmployeeHotel em = new EmployeeHotel();
+                em.Description = "Check out" + DateTime.Now.ToString();
+                em.SaveHistoryCheckINandOut();
+            }
+            else if (CheckOutCheck == DialogResult.No)
+            {
+                this.Hide();
+            }
         }
     }
 }
