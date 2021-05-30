@@ -14,8 +14,16 @@ namespace General_Manager.Form
         Database db = new Database();
         public int[] arrayID = new int[20];
         public string[] arrayRole = new string[20];
+        public int[] A = new int[7];
+        public int[] B = new int[7];
+        public int[] C = new int[7];
+        public int Manager { get; set; }
+        public int Receptionist { get; set; }
+        public int Janitor { get; set; }
+
         Random random = new Random();
         public int Check { get; set; }
+        public int CheckBack { get; set; }
         public int Total { get; set; }
         public bool InsertId(int id)
         {
@@ -103,221 +111,112 @@ namespace General_Manager.Form
                 arrayID[i] = Convert.ToInt32(table.Rows[i]["id"].ToString().Trim());
             }
         }
+
         public void GetShift()
         {
             this.ReturnRoleID();
             EmployeeHotel employee = new EmployeeHotel();
-            int manager = Convert.ToInt32(employee.GetNumberOfManager());
-            int receptionist = Convert.ToInt32(employee.GetNumberReceptionist());
-            int Janitor =  Convert.ToInt32(employee.GetNumberJanitor());
+            Manager = Convert.ToInt32(employee.GetNumberOfManager());
+            Receptionist = Convert.ToInt32(employee.GetNumberReceptionist());
+            Janitor = Convert.ToInt32(employee.GetNumberJanitor());
             //Monday
+            //int[] check = { 1, 3, 4 };
+            Check = 0;
             for (int i = 0; i < Total; i++)
             {
-                if (arrayRole[i] == "Manager" && manager > 0)
+                if (arrayRole[i] == "Manager" && Manager > 0)
                 {
-                    Check = 0;
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
+                    int s1 = random.Next(1, 3);
+                    int s2 = random.Next(1, 3);
+                    int s3 = random.Next(1, 3);
+                    int s4 = random.Next(1, 3);
+                    int s5 = random.Next(1, 3);
+                    int s6 = random.Next(1, 3);
+                    int s7 = random.Next(1, 3);
+                    if (Check != 1)
                     {
-                        this.UppdateShiftColumn1(arrayID[i], 1);
+
+                        this.UppdateShift(arrayID[i], s1, s2, s3, s4, s5, s6, s7);
+                        A[0] = s1; A[1] = s2; A[2] = s3; A[3] = s4; A[4] = s5; A[5] = s6; A[6] = s7;
+                        Check = 1;
+                    }
+                    do
+                    {
+                        this.UppdateShift(arrayID[i], s1, s2, s3, s4, s5, s6, s7);
+                    }
+                    while (s1 != A[0] && s2 != A[1] && s3 != A[2] && s4 != A[3] && s5 != A[4]);
+
+                    
+                }
+                Check = 0;
+                if (arrayRole[i] == "Receptionist" && Receptionist > 0)
+                {
+                    int s1 = random.Next(1, 4);
+                    int s2 = random.Next(1, 4);
+                    int s3 = random.Next(1, 4);
+                    int s4 = random.Next(1, 4);
+                    int s5 = random.Next(1, 4);
+                    int s6 = random.Next(1, 4);
+                    int s7 = random.Next(1, 4);
+                    if(Check!= 1)
+                    {
+                        this.UppdateShift(arrayID[i], s1, s2, s3, s4, s5, s6, s7);
+                        B[0] = s1; B[1] = s2; B[2] = s3; B[3] = s4; B[4] = s5; B[5] = s6; B[6] = s7;
+                        Check = 1;
                     }
                     else
                     {
-                        this.UppdateShiftColumn1(arrayID[i], s1);
+                        this.UppdateShift(arrayID[i], B[3], B[5], B[4], B[6], B[2], B[1], B[0]);
                     }
-                    Check = 1;
+
                 }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Receptionist" && receptionist > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn1(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
+                Check = 0;
                 if (arrayRole[i] == "Janitor" && Janitor > 0)
                 {
                     int s1 = random.Next(1, 4);
-                    if (Check != s1)
+                    int s2 = random.Next(1, 4);
+                    int s3 = random.Next(1, 4);
+                    int s4 = random.Next(1, 4);
+                    int s5 = random.Next(1, 4);
+                    int s6 = random.Next(1, 4);
+                    int s7 = random.Next(1, 4);
+                    if (Check != 1)
                     {
-                        this.UppdateShiftColumn1(arrayID[i], s1);
+                        this.UppdateShift(arrayID[i], s1, s2, s3, s4, s5, s6, s7);
+                        C[0] = s1; C[1] = s2; C[2] = s3; C[3] = s4; C[4] = s5; C[5] = s6; C[6] = s7;
                     }
-                    Check = s1;
-                }
-            }
-            //Tuesday
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Manager" && manager > 0)
-                {
-                    Check = 0;
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
+                    else
                     {
-                        this.UppdateShiftColumn2(arrayID[i], s1);
+                        this.UppdateShift(arrayID[i], C[3], C[5], C[4], C[6], C[2], C[1], C[0]);
                     }
-                    Check = s1;
                 }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Receptionist" && receptionist > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn2(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Janitor" && Janitor > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn2(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
+
             }
 
-            //Wednesday
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Manager" && manager > 0)
-                {
-                    Check = 0;
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn3(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Receptionist" && receptionist > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn3(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Janitor" && Janitor > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn3(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            //Thursday
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Manager" && manager > 0)
-                {
-                    Check = 0;
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn4(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Receptionist" && receptionist > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn4(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Janitor" && Janitor > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn4(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            //Friday
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Manager" && manager > 0)
-                {
-                    Check = 0;
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn5(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Receptionist" && receptionist > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn5(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            for (int i = 0; i < Total; i++)
-            {
-                if (arrayRole[i] == "Janitor" && Janitor > 0)
-                {
-                    int s1 = random.Next(1, 4);
-                    if (Check != s1)
-                    {
-                        this.UppdateShiftColumn5(arrayID[i], s1);
-                    }
-                    Check = s1;
-                }
-            }
-            //for (int i = 0; i < Total; i++)
-            //{
-            //    int mon = random.Next(1, 4);
-            //    int tue = random.Next(1, 4);
-            //    int wed = random.Next(1, 4);
-            //    int thu = random.Next(1, 4);
-            //    int fri = random.Next(1, 4);
-            //    int sat = random.Next(1, 4);
-            //    int sun = random.Next(1, 4);
-            //    this.UppdateShift(arrayID[i], mon, tue, wed, thu, fri, sat, sun);
-            //}
+        }
+        public bool UppdateShift(int id, int shiftmon, int shifttu, int shiftwed, int shiftthus, int shiftfri, int shiftsat, int shiftsun)
+        {
 
-
+            SqlCommand command = new SqlCommand("Update Schedule SET Monday = @mon, Tuesday = @tu, Wednesday = @wed, Thursday = @thus, Friday = @fri, Saturday = @sat, Sunday = @sun Where Id = @id", db.GetConnection);
+            command.Parameters.Add("@mon", SqlDbType.Int).Value = shiftmon;
+            command.Parameters.Add("@tu", SqlDbType.Int).Value = shifttu;
+            command.Parameters.Add("@wed", SqlDbType.Int).Value = shiftwed;
+            command.Parameters.Add("@thus", SqlDbType.Int).Value = shiftthus;
+            command.Parameters.Add("@fri", SqlDbType.Int).Value = shiftfri;
+            command.Parameters.Add("@sat", SqlDbType.Int).Value = shiftsat;
+            command.Parameters.Add("@sun", SqlDbType.Int).Value = shiftsun;
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            db.OpenConnection();
+            if (command.ExecuteNonQuery() > 0)
+            {
+                db.CloseConnection();
+                return true;
+            }
+            else
+            {
+                db.CloseConnection();
+                return false;
+            }
         }
         public bool DeleteData()
         {
@@ -341,30 +240,6 @@ namespace General_Manager.Form
             SqlCommand command = new SqlCommand("insert into Schedule (Id, firstname, lastname, role) select Id, fname, lname, role from Employee", db.GetConnection);
             db.OpenConnection();
             if (command.ExecuteNonQuery() > 0)
-            {
-                db.CloseConnection();
-                return true;
-            }
-            else
-            {
-                db.CloseConnection();
-                return false;
-            }
-        }
-        public bool UppdateShift(int id, int shiftmon, int shifttu, int shiftwed, int shiftthus, int shiftfri, int shiftsat, int shiftsun)
-        {
-
-            SqlCommand command = new SqlCommand("Update Schedule SET Monday = @mon, Tuesday = @tu, Wednesday = @wed, Thursday = @thus, Friday = @fri, Saturday = @sat, Sunday = @sun Where Id = @id", db.GetConnection);
-            command.Parameters.Add("@mon", SqlDbType.Int).Value = shiftmon;
-            command.Parameters.Add("@tu", SqlDbType.Int).Value = shifttu;
-            command.Parameters.Add("@wed", SqlDbType.Int).Value = shiftwed;
-            command.Parameters.Add("@thus", SqlDbType.Int).Value = shiftthus;
-            command.Parameters.Add("@fri", SqlDbType.Int).Value = shiftfri;
-            command.Parameters.Add("@sat", SqlDbType.Int).Value = shiftsat;
-            command.Parameters.Add("@sun", SqlDbType.Int).Value = shiftsun;
-            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
-            db.OpenConnection();
-            if(command.ExecuteNonQuery() > 0)
             {
                 db.CloseConnection();
                 return true;

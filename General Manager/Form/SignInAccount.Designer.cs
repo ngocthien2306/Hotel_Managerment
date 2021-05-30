@@ -105,7 +105,7 @@ namespace General_Manager.Form
             this.xtraTabControl1.Location = new System.Drawing.Point(289, 211);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.XtraPage_Account;
-            this.xtraTabControl1.Size = new System.Drawing.Size(475, 173);
+            this.xtraTabControl1.Size = new System.Drawing.Size(595, 173);
             this.xtraTabControl1.TabIndex = 6;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.XtraPage_Account});
@@ -119,28 +119,28 @@ namespace General_Manager.Form
             this.XtraPage_Account.Controls.Add(this.Label_pass);
             this.XtraPage_Account.Controls.Add(this.Label_Username);
             this.XtraPage_Account.Name = "XtraPage_Account";
-            this.XtraPage_Account.Size = new System.Drawing.Size(471, 144);
+            this.XtraPage_Account.Size = new System.Drawing.Size(591, 144);
             this.XtraPage_Account.Text = "Account";
             // 
             // Repass_Textbox
             // 
             this.Repass_Textbox.Location = new System.Drawing.Point(124, 102);
             this.Repass_Textbox.Name = "Repass_Textbox";
-            this.Repass_Textbox.Size = new System.Drawing.Size(330, 23);
+            this.Repass_Textbox.Size = new System.Drawing.Size(450, 23);
             this.Repass_Textbox.TabIndex = 11;
             // 
             // Password_Textbox
             // 
             this.Password_Textbox.Location = new System.Drawing.Point(124, 62);
             this.Password_Textbox.Name = "Password_Textbox";
-            this.Password_Textbox.Size = new System.Drawing.Size(330, 23);
+            this.Password_Textbox.Size = new System.Drawing.Size(450, 23);
             this.Password_Textbox.TabIndex = 10;
             // 
             // Username_Textbox
             // 
             this.Username_Textbox.Location = new System.Drawing.Point(124, 22);
             this.Username_Textbox.Name = "Username_Textbox";
-            this.Username_Textbox.Size = new System.Drawing.Size(330, 23);
+            this.Username_Textbox.Size = new System.Drawing.Size(450, 23);
             this.Username_Textbox.TabIndex = 9;
             // 
             // Label_repass
@@ -175,14 +175,14 @@ namespace General_Manager.Form
             // 
             this.Fullname_Textbox.Location = new System.Drawing.Point(391, 54);
             this.Fullname_Textbox.Name = "Fullname_Textbox";
-            this.Fullname_Textbox.Size = new System.Drawing.Size(371, 23);
+            this.Fullname_Textbox.Size = new System.Drawing.Size(491, 23);
             this.Fullname_Textbox.TabIndex = 8;
             // 
             // Cmnd_Textbox
             // 
             this.Cmnd_Textbox.Location = new System.Drawing.Point(391, 155);
             this.Cmnd_Textbox.Name = "Cmnd_Textbox";
-            this.Cmnd_Textbox.Size = new System.Drawing.Size(371, 23);
+            this.Cmnd_Textbox.Size = new System.Drawing.Size(491, 23);
             this.Cmnd_Textbox.TabIndex = 9;
             // 
             // Birthday_edit
@@ -200,9 +200,9 @@ namespace General_Manager.Form
             // SignIn_btn
             // 
             this.SignIn_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("SignIn_btn.ImageOptions.Image")));
-            this.SignIn_btn.Location = new System.Drawing.Point(291, 408);
+            this.SignIn_btn.Location = new System.Drawing.Point(302, 451);
             this.SignIn_btn.Name = "SignIn_btn";
-            this.SignIn_btn.Size = new System.Drawing.Size(105, 41);
+            this.SignIn_btn.Size = new System.Drawing.Size(140, 54);
             this.SignIn_btn.TabIndex = 11;
             this.SignIn_btn.Text = "Sign in";
             this.SignIn_btn.Click += new System.EventHandler(this.SignIn_btn_Click);
@@ -210,24 +210,24 @@ namespace General_Manager.Form
             // Exit_btn
             // 
             this.Exit_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Exit_btn.ImageOptions.Image")));
-            this.Exit_btn.Location = new System.Drawing.Point(484, 408);
+            this.Exit_btn.Location = new System.Drawing.Point(738, 451);
             this.Exit_btn.Name = "Exit_btn";
-            this.Exit_btn.Size = new System.Drawing.Size(111, 41);
+            this.Exit_btn.Size = new System.Drawing.Size(146, 54);
             this.Exit_btn.TabIndex = 12;
             this.Exit_btn.Text = "Exit";
             // 
             // Reset_btn
             // 
             this.Reset_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Reset_btn.ImageOptions.Image")));
-            this.Reset_btn.Location = new System.Drawing.Point(655, 408);
+            this.Reset_btn.Location = new System.Drawing.Point(520, 451);
             this.Reset_btn.Name = "Reset_btn";
-            this.Reset_btn.Size = new System.Drawing.Size(107, 41);
+            this.Reset_btn.Size = new System.Drawing.Size(142, 54);
             this.Reset_btn.TabIndex = 13;
             this.Reset_btn.Text = "Reset";
             // 
             // HyperlinkLabelControl
             // 
-            this.HyperlinkLabelControl.Location = new System.Drawing.Point(28, 432);
+            this.HyperlinkLabelControl.Location = new System.Drawing.Point(29, 488);
             this.HyperlinkLabelControl.Name = "HyperlinkLabelControl";
             this.HyperlinkLabelControl.Size = new System.Drawing.Size(205, 17);
             this.HyperlinkLabelControl.TabIndex = 14;
@@ -238,7 +238,7 @@ namespace General_Manager.Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 475);
+            this.ClientSize = new System.Drawing.Size(896, 549);
             this.Controls.Add(this.HyperlinkLabelControl);
             this.Controls.Add(this.Reset_btn);
             this.Controls.Add(this.Exit_btn);

@@ -86,6 +86,7 @@ namespace General_Manager.Form
             this.PicturePictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.emailTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.genderTextEdit = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.roleTextEdit = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForId = new DevExpress.XtraLayout.LayoutControlItem();
@@ -129,7 +130,6 @@ namespace General_Manager.Form
             this.Label_id = new System.Windows.Forms.Label();
             this.Label_wcome = new System.Windows.Forms.Label();
             this.PictureUser = new DevExpress.XtraEditors.PictureEdit();
-            this.roleTextEdit = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).BeginInit();
@@ -155,6 +155,7 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.PicturePictureEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roleTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForId)).BeginInit();
@@ -181,7 +182,6 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.Group_info)).BeginInit();
             this.Group_info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureUser.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roleTextEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -264,6 +264,7 @@ namespace General_Manager.Form
             this.M010203.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M010203.ImageOptions.Image")));
             this.M010203.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010203.ImageOptions.LargeImage")));
             this.M010203.Name = "M010203";
+            this.M010203.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010203_ItemClick);
             // 
             // M010301
             // 
@@ -331,7 +332,7 @@ namespace General_Manager.Form
             // 
             // M010503
             // 
-            this.M010503.Caption = "Edit";
+            this.M010503.Caption = "Save";
             this.M010503.Id = 15;
             this.M010503.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M010503.ImageOptions.Image")));
             this.M010503.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010503.ImageOptions.LargeImage")));
@@ -720,6 +721,23 @@ namespace General_Manager.Form
             this.genderTextEdit.Size = new System.Drawing.Size(533, 24);
             this.genderTextEdit.StyleController = this.dataLayoutControl1;
             this.genderTextEdit.TabIndex = 18;
+            // 
+            // roleTextEdit
+            // 
+            this.roleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "role", true));
+            this.roleTextEdit.EditValue = "";
+            this.roleTextEdit.Location = new System.Drawing.Point(897, 68);
+            this.roleTextEdit.MenuManager = this.ribbon;
+            this.roleTextEdit.Name = "roleTextEdit";
+            this.roleTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.roleTextEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Manager"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Receptionist"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Janior")});
+            this.roleTextEdit.Size = new System.Drawing.Size(752, 24);
+            this.roleTextEdit.StyleController = this.dataLayoutControl1;
+            this.roleTextEdit.TabIndex = 14;
             // 
             // Root
             // 
@@ -1148,23 +1166,6 @@ namespace General_Manager.Form
             this.PictureUser.Size = new System.Drawing.Size(84, 75);
             this.PictureUser.TabIndex = 0;
             // 
-            // roleTextEdit
-            // 
-            this.roleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "role", true));
-            this.roleTextEdit.EditValue = "";
-            this.roleTextEdit.Location = new System.Drawing.Point(897, 68);
-            this.roleTextEdit.MenuManager = this.ribbon;
-            this.roleTextEdit.Name = "roleTextEdit";
-            this.roleTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.roleTextEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Manager"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Receptionist"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Janior")});
-            this.roleTextEdit.Size = new System.Drawing.Size(752, 24);
-            this.roleTextEdit.StyleController = this.dataLayoutControl1;
-            this.roleTextEdit.TabIndex = 14;
-            // 
             // Menu
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -1209,6 +1210,7 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.PicturePictureEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roleTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForId)).EndInit();
@@ -1236,7 +1238,6 @@ namespace General_Manager.Form
             this.Group_info.ResumeLayout(false);
             this.Group_info.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureUser.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roleTextEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

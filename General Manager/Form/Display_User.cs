@@ -18,7 +18,7 @@ namespace General_Manager.Form
         {
             InitializeComponent();
         }
-        Hotel_ManagementEntities3 db;
+        Hotel_ManagementEntities4 db;
         private void Watch_Load(object sender, EventArgs e)
         {
 
@@ -34,7 +34,7 @@ namespace General_Manager.Form
 
         private void Display_User_Load(object sender, EventArgs e)
         {
-            db = new Hotel_ManagementEntities3();
+            db = new Hotel_ManagementEntities4();
             // TODO: This line of code loads data into the 'hotel_ManagementDataSet1.Customer' table. You can move, or remove it, as needed.
             this.customerTableAdapter.Fill(this.hotel_ManagementDataSet1.Customer);
             db.Customers.Load();
@@ -51,7 +51,6 @@ namespace General_Manager.Form
         {
             try
             {
-                int id = Convert.ToInt32(IdTextEdit.Text);
                 db.SaveChanges();
                 XtraMessageBox.Show("You data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -95,6 +94,12 @@ namespace General_Manager.Form
             else
             {
             }
+        }
+
+        private void M010101_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Customer_history_Form cus = new Customer_history_Form();
+            cus.ShowDialog();
         }
     }
 }

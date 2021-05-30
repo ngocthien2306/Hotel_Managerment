@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -6,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace General_Manager.Form
 {
@@ -102,6 +104,38 @@ namespace General_Manager.Form
             else
             {
                 data.CloseConnection();
+                return false;
+            }
+        }
+        public DateTimeOffset DayLog { get; set; }
+        public string Description { get; set; }
+        public bool SaveHistoryLogin()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand conmmand = new SqlCommand("INSERT INTO cusHistory (fullname, username, daylog, description)" +
+                    "VALUES (@full, @user, @day, @des)", data.GetConnection);
+                conmmand.Parameters.Add(@"full", SqlDbType.NVarChar).Value = Fullname;
+                conmmand.Parameters.Add("@user", SqlDbType.NVarChar).Value = Username;
+                conmmand.Parameters.Add("@day", SqlDbType.DateTimeOffset).Value = DayLog;
+                conmmand.Parameters.Add("@des", SqlDbType.Text).Value = Description;
+
+                data.OpenConnection();
+                if (conmmand.ExecuteNonQuery() == 1)
+                {
+                    data.CloseConnection();
+                    return true;
+                }
+                else
+                {
+                    data.CloseConnection();
+                    return false;
+                }
+            }
+            catch (Exception a)
+            {
+                XtraMessageBox.Show(a.Message);
                 return false;
             }
         }

@@ -28,11 +28,11 @@ namespace General_Manager.Form
             timer.Start();
             LoadTime();
         }
-
+        DataTable dt;
         public void LoadTime()
         {
             int id = Convert.ToInt32((Login.CurrentID).ToString()) ;
-            DataTable dt = new DataTable();
+            dt = new DataTable();
             dt = WS.WorkTime(id);
             Start_tb.Text = dt.Rows[0][0].ToString();
             End_tb.Text = dt.Rows[0][1].ToString();
@@ -53,6 +53,11 @@ namespace General_Manager.Form
             TimeSpan ts1 = checkin - Convert.ToDateTime(StartTime);
             int duration = Convert.ToInt32(ts1.TotalMinutes);
             XtraMessageBox.Show(duration.ToString());
+            EmployeeHotel em = new EmployeeHotel();
+            Menu menu = new Menu();
+            em.ID = Convert.ToInt32(menu.Label_ShowId.Text);
+            em.Description = "Check in" + DateTime.Now.ToString();
+            em.SaveHistoryCheckINandOut();
         }
 
         private void CheckOut_btn_Click_1(object sender, EventArgs e)
@@ -61,6 +66,9 @@ namespace General_Manager.Form
             TimeSpan ts2 = checkin - Convert.ToDateTime(EndTime);
             int duration = Convert.ToInt32(ts2.TotalMinutes);
             XtraMessageBox.Show(duration.ToString());
+            EmployeeHotel em = new EmployeeHotel();
+            em.Description = "Check out" + DateTime.Now.ToString();
+            em.SaveHistoryCheckINandOut();
         }
     }
 }

@@ -31,7 +31,7 @@ namespace General_Manager.Form
         public void GetNumber()
         {
             EmployeeHotel user = new EmployeeHotel();
-            WorkShift w = new WorkShift();
+            //WorkShift w = new WorkShift();
             double manager = Convert.ToDouble(user.GetNumberOfManager());
             Getnum.Text = "Manager: " + manager.ToString();
 
@@ -42,7 +42,7 @@ namespace General_Manager.Form
             // TODO: This line of code loads data into the 'hotel_ManagementDataSet11.Schedule' table. You can move, or remove it, as needed.
             //this.scheduleTableAdapter.Fill(this.hotel_ManagementDataSet11.Schedule);
             this.ShiftWork();
-            WorkShift s = new WorkShift();
+            //WorkShift s = new WorkShift();
             //this.GetNumber();
         }
         public void ShiftWork()
@@ -54,6 +54,8 @@ namespace General_Manager.Form
         private void Setshift_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             WorkShift w = new WorkShift();
+            w.DeleteData();
+            w.InsertShift();
             GridControl_DisplayShift.DataSource = w.ShowReloadShift();
         }
 

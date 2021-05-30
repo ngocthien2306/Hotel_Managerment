@@ -30,6 +30,7 @@ namespace General_Manager.Form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Schedule));
             DevExpress.Utils.SuperToolTip superToolTip53 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem53 = new DevExpress.Utils.ToolTipTitleItem();
@@ -187,8 +188,9 @@ namespace General_Manager.Form
             DevExpress.Utils.SuperToolTip superToolTip104 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem104 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem104 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
+            this.GridControl_DisplayShift = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.RibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
@@ -200,8 +202,6 @@ namespace General_Manager.Form
             this.DocumentViewer_DataShift = new DevExpress.XtraPrinting.Preview.DocumentViewer();
             this.PrintingSystem = new DevExpress.XtraPrinting.PrintingSystem(this.components);
             this.printableComponentLink1 = new DevExpress.XtraPrinting.PrintableComponentLink(this.components);
-            this.scheduleBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.hotel_ManagementDataSet11 = new General_Manager.Hotel_ManagementDataSet1();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.printPreviewStaticItem1 = new DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem();
             this.progressBarEditItem1 = new DevExpress.XtraPrinting.Preview.ProgressBarEditItem();
@@ -262,10 +262,15 @@ namespace General_Manager.Form
             this.printPreviewBarItem51 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarItem();
             this.RemoveSchedule_btn = new DevExpress.XtraBars.BarButtonItem();
             this.Exit_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.BarFind_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.BarCardView_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.BarListView_btn = new DevExpress.XtraBars.BarButtonItem();
             this.GridControlData = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.LoadSchedule = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.PageFindData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ViewRibbonGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.PreviewRibbonPage = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage();
             this.printPreviewRibbonPageGroup1 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup2 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
@@ -275,6 +280,9 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup6 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup7 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
             this.printPreviewRibbonPageGroup8 = new DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup();
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.scheduleBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.hotel_ManagementDataSet11 = new General_Manager.Hotel_ManagementDataSet1();
             this.scheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.officeNavigationBar = new DevExpress.XtraBars.Navigation.OfficeNavigationBar();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
@@ -287,24 +295,19 @@ namespace General_Manager.Form
             this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.hotel_ManagementDataSet1 = new General_Manager.Hotel_ManagementDataSet();
             this.employeeTableAdapter1 = new General_Manager.Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter();
-            this.Getnum = new System.Windows.Forms.Label();
             this.scheduleTableAdapter = new General_Manager.Hotel_ManagementDataSet1TableAdapters.ScheduleTableAdapter();
-            this.PageFindData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.BarFind_btn = new DevExpress.XtraBars.BarButtonItem();
-            this.ViewRibbonGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.BarCardView_btn = new DevExpress.XtraBars.BarButtonItem();
-            this.BarListView_btn = new DevExpress.XtraBars.BarButtonItem();
-            this.GridControl_DisplayShift = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
+            this.Getnum = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridControl_DisplayShift)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DocumentViewerRibbonController)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrintingSystem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -313,10 +316,34 @@ namespace General_Manager.Form
             this.employeesNavigationPage.SuspendLayout();
             this.customersNavigationPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridControl_DisplayShift)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cardView1
+            // 
+            this.cardView1.GridControl = this.GridControl_DisplayShift;
+            this.cardView1.Name = "cardView1";
+            // 
+            // GridControl_DisplayShift
+            // 
+            this.GridControl_DisplayShift.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode2.LevelTemplate = this.cardView1;
+            gridLevelNode2.RelationName = "Level1";
+            this.GridControl_DisplayShift.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode2});
+            this.GridControl_DisplayShift.Location = new System.Drawing.Point(0, 0);
+            this.GridControl_DisplayShift.MainView = this.gridView1;
+            this.GridControl_DisplayShift.MenuManager = this.RibbonControl;
+            this.GridControl_DisplayShift.Name = "GridControl_DisplayShift";
+            this.GridControl_DisplayShift.Size = new System.Drawing.Size(1142, 709);
+            this.GridControl_DisplayShift.TabIndex = 3;
+            this.GridControl_DisplayShift.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1,
+            this.cardView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.GridControl_DisplayShift;
+            this.gridView1.Name = "gridView1";
             // 
             // RibbonControl
             // 
@@ -492,16 +519,6 @@ namespace General_Manager.Form
             // 
             this.printableComponentLink1.Component = this.GridControl_DisplayShift;
             this.printableComponentLink1.PrintingSystemBase = this.PrintingSystem;
-            // 
-            // scheduleBindingSource1
-            // 
-            this.scheduleBindingSource1.DataMember = "Schedule";
-            this.scheduleBindingSource1.DataSource = this.hotel_ManagementDataSet11;
-            // 
-            // hotel_ManagementDataSet11
-            // 
-            this.hotel_ManagementDataSet11.DataSetName = "Hotel_ManagementDataSet1";
-            this.hotel_ManagementDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ribbonStatusBar
             // 
@@ -1479,6 +1496,32 @@ namespace General_Manager.Form
             this.Exit_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Exit_btn.ImageOptions.LargeImage")));
             this.Exit_btn.Name = "Exit_btn";
             // 
+            // BarFind_btn
+            // 
+            this.BarFind_btn.Caption = "Find";
+            this.BarFind_btn.Id = 1;
+            this.BarFind_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarFind_btn.ImageOptions.Image")));
+            this.BarFind_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarFind_btn.ImageOptions.LargeImage")));
+            this.BarFind_btn.Name = "BarFind_btn";
+            this.BarFind_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarFind_btn_ItemClick);
+            // 
+            // BarCardView_btn
+            // 
+            this.BarCardView_btn.Caption = "Card View";
+            this.BarCardView_btn.Id = 2;
+            this.BarCardView_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarCardView_btn.ImageOptions.Image")));
+            this.BarCardView_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarCardView_btn.ImageOptions.LargeImage")));
+            this.BarCardView_btn.Name = "BarCardView_btn";
+            this.BarCardView_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarCardView_btn_ItemClick);
+            // 
+            // BarListView_btn
+            // 
+            this.BarListView_btn.Caption = "List View";
+            this.BarListView_btn.Id = 3;
+            this.BarListView_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarListView_btn.ImageOptions.Image")));
+            this.BarListView_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarListView_btn.ImageOptions.LargeImage")));
+            this.BarListView_btn.Name = "BarListView_btn";
+            // 
             // GridControlData
             // 
             this.GridControlData.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1511,6 +1554,19 @@ namespace General_Manager.Form
             this.LoadSchedule.ItemLinks.Add(this.Exit_btn);
             this.LoadSchedule.Name = "LoadSchedule";
             this.LoadSchedule.Text = "Load Schedule";
+            // 
+            // PageFindData
+            // 
+            this.PageFindData.ItemLinks.Add(this.BarFind_btn);
+            this.PageFindData.Name = "PageFindData";
+            this.PageFindData.Text = "Find ";
+            // 
+            // ViewRibbonGroup
+            // 
+            this.ViewRibbonGroup.ItemLinks.Add(this.BarCardView_btn);
+            this.ViewRibbonGroup.ItemLinks.Add(this.BarListView_btn);
+            this.ViewRibbonGroup.Name = "ViewRibbonGroup";
+            this.ViewRibbonGroup.Text = "View Data";
             // 
             // PreviewRibbonPage
             // 
@@ -1637,6 +1693,16 @@ namespace General_Manager.Form
             this.printPreviewRibbonPageGroup8.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup8.Text = "Close";
             // 
+            // scheduleBindingSource1
+            // 
+            this.scheduleBindingSource1.DataMember = "Schedule";
+            this.scheduleBindingSource1.DataSource = this.hotel_ManagementDataSet11;
+            // 
+            // hotel_ManagementDataSet11
+            // 
+            this.hotel_ManagementDataSet11.DataSetName = "Hotel_ManagementDataSet1";
+            this.hotel_ManagementDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // scheduleBindingSource
             // 
             this.scheduleBindingSource.DataMember = "Schedule";
@@ -1761,6 +1827,10 @@ namespace General_Manager.Form
             // 
             this.employeeTableAdapter1.ClearBeforeFill = true;
             // 
+            // scheduleTableAdapter
+            // 
+            this.scheduleTableAdapter.ClearBeforeFill = true;
+            // 
             // Getnum
             // 
             this.Getnum.AutoSize = true;
@@ -1769,76 +1839,6 @@ namespace General_Manager.Form
             this.Getnum.Size = new System.Drawing.Size(72, 19);
             this.Getnum.TabIndex = 4;
             this.Getnum.Text = "Number: ";
-            // 
-            // scheduleTableAdapter
-            // 
-            this.scheduleTableAdapter.ClearBeforeFill = true;
-            // 
-            // PageFindData
-            // 
-            this.PageFindData.ItemLinks.Add(this.BarFind_btn);
-            this.PageFindData.Name = "PageFindData";
-            this.PageFindData.Text = "Find ";
-            // 
-            // BarFind_btn
-            // 
-            this.BarFind_btn.Caption = "Find";
-            this.BarFind_btn.Id = 1;
-            this.BarFind_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.BarFind_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.BarFind_btn.Name = "BarFind_btn";
-            this.BarFind_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarFind_btn_ItemClick);
-            // 
-            // ViewRibbonGroup
-            // 
-            this.ViewRibbonGroup.ItemLinks.Add(this.BarCardView_btn);
-            this.ViewRibbonGroup.ItemLinks.Add(this.BarListView_btn);
-            this.ViewRibbonGroup.Name = "ViewRibbonGroup";
-            this.ViewRibbonGroup.Text = "View Data";
-            // 
-            // BarCardView_btn
-            // 
-            this.BarCardView_btn.Caption = "Card View";
-            this.BarCardView_btn.Id = 2;
-            this.BarCardView_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarCardView_btn.ImageOptions.Image")));
-            this.BarCardView_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarCardView_btn.ImageOptions.LargeImage")));
-            this.BarCardView_btn.Name = "BarCardView_btn";
-            this.BarCardView_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BarCardView_btn_ItemClick);
-            // 
-            // BarListView_btn
-            // 
-            this.BarListView_btn.Caption = "List View";
-            this.BarListView_btn.Id = 3;
-            this.BarListView_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BarListView_btn.ImageOptions.Image")));
-            this.BarListView_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BarListView_btn.ImageOptions.LargeImage")));
-            this.BarListView_btn.Name = "BarListView_btn";
-            // 
-            // GridControl_DisplayShift
-            // 
-            this.GridControl_DisplayShift.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.LevelTemplate = this.cardView1;
-            gridLevelNode2.RelationName = "Level1";
-            this.GridControl_DisplayShift.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
-            this.GridControl_DisplayShift.Location = new System.Drawing.Point(0, 0);
-            this.GridControl_DisplayShift.MainView = this.gridView1;
-            this.GridControl_DisplayShift.MenuManager = this.RibbonControl;
-            this.GridControl_DisplayShift.Name = "GridControl_DisplayShift";
-            this.GridControl_DisplayShift.Size = new System.Drawing.Size(1142, 709);
-            this.GridControl_DisplayShift.TabIndex = 3;
-            this.GridControl_DisplayShift.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1,
-            this.cardView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.GridControl_DisplayShift;
-            this.gridView1.Name = "gridView1";
-            // 
-            // cardView1
-            // 
-            this.cardView1.GridControl = this.GridControl_DisplayShift;
-            this.cardView1.Name = "cardView1";
             // 
             // Schedule
             // 
@@ -1856,14 +1856,17 @@ namespace General_Manager.Form
             this.Ribbon = this.RibbonControl;
             this.StatusBar = this.ribbonStatusBar;
             this.Load += new System.EventHandler(this.Schedule_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridControl_DisplayShift)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DocumentViewerRibbonController)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrintingSystem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scheduleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).EndInit();
@@ -1872,9 +1875,6 @@ namespace General_Manager.Form
             this.employeesNavigationPage.ResumeLayout(false);
             this.customersNavigationPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridControl_DisplayShift)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1902,7 +1902,6 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.BarButtonItem customersBarButtonItem;
         private Hotel_ManagementDataSet hotel_ManagementDataSet1;
         private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter1;
-        public System.Windows.Forms.Label Getnum;
         private DevExpress.XtraBars.BarButtonItem Setshift;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup LoadSchedule;
         private Hotel_ManagementDataSet1 hotel_ManagementDataSet11;
@@ -1990,5 +1989,6 @@ namespace General_Manager.Form
         private DevExpress.XtraGrid.GridControl GridControl_DisplayShift;
         private DevExpress.XtraGrid.Views.Card.CardView cardView1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        public System.Windows.Forms.Label Getnum;
     }
 }

@@ -136,7 +136,13 @@
       <DependentUpon>Hotel Entity.tt</DependentUpon>
     </Compile>
     <Compile Include="Form\Customer.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>EntityFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Customer_history_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Customer_history_Form.Designer.cs">
+      <DependentUpon>Customer_history_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Display_User.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -145,6 +151,27 @@
     <Compile Include="Form\Display_User.Designer.cs">
       <DependentUpon>Display_User.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form\EntityFramework.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityFramework.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EntityFramework.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityFramework.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EntityFramework.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityFramework.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\History_loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\History_loginForm.Designer.cs">
+      <DependentUpon>History_loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Login.cs">
       <SubType>Form</SubType>
@@ -268,9 +295,15 @@
     <EmbeddedResource Include="Form\Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Customer_history_Form.resx">
+      <DependentUpon>Customer_history_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Display_User.resx">
       <DependentUpon>Display_User.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\History_loginForm.resx">
+      <DependentUpon>History_loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -324,6 +357,13 @@
     <None Include="Form\CustomerModel.edmx.diagram">
       <DependentUpon>CustomerModel.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="Form\EntityFramework.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityFramework.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Form\EntityFramework.edmx.diagram">
+      <DependentUpon>EntityFramework.edmx</DependentUpon>
+    </None>
     <None Include="Hotel Entity.edmx.diagram">
       <DependentUpon>Hotel Entity.edmx</DependentUpon>
     </None>
@@ -367,6 +407,16 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Form\EntityFramework.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityFramework.edmx</DependentUpon>
+      <LastGenOutput>EntityFramework.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Form\EntityFramework.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityFramework.edmx</DependentUpon>
+      <LastGenOutput>EntityFramework.cs</LastGenOutput>
+    </Content>
     <Content Include="Form\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CustomerModel.edmx</DependentUpon>

@@ -62,7 +62,7 @@ namespace General_Manager.Form
             // ID_tb
             // 
             this.ID_tb.Enabled = false;
-            this.ID_tb.Location = new System.Drawing.Point(114, 18);
+            this.ID_tb.Location = new System.Drawing.Point(122, 19);
             this.ID_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ID_tb.Name = "ID_tb";
             this.ID_tb.Properties.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,7 +77,7 @@ namespace General_Manager.Form
             this.ID_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.ID_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.ID_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.ID_tb.Size = new System.Drawing.Size(257, 22);
+            this.ID_tb.Size = new System.Drawing.Size(257, 26);
             this.ID_tb.TabIndex = 0;
             // 
             // ID_lb
@@ -87,7 +87,7 @@ namespace General_Manager.Form
             this.ID_lb.Location = new System.Drawing.Point(20, 18);
             this.ID_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ID_lb.Name = "ID_lb";
-            this.ID_lb.Size = new System.Drawing.Size(75, 19);
+            this.ID_lb.Size = new System.Drawing.Size(94, 24);
             this.ID_lb.TabIndex = 1;
             this.ID_lb.Text = "Current ID";
             // 
@@ -100,7 +100,7 @@ namespace General_Manager.Form
             this.labelControl2.Location = new System.Drawing.Point(333, 23);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(95, 19);
+            this.labelControl2.Size = new System.Drawing.Size(118, 24);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Current Time";
             // 
@@ -122,7 +122,7 @@ namespace General_Manager.Form
             this.Date_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.Date_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Date_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Date_tb.Size = new System.Drawing.Size(243, 26);
+            this.Date_tb.Size = new System.Drawing.Size(243, 30);
             this.Date_tb.TabIndex = 3;
             // 
             // timer
@@ -148,7 +148,7 @@ namespace General_Manager.Form
             this.Time_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.Time_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Time_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Time_tb.Size = new System.Drawing.Size(243, 26);
+            this.Time_tb.Size = new System.Drawing.Size(243, 30);
             this.Time_tb.TabIndex = 4;
             // 
             // panelControl1
@@ -219,7 +219,7 @@ namespace General_Manager.Form
             this.End_lb.Location = new System.Drawing.Point(21, 58);
             this.End_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.End_lb.Name = "End_lb";
-            this.End_lb.Size = new System.Drawing.Size(28, 19);
+            this.End_lb.Size = new System.Drawing.Size(34, 24);
             this.End_lb.TabIndex = 11;
             this.End_lb.Text = "End";
             // 
@@ -230,7 +230,7 @@ namespace General_Manager.Form
             this.Start_lb.Location = new System.Drawing.Point(21, 10);
             this.Start_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Start_lb.Name = "Start_lb";
-            this.Start_lb.Size = new System.Drawing.Size(36, 19);
+            this.Start_lb.Size = new System.Drawing.Size(46, 24);
             this.Start_lb.TabIndex = 10;
             this.Start_lb.Text = "Start";
             // 
@@ -252,7 +252,7 @@ namespace General_Manager.Form
             this.End_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.End_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.End_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.End_tb.Size = new System.Drawing.Size(271, 26);
+            this.End_tb.Size = new System.Drawing.Size(271, 30);
             this.End_tb.TabIndex = 5;
             // 
             // Start_tb
@@ -273,13 +273,13 @@ namespace General_Manager.Form
             this.Start_tb.Properties.AppearanceDisabled.Options.UseTextOptions = true;
             this.Start_tb.Properties.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Start_tb.Properties.AppearanceDisabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Start_tb.Size = new System.Drawing.Size(273, 26);
+            this.Start_tb.Size = new System.Drawing.Size(273, 30);
             this.Start_tb.TabIndex = 4;
             // 
             // Attendance
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 384);
             this.Controls.Add(this.panelControl3);

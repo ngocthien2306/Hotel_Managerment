@@ -8,6 +8,7 @@ using System.Data;
 using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace General_Manager.Form
 {
@@ -78,14 +79,74 @@ namespace General_Manager.Form
                 return false;
             }
         }
+        public string Fullname { get; set; }
+        public DateTime Daylog { get; set; }
+        public string Description { get; set; }
+        public bool SaveHistoryCheckINandOut()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand command = new SqlCommand("INSERT INTO empHistory (Id, description) VALUES (@id, @des)", data.GetConnection);
+                command.Parameters.Add("@des", SqlDbType.Text).Value = Description;
+                command.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+                data.OpenConnection();
+                if(command.ExecuteNonQuery() == 1)
+                {
+                    data.CloseConnection();
+                    return true;
+                }
+                else
+                {
+                    data.CloseConnection();
+                    return false;
+                }
+            }
+            catch(Exception a)
+            {
+                XtraMessageBox.Show(a.Message);
+                return false;
+            }
+        }
+        public bool SaveHistoryLogin() {
+            try
+            {
+                Database data = new Database();
+                SqlCommand conmmand = new SqlCommand("INSERT INTO empHistory (Id, fullname, daylog, role, description)" +
+                    "VALUES (@id, @full, @day, @role, @des)", data.GetConnection);
+                conmmand.Parameters.Add(@"id", SqlDbType.Int).Value = ID;
+                conmmand.Parameters.Add("@full", SqlDbType.NVarChar).Value = Fullname;
+                conmmand.Parameters.Add("@day", SqlDbType.DateTime).Value = Daylog;
+                conmmand.Parameters.Add("@role", SqlDbType.NVarChar).Value = Role;
+                conmmand.Parameters.Add("@des", SqlDbType.Text).Value = Description;
+
+
+                data.OpenConnection();
+                if (conmmand.ExecuteNonQuery() == 1)
+                {
+                    data.CloseConnection();
+                    return true;
+                }
+                else
+                {
+                    data.CloseConnection();
+                    return false;
+                }
+            }
+            catch (Exception a)
+            {
+                XtraMessageBox.Show(a.Message);
+                return false;
+            }
+        }
         public object GetNumberJanitor()
         {
             try
             {
                 Database data = new Database();
-                SqlCommand command = new SqlCommand(@"Select count(*) from employee where role = 'Janior'", data.GetConnection);
+                SqlCommand command = new SqlCommand(@"Select count(*) from employee where role = 'Janitor'", data.GetConnection);
                 data.OpenConnection();
-                command.CommandText = @"Select count(*) from employee where role = 'Janior'";
+                command.CommandText = @"Select count(*) from employee where role = 'Janitor'";
                 return command.ExecuteScalar();
             }
             catch
@@ -151,7 +212,7 @@ namespace General_Manager.Form
             }
             catch(Exception a)
             {
-                MessageBox.Show(a.Message);
+                XtraMessageBox.Show(a.Message);
                 return false;
             }
         }

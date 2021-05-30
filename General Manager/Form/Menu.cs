@@ -165,5 +165,11 @@ namespace General_Manager.Form
         {
             this.ReloadData();
         }
+
+        private void M010203_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            History_loginForm his = new History_loginForm();
+            his.ShowDialog();
+        }
     }
 }

@@ -29,8 +29,8 @@ namespace General_Manager.Form
         }
         public void LoginWithCustomer()
         {
-            //try
-            //{
+            try
+            {
                 string username = Username_tb.Text;
                 string password = Password_tb.Text;
                 User customer = new User();
@@ -50,11 +50,18 @@ namespace General_Manager.Form
                     data.CloseConnection();
                     if(customer.Login(username, password))
                     {
-                        book.Label_DisName.Text = table1.Rows[0]["fullname"].ToString().Trim();
+                        string fullname = table1.Rows[0]["fullname"].ToString().Trim();
+                        book.Label_DisName.Text = fullname;
                         book.Label_displayID.Text = table1.Rows[0]["Id"].ToString().Trim();
                         byte[] pic = (byte[])table1.Rows[0]["picture"];
                         MemoryStream picture = new MemoryStream(pic);
                         book.PictureUser.Image = Image.FromStream(picture);
+                        customer.Fullname = fullname;
+                        customer.Username = username;
+                        customer.Description = "Login account";
+                        customer.DayLog = DateTimeOffset.Now;
+                        customer.SaveHistoryLogin();
+                        customer.Description += customer.Description;
                         book.ShowDialog();
                     }
                 }
@@ -62,11 +69,11 @@ namespace General_Manager.Form
                 {
                     XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            //}
-            //catch
-            //{
-            //    XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            }
+            catch
+            {
+                XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         public void RoleLogin()
         {
@@ -81,6 +88,7 @@ namespace General_Manager.Form
                     EmployeeHotel user = new EmployeeHotel();
                     user.ID = Convert.ToInt32(Username_tb.Text);
                     user.Password = Password_tb.Text;
+
                     Database data = new Database();
                     SqlCommand command = new SqlCommand("SELECT Id, password, fname, lname, CMND, bdate, address, phone, email, " +
                         "salary, role, daywork, work, picture, gender, shift FROM Employee WHERE Id = @id AND password = @pass", data.GetConnection);
@@ -99,6 +107,8 @@ namespace General_Manager.Form
                         int UserId = Convert.ToInt32(table.Rows[0]["id"].ToString());
                         byte[] pic = (byte[])table.Rows[0]["picture"];
                         MemoryStream picture = new MemoryStream(pic);
+                        string fname = table.Rows[0]["fname"].ToString().Trim();
+                        string lname = table.Rows[0]["lname"].ToString().Trim();
                         GetID(UserId);
                         WorkShift w = new WorkShift();
                         if (user.GetLogin() && role == "Manager" && Manager_rbt.Checked == true)
@@ -108,6 +118,11 @@ namespace General_Manager.Form
                             manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
                             manager.PictureUser.Image = Image.FromStream(picture);
                             //w.InsertId(Convert.ToInt32(UserId));
+                            user.Daylog = DateTime.Now;
+                            user.Fullname = fname + lname;
+                            user.Description = "Login account";
+                            user.Role = role;
+                            user.SaveHistoryLogin();
                             manager.ShowDialog();
                         }
                         else if (user.GetLogin() && role == "Receptionist" && Receptionist_rbt.Checked == true)

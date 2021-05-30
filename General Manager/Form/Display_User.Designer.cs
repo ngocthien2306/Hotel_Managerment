@@ -55,30 +55,30 @@ namespace General_Manager.Form
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForId = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForfullname = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForpicture = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForbirthday = new DevExpress.XtraLayout.LayoutControlItem();
             this.LayoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForpassword = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForusername = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForCMND = new DevExpress.XtraLayout.LayoutControlItem();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.XtraTabPage = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.customerTableAdapter = new General_Manager.Hotel_ManagementDataSet1TableAdapters.CustomerTableAdapter();
             this.tableAdapterManager = new General_Manager.Hotel_ManagementDataSet1TableAdapters.TableAdapterManager();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.M010101 = new DevExpress.XtraBars.BarButtonItem();
             this.M010102 = new DevExpress.XtraBars.BarButtonItem();
-            this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.M0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ItemForpicture = new DevExpress.XtraLayout.LayoutControlItem();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.M0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Addnew_btn = new DevExpress.XtraBars.BarButtonItem();
             this.Delete_btn = new DevExpress.XtraBars.BarButtonItem();
             this.Save_btn = new DevExpress.XtraBars.BarButtonItem();
-            this.M0103 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Close_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.M01 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.M0101 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M0102 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.M0103 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerGridControl)).BeginInit();
@@ -99,15 +99,15 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForfullname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForbirthday)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForusername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCMND)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -363,6 +363,16 @@ namespace General_Manager.Form
             this.ItemForfullname.Text = "fullname";
             this.ItemForfullname.TextSize = new System.Drawing.Size(63, 17);
             // 
+            // ItemForpicture
+            // 
+            this.ItemForpicture.Control = this.picturePictureEdit;
+            this.ItemForpicture.Location = new System.Drawing.Point(0, 84);
+            this.ItemForpicture.Name = "ItemForpicture";
+            this.ItemForpicture.Size = new System.Drawing.Size(311, 255);
+            this.ItemForpicture.StartNewLine = true;
+            this.ItemForpicture.Text = "picture";
+            this.ItemForpicture.TextSize = new System.Drawing.Size(63, 17);
+            // 
             // ItemForbirthday
             // 
             this.ItemForbirthday.Control = this.birthdayDateEdit;
@@ -409,6 +419,27 @@ namespace General_Manager.Form
             this.ItemForCMND.Text = "CMND";
             this.ItemForCMND.TextSize = new System.Drawing.Size(63, 17);
             // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Location = new System.Drawing.Point(13, 373);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.XtraTabPage;
+            this.xtraTabControl1.Size = new System.Drawing.Size(617, 163);
+            this.xtraTabControl1.TabIndex = 2;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.XtraTabPage,
+            this.xtraTabPage2});
+            // 
+            // XtraTabPage
+            // 
+            this.XtraTabPage.Name = "XtraTabPage";
+            this.XtraTabPage.Size = new System.Drawing.Size(613, 147);
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(613, 147);
+            // 
             // customerTableAdapter
             // 
             this.customerTableAdapter.ClearBeforeFill = true;
@@ -447,6 +478,7 @@ namespace General_Manager.Form
             this.M010101.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M010101.ImageOptions.Image")));
             this.M010101.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010101.ImageOptions.LargeImage")));
             this.M010101.Name = "M010101";
+            this.M010101.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010101_ItemClick);
             // 
             // M010102
             // 
@@ -455,6 +487,41 @@ namespace General_Manager.Form
             this.M010102.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("M010102.ImageOptions.Image")));
             this.M010102.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("M010102.ImageOptions.LargeImage")));
             this.M010102.Name = "M010102";
+            // 
+            // Addnew_btn
+            // 
+            this.Addnew_btn.Caption = "Add User";
+            this.Addnew_btn.Id = 3;
+            this.Addnew_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Addnew_btn.ImageOptions.Image")));
+            this.Addnew_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Addnew_btn.ImageOptions.LargeImage")));
+            this.Addnew_btn.Name = "Addnew_btn";
+            this.Addnew_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Addnew_btn_ItemClick);
+            // 
+            // Delete_btn
+            // 
+            this.Delete_btn.Caption = "Delete";
+            this.Delete_btn.Id = 4;
+            this.Delete_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Delete_btn.ImageOptions.Image")));
+            this.Delete_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Delete_btn.ImageOptions.LargeImage")));
+            this.Delete_btn.Name = "Delete_btn";
+            this.Delete_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Delete_btn_ItemClick);
+            // 
+            // Save_btn
+            // 
+            this.Save_btn.Caption = "Save";
+            this.Save_btn.Id = 5;
+            this.Save_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Save_btn.ImageOptions.Image")));
+            this.Save_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Save_btn.ImageOptions.LargeImage")));
+            this.Save_btn.Name = "Save_btn";
+            this.Save_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Save_btn_ItemClick);
+            // 
+            // Close_btn
+            // 
+            this.Close_btn.Caption = "Close";
+            this.Close_btn.Id = 6;
+            this.Close_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Close_btn.ImageOptions.SvgImage")));
+            this.Close_btn.Name = "Close_btn";
+            this.Close_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Close_btn_ItemClick);
             // 
             // M01
             // 
@@ -472,6 +539,20 @@ namespace General_Manager.Form
             this.M0101.Name = "M0101";
             this.M0101.Text = "                Task                    ";
             // 
+            // M0102
+            // 
+            this.M0102.ItemLinks.Add(this.Addnew_btn);
+            this.M0102.ItemLinks.Add(this.Delete_btn);
+            this.M0102.ItemLinks.Add(this.Save_btn);
+            this.M0102.Name = "M0102";
+            this.M0102.Text = "CRUD";
+            // 
+            // M0103
+            // 
+            this.M0103.ItemLinks.Add(this.Close_btn);
+            this.M0103.Name = "M0103";
+            this.M0103.Text = "Close";
+            // 
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 727);
@@ -483,86 +564,6 @@ namespace General_Manager.Form
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
-            // 
-            // ItemForpicture
-            // 
-            this.ItemForpicture.Control = this.picturePictureEdit;
-            this.ItemForpicture.Location = new System.Drawing.Point(0, 84);
-            this.ItemForpicture.Name = "ItemForpicture";
-            this.ItemForpicture.Size = new System.Drawing.Size(311, 255);
-            this.ItemForpicture.StartNewLine = true;
-            this.ItemForpicture.Text = "picture";
-            this.ItemForpicture.TextSize = new System.Drawing.Size(63, 17);
-            // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(613, 147);
-            // 
-            // xtraTabPage1
-            // 
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(486, 125);
-            // 
-            // xtraTabControl1
-            // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(13, 373);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(617, 163);
-            this.xtraTabControl1.TabIndex = 2;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2});
-            // 
-            // M0102
-            // 
-            this.M0102.ItemLinks.Add(this.Addnew_btn);
-            this.M0102.ItemLinks.Add(this.Delete_btn);
-            this.M0102.ItemLinks.Add(this.Save_btn);
-            this.M0102.Name = "M0102";
-            this.M0102.Text = "CRUD";
-            // 
-            // Addnew_btn
-            // 
-            this.Addnew_btn.Caption = "Add User";
-            this.Addnew_btn.Id = 3;
-            this.Addnew_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Addnew_btn.ImageOptions.Image")));
-            this.Addnew_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Addnew_btn.ImageOptions.LargeImage")));
-            this.Addnew_btn.Name = "Addnew_btn";
-            this.Addnew_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Addnew_btn_ItemClick);
-            // 
-            // Delete_btn
-            // 
-            this.Delete_btn.Caption = "Delete";
-            this.Delete_btn.Id = 4;
-            this.Delete_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.Delete_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.Delete_btn.Name = "Delete_btn";
-            this.Delete_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Delete_btn_ItemClick);
-            // 
-            // Save_btn
-            // 
-            this.Save_btn.Caption = "Save";
-            this.Save_btn.Id = 5;
-            this.Save_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.Save_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.Save_btn.Name = "Save_btn";
-            this.Save_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Save_btn_ItemClick);
-            // 
-            // M0103
-            // 
-            this.M0103.ItemLinks.Add(this.Close_btn);
-            this.M0103.Name = "M0103";
-            this.M0103.Text = "Close";
-            // 
-            // Close_btn
-            // 
-            this.Close_btn.Caption = "Close";
-            this.Close_btn.Id = 6;
-            this.Close_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Close_btn.ImageOptions.SvgImage")));
-            this.Close_btn.Name = "Close_btn";
-            this.Close_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Close_btn_ItemClick);
             // 
             // Display_User
             // 
@@ -598,15 +599,15 @@ namespace General_Manager.Form
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForfullname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForbirthday)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForpassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForusername)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForCMND)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForpicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -654,7 +655,7 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.BarButtonItem M010102;
         private DevExpress.XtraLayout.LayoutControlItem ItemForpicture;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraTab.XtraTabPage XtraTabPage;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraBars.BarButtonItem Addnew_btn;
         private DevExpress.XtraBars.BarButtonItem Delete_btn;
