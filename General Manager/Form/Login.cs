@@ -142,12 +142,12 @@ namespace General_Manager.Form
                     }
                 }
 
-            }
+        }
         catch
             {
                 XtraMessageBox.Show("Invalid Username of wrong Password, Try again or Create new account", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
+    }
   
         
         private void Login_bt_Click(object sender, EventArgs e)
