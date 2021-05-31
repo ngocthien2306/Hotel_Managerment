@@ -119,7 +119,7 @@ namespace General_Manager.Form
                             manager.PictureUser.Image = Image.FromStream(picture);
                             //w.InsertId(Convert.ToInt32(UserId));
                             user.Daylog = DateTime.Now;
-                            user.Fullname = fname + lname;
+                            user.Fullname = fname + " " + lname;
                             user.Description = "Login account";
                             user.Role = role;
                             user.SaveHistoryLogin();

@@ -82,14 +82,14 @@ namespace General_Manager.Form
         public string Fullname { get; set; }
         public DateTimeOffset Daylog { get; set; }
         public string Description { get; set; }
-        public bool SaveHistoryCheckINandOut()
+        public bool SaveHistoryCheckINandOut(int id)
         {
             try
             {
                 Database data = new Database();
                 SqlCommand command = new SqlCommand("INSERT INTO empHistory (Id, description) VALUES (@id, @des)", data.GetConnection);
                 command.Parameters.Add("@des", SqlDbType.Text).Value = Description;
-                command.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+                command.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 data.OpenConnection();
                 if(command.ExecuteNonQuery() == 1)
                 {

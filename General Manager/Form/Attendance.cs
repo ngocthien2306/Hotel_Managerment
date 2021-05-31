@@ -55,9 +55,9 @@ namespace General_Manager.Form
             XtraMessageBox.Show(duration.ToString());
             EmployeeHotel em = new EmployeeHotel();
             Menu menu = new Menu();
-            em.ID = Convert.ToInt32(menu.Label_ShowId.Text);
+            int id = Convert.ToInt32(menu.Label_ShowId.Text);
             em.Description = "Check in " + DateTime.Now.ToString();
-            em.SaveHistoryCheckINandOut();
+            em.SaveHistoryCheckINandOut(id);
         }
 
         private void CheckOut_btn_Click_1(object sender, EventArgs e)
@@ -65,27 +65,20 @@ namespace General_Manager.Form
             DateTime checkin = DateTime.Now;
             TimeSpan ts2 = checkin - Convert.ToDateTime(EndTime);
             int duration = Convert.ToInt32(ts2.TotalMinutes);
-<<<<<<< HEAD
-            XtraMessageBox.Show(duration.ToString());
             EmployeeHotel em = new EmployeeHotel();
             Menu menu = new Menu();
-            em.ID = Convert.ToInt32(menu.Label_ShowId.Text);
-            em.Description = "Check out " + DateTime.Now.ToString();
-            em.SaveHistoryCheckINandOut();
-=======
+            int id = Convert.ToInt32(menu.Label_ShowId.Text);
             DialogResult CheckOutCheck = MessageBox.Show("Do you want to check-out now?", "Check out", MessageBoxButtons.YesNo);
             if (CheckOutCheck == DialogResult.Yes)
             {
                 XtraMessageBox.Show(duration.ToString());
-                EmployeeHotel em = new EmployeeHotel();
                 em.Description = "Check out" + DateTime.Now.ToString();
-                em.SaveHistoryCheckINandOut();
+                em.SaveHistoryCheckINandOut(id);
             }
-            else if (CheckOutCheck == DialogResult.No)
+            else
             {
-                this.Hide();
+
             }
->>>>>>> a667a88e3eb85344366015890c96f20ca09d7359
         }
     }
 }
