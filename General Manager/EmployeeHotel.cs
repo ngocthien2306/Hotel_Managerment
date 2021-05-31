@@ -80,7 +80,7 @@ namespace General_Manager.Form
             }
         }
         public string Fullname { get; set; }
-        public DateTime Daylog { get; set; }
+        public DateTimeOffset Daylog { get; set; }
         public string Description { get; set; }
         public bool SaveHistoryCheckINandOut()
         {
@@ -108,6 +108,30 @@ namespace General_Manager.Form
                 return false;
             }
         }
+        public bool DeleteHistory()
+        {
+            try
+            {
+                Database data = new Database();
+                SqlCommand conmmand = new SqlCommand("delete from empHistory", data.GetConnection);
+                data.OpenConnection();
+                if (conmmand.ExecuteNonQuery() == 1)
+                {
+                    data.CloseConnection();
+                    return true;
+                }
+                else
+                {
+                    data.CloseConnection();
+                    return false;
+                }
+            }
+            catch (Exception a)
+            {
+                XtraMessageBox.Show(a.Message);
+                return false;
+            }
+        }
         public bool SaveHistoryLogin() {
             try
             {
@@ -116,7 +140,7 @@ namespace General_Manager.Form
                     "VALUES (@id, @full, @day, @role, @des)", data.GetConnection);
                 conmmand.Parameters.Add(@"id", SqlDbType.Int).Value = ID;
                 conmmand.Parameters.Add("@full", SqlDbType.NVarChar).Value = Fullname;
-                conmmand.Parameters.Add("@day", SqlDbType.DateTime).Value = Daylog;
+                conmmand.Parameters.Add("@day", SqlDbType.DateTimeOffset).Value = Daylog;
                 conmmand.Parameters.Add("@role", SqlDbType.NVarChar).Value = Role;
                 conmmand.Parameters.Add("@des", SqlDbType.Text).Value = Description;
 

@@ -82,25 +82,25 @@ namespace General_Manager.Form
             // 
             // ID_lb
             // 
-            this.ID_lb.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
+            this.ID_lb.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ID_lb.Appearance.Options.UseFont = true;
             this.ID_lb.Location = new System.Drawing.Point(20, 18);
             this.ID_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ID_lb.Name = "ID_lb";
-            this.ID_lb.Size = new System.Drawing.Size(94, 24);
+            this.ID_lb.Size = new System.Drawing.Size(75, 20);
             this.ID_lb.TabIndex = 1;
             this.ID_lb.Text = "Current ID";
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseBackColor = true;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(333, 23);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(118, 24);
+            this.labelControl2.Size = new System.Drawing.Size(92, 18);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Current Time";
             // 
@@ -166,7 +166,7 @@ namespace General_Manager.Form
             // 
             // CheckOut_btn
             // 
-            this.CheckOut_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckOut_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckOut_btn.Appearance.Options.UseFont = true;
             this.CheckOut_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CheckOut_btn.ImageOptions.Image")));
             this.CheckOut_btn.Location = new System.Drawing.Point(579, 64);
@@ -179,7 +179,7 @@ namespace General_Manager.Form
             // 
             // CheckIn_btn
             // 
-            this.CheckIn_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckIn_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckIn_btn.Appearance.Options.UseFont = true;
             this.CheckIn_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("CheckIn_btn.ImageOptions.Image")));
             this.CheckIn_btn.Location = new System.Drawing.Point(61, 64);
@@ -214,23 +214,23 @@ namespace General_Manager.Form
             // 
             // End_lb
             // 
-            this.End_lb.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
+            this.End_lb.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.End_lb.Appearance.Options.UseFont = true;
             this.End_lb.Location = new System.Drawing.Point(21, 58);
             this.End_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.End_lb.Name = "End_lb";
-            this.End_lb.Size = new System.Drawing.Size(34, 24);
+            this.End_lb.Size = new System.Drawing.Size(27, 20);
             this.End_lb.TabIndex = 11;
             this.End_lb.Text = "End";
             // 
             // Start_lb
             // 
-            this.Start_lb.Appearance.Font = new System.Drawing.Font("Bahnschrift SemiLight", 12F);
+            this.Start_lb.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Start_lb.Appearance.Options.UseFont = true;
             this.Start_lb.Location = new System.Drawing.Point(21, 10);
             this.Start_lb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Start_lb.Name = "Start_lb";
-            this.Start_lb.Size = new System.Drawing.Size(46, 24);
+            this.Start_lb.Size = new System.Drawing.Size(32, 20);
             this.Start_lb.TabIndex = 10;
             this.Start_lb.Text = "Start";
             // 

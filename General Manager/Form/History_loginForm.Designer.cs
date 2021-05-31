@@ -43,10 +43,13 @@ namespace General_Manager.Form
             this.coldescription = new DevExpress.XtraGrid.Columns.GridColumn();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.HistoryDelete_btn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.empHistoryTableAdapter = new General_Manager.Hotel_ManagementDataSetTableAdapters.empHistoryTableAdapter();
             this.tableAdapterManager = new General_Manager.Hotel_ManagementDataSetTableAdapters.TableAdapterManager();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Reload_btn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Printlist_btn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Find_btn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.empHistoryGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empHistoryBindingSource)).BeginInit();
@@ -155,7 +158,11 @@ namespace General_Manager.Form
             // 
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement1});
+            this.accordionControlElement1,
+            this.Find_btn,
+            this.Printlist_btn,
+            this.Reload_btn,
+            this.HistoryDelete_btn});
             this.accordionControl1.Location = new System.Drawing.Point(0, 34);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
@@ -165,11 +172,17 @@ namespace General_Manager.Form
             // 
             // accordionControlElement1
             // 
-            this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement2});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Element1";
+            // 
+            // HistoryDelete_btn
+            // 
+            this.HistoryDelete_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image1")));
+            this.HistoryDelete_btn.Name = "HistoryDelete_btn";
+            this.HistoryDelete_btn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.HistoryDelete_btn.Text = "Delete History";
+            this.HistoryDelete_btn.Click += new System.EventHandler(this.HistoryDelete_btn_Click);
             // 
             // fluentDesignFormControl1
             // 
@@ -204,12 +217,29 @@ namespace General_Manager.Form
             this.tableAdapterManager.UpdateOrder = General_Manager.Hotel_ManagementDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.WorkShiftTableAdapter = null;
             // 
-            // accordionControlElement2
+            // Reload_btn
             // 
-            this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Delete History";
+            this.Reload_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
+            this.Reload_btn.Name = "Reload_btn";
+            this.Reload_btn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Reload_btn.Text = "Re-Load";
+            this.Reload_btn.Click += new System.EventHandler(this.Reload_btn_Click);
+            // 
+            // Printlist_btn
+            // 
+            this.Printlist_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
+            this.Printlist_btn.Name = "Printlist_btn";
+            this.Printlist_btn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Printlist_btn.Text = "Print List";
+            this.Printlist_btn.Click += new System.EventHandler(this.Printlist_btn_Click);
+            // 
+            // Find_btn
+            // 
+            this.Find_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
+            this.Find_btn.Name = "Find_btn";
+            this.Find_btn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.Find_btn.Text = "Find";
+            this.Find_btn.Click += new System.EventHandler(this.Find_btn_Click);
             // 
             // History_loginForm
             // 
@@ -252,6 +282,9 @@ namespace General_Manager.Form
         private DevExpress.XtraGrid.Columns.GridColumn coldaylog;
         private DevExpress.XtraGrid.Columns.GridColumn colrole;
         private DevExpress.XtraGrid.Columns.GridColumn coldescription;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement HistoryDelete_btn;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Find_btn;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Printlist_btn;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement Reload_btn;
     }
 }

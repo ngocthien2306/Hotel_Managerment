@@ -123,6 +123,8 @@ namespace General_Manager.Form
                             user.Description = "Login account";
                             user.Role = role;
                             user.SaveHistoryLogin();
+                            manager.dataLayoutControl1.Visible = false;
+                            manager.GridControl.Visible = false;
                             manager.ShowDialog();
                         }
                         else if (user.GetLogin() && role == "Receptionist" && Receptionist_rbt.Checked == true)

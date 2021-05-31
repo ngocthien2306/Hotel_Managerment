@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\hp\source\Hotel_Managerment_App\General Manager\Form\CustomerModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\hp\source\Hotel_Managerment_App\General Manager\Form\Model_Entity.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

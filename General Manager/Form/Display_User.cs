@@ -18,7 +18,7 @@ namespace General_Manager.Form
         {
             InitializeComponent();
         }
-        Hotel_ManagementEntities4 db;
+        Hotel_ManagementEntities3 db;
         private void Watch_Load(object sender, EventArgs e)
         {
 
@@ -34,7 +34,7 @@ namespace General_Manager.Form
 
         private void Display_User_Load(object sender, EventArgs e)
         {
-            db = new Hotel_ManagementEntities4();
+            db = new Hotel_ManagementEntities3();
             // TODO: This line of code loads data into the 'hotel_ManagementDataSet1.Customer' table. You can move, or remove it, as needed.
             this.customerTableAdapter.Fill(this.hotel_ManagementDataSet1.Customer);
             db.Customers.Load();

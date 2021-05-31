@@ -31,6 +31,7 @@ namespace General_Manager.Form
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.M010101 = new DevExpress.XtraBars.BarButtonItem();
             this.M010103 = new DevExpress.XtraBars.BarButtonItem();
@@ -38,7 +39,7 @@ namespace General_Manager.Form
             this.M010202 = new DevExpress.XtraBars.BarButtonItem();
             this.M010203 = new DevExpress.XtraBars.BarButtonItem();
             this.M010301 = new DevExpress.XtraBars.BarButtonItem();
-            this.m010302 = new DevExpress.XtraBars.BarButtonItem();
+            this.M010302 = new DevExpress.XtraBars.BarButtonItem();
             this.m010303 = new DevExpress.XtraBars.BarButtonItem();
             this.M010401 = new DevExpress.XtraBars.BarButtonItem();
             this.M010402 = new DevExpress.XtraBars.BarButtonItem();
@@ -196,7 +197,7 @@ namespace General_Manager.Form
             this.M010202,
             this.M010203,
             this.M010301,
-            this.m010302,
+            this.M010302,
             this.m010303,
             this.M010401,
             this.M010402,
@@ -274,12 +275,13 @@ namespace General_Manager.Form
             this.M010301.Name = "M010301";
             this.M010301.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010301_ItemClick);
             // 
-            // m010302
+            // M010302
             // 
-            this.m010302.Caption = "Salary";
-            this.m010302.Id = 8;
-            this.m010302.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010302.ImageOptions.SvgImage")));
-            this.m010302.Name = "m010302";
+            this.M010302.Caption = "Salary";
+            this.M010302.Id = 8;
+            this.M010302.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("m010302.ImageOptions.SvgImage")));
+            this.M010302.Name = "M010302";
+            this.M010302.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.M010302_ItemClick);
             // 
             // m010303
             // 
@@ -415,7 +417,7 @@ namespace General_Manager.Form
             // m0103
             // 
             this.m0103.ItemLinks.Add(this.M010301);
-            this.m0103.ItemLinks.Add(this.m010302);
+            this.m0103.ItemLinks.Add(this.M010302);
             this.m0103.ItemLinks.Add(this.m010303);
             this.m0103.ItemLinks.Add(this.Room_item);
             this.m0103.Name = "m0103";
@@ -947,6 +949,9 @@ namespace General_Manager.Form
             this.GridControl.DataSource = this.employeeBindingSource1;
             this.GridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.GridControl.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            gridLevelNode1.RelationName = "Level1";
+            this.GridControl.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.GridControl.Location = new System.Drawing.Point(-5, 561);
             this.GridControl.MainView = this.Gridview_Employee;
             this.GridControl.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
@@ -1255,7 +1260,7 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.BarButtonItem M010202;
         private DevExpress.XtraBars.BarButtonItem M010203;
         private DevExpress.XtraBars.BarButtonItem M010301;
-        private DevExpress.XtraBars.BarButtonItem m010302;
+        private DevExpress.XtraBars.BarButtonItem M010302;
         private DevExpress.XtraBars.BarButtonItem m010303;
         private DevExpress.XtraBars.BarButtonItem M010401;
         private DevExpress.XtraBars.BarButtonItem M010402;
@@ -1278,7 +1283,6 @@ namespace General_Manager.Form
         private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.PanelControl Panel_Info;
-        private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraEditors.TextEdit IdTextEdit;
         private DevExpress.XtraEditors.TextEdit passwordTextEdit;
         private DevExpress.XtraEditors.TextEdit fnameTextEdit;
@@ -1313,7 +1317,6 @@ namespace General_Manager.Form
         private DevExpress.XtraLayout.LayoutControlItem ItemForphone;
         private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
-        private DevExpress.XtraGrid.GridControl GridControl;
         private DevExpress.XtraGrid.Views.Grid.GridView Gridview_Employee;
         private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colpassword;
@@ -1344,5 +1347,7 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.Ribbon.RibbonPage M03;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0301;
         private DevExpress.XtraEditors.CheckedComboBoxEdit roleTextEdit;
+        public DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
+        public DevExpress.XtraGrid.GridControl GridControl;
     }
 }

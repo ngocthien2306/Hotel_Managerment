@@ -56,7 +56,7 @@ namespace General_Manager.Form
             EmployeeHotel em = new EmployeeHotel();
             Menu menu = new Menu();
             em.ID = Convert.ToInt32(menu.Label_ShowId.Text);
-            em.Description = "Check in" + DateTime.Now.ToString();
+            em.Description = "Check in " + DateTime.Now.ToString();
             em.SaveHistoryCheckINandOut();
         }
 
@@ -67,7 +67,9 @@ namespace General_Manager.Form
             int duration = Convert.ToInt32(ts2.TotalMinutes);
             XtraMessageBox.Show(duration.ToString());
             EmployeeHotel em = new EmployeeHotel();
-            em.Description = "Check out" + DateTime.Now.ToString();
+            Menu menu = new Menu();
+            em.ID = Convert.ToInt32(menu.Label_ShowId.Text);
+            em.Description = "Check out " + DateTime.Now.ToString();
             em.SaveHistoryCheckINandOut();
         }
     }

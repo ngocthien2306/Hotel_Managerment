@@ -4,7 +4,15 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Entity_Hotel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Hotel Management.dbo.cusHistory' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="cusHistory">
+          <Property Name="fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="daylog" Type="date" />
+          <Property Name="description" Type="text" />
+        </EntityType>-->
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="Id" />
@@ -17,14 +25,23 @@
           <Property Name="username" Type="nvarchar" MaxLength="50" />
           <Property Name="CMND" Type="int" />
         </EntityType>
-        <EntityContainer Name="ModelStoreContainer">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'Hotel Management.dbo.empHistory' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="empHistory">
+          <Property Name="Id" Type="int" />
+          <Property Name="fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="daylog" Type="datetime" />
+          <Property Name="role" Type="nvarchar" MaxLength="50" />
+          <Property Name="description" Type="text" />
+        </EntityType>-->
+        <EntityContainer Name="Entity_HotelStoreContainer">
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="Entity_Hotel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="Id" />
@@ -45,9 +62,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Hotel_ManagementEntities3">
+        <EntityContainerMapping StorageEntityContainer="Entity_HotelStoreContainer" CdmEntityContainer="Hotel_ManagementEntities3">
           <EntitySetMapping Name="Customers">
-            <EntityTypeMapping TypeName="Model.Customer">
+            <EntityTypeMapping TypeName="Entity_Hotel.Customer">
               <MappingFragment StoreEntitySet="Customer">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="fullname" ColumnName="fullname" />

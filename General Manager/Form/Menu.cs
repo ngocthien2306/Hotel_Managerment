@@ -99,10 +99,14 @@ namespace General_Manager.Form
         private void M010501_ItemClick(object sender, ItemClickEventArgs e)
         {
             employeeBindingSource1.AddNew();
+            dataLayoutControl1.Visible = true;
+            GridControl.Visible = true;
         }
 
         private void M010503_ItemClick(object sender, ItemClickEventArgs e)
         {
+            dataLayoutControl1.Visible = true;
+            GridControl.Visible = true;
             try
             {
                 int id = Convert.ToInt32(IdTextEdit.Text);
@@ -117,6 +121,8 @@ namespace General_Manager.Form
 
         private void M010502_ItemClick(object sender, ItemClickEventArgs e)
         {
+            dataLayoutControl1.Visible = true;
+            GridControl.Visible = true;
             if (XtraMessageBox.Show("Are you sure want to remove this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 employeeBindingSource1.RemoveCurrent();
         }
@@ -170,6 +176,12 @@ namespace General_Manager.Form
         {
             History_loginForm his = new History_loginForm();
             his.ShowDialog();
+        }
+
+        private void M010302_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Salary_Perday salary = new Salary_Perday();
+            salary.ShowDialog();
         }
     }
 }
