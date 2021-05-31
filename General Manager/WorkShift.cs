@@ -419,7 +419,7 @@ namespace General_Manager.Form
         public bool UpdateWorkDuration(int Id, int Mins)
         {
             string DoW = DateTime.Now.ToString("dddd");
-            SqlCommand command = new SqlCommand("Update WorkDuration set "+DoW+" += @Mins where Id = @Id", db.GetConnection);
+            SqlCommand command = new SqlCommand("Update WorkDone set "+DoW+" += @Mins where Id = @Id", db.GetConnection);
             command.Parameters.Add("@Id", SqlDbType.Int).Value = Id;
             command.Parameters.Add("@Mins", SqlDbType.Int).Value = Mins;
             db.OpenConnection();
