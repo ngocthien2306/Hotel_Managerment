@@ -170,6 +170,8 @@ namespace General_Manager.Form
         private void M010401_ItemClick(object sender, ItemClickEventArgs e)
         {
             this.ReloadData();
+            dataLayoutControl1.Visible = true;
+            GridControl.Visible = true;
         }
 
         private void M010203_ItemClick(object sender, ItemClickEventArgs e)
@@ -182,6 +184,11 @@ namespace General_Manager.Form
         {
             Salary_Perday salary = new Salary_Perday();
             salary.ShowDialog();
+        }
+
+        private void m010303_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }
