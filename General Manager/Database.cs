@@ -11,7 +11,7 @@ namespace General_Manager.Form
     {
         //"Data Source=DESKTOP-A1KBTCS;Initial Catalog=Hotel Management;Integrated Security=True"
         //"Data Source=DESKTOP-NHHG86O;Initial Catalog=Hotel Management;Integrated Security=True"
-        SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-A1KBTCS;Initial Catalog=Hotel Management;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-NHHG86O;Initial Catalog=Hotel Management;Integrated Security=True");
         public SqlConnection GetConnection
         {
             get { return this.connect; }

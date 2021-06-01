@@ -116,7 +116,10 @@ namespace General_Manager.Form
                             manager.Label_ShowId.Text = UserId.ToString();
                             manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
                             manager.PictureUser.Image = Image.FromStream(picture);
+                            manager.Label_showrole.Text = role;
                             //w.InsertId(Convert.ToInt32(UserId));
+                            User u = new User();
+                            u.ID = Convert.ToInt32(Username_tb.Text);
                             user.Daylog = DateTime.Now;
                             user.Fullname = fname + " " + lname;
                             user.Description = "Login account";
@@ -131,6 +134,7 @@ namespace General_Manager.Form
                             manager.Label_ShowId.Text = UserId.ToString();
                             manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
                             manager.PictureUser.Image = Image.FromStream(picture);
+                            manager.Label_showrole.Text = role;
                             //w.InsertId(Convert.ToInt32(UserId));
                             user.Daylog = DateTime.Now;
                             user.Fullname = fname + " " + lname;
@@ -146,6 +150,7 @@ namespace General_Manager.Form
                             manager.Label_ShowId.Text = UserId.ToString();
                             manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
                             manager.PictureUser.Image = Image.FromStream(picture);
+                            manager.Label_showrole.Text = role;
                             //w.InsertId(Convert.ToInt32(UserId));
                             user.Daylog = DateTime.Now;
                             user.Fullname = fname + " " + lname;

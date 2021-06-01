@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using General_Manager.Form;
 using System.Data.Entity;
 using DevExpress.XtraEditors;
+using System.Data.SqlClient;
 namespace General_Manager.Form
 {
     public partial class Menu : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -91,6 +92,7 @@ namespace General_Manager.Form
         public void ReloadData()
         {
             // TODO: This line of code loads data into the 'hotel_ManagementDataSet.Employee' table. You can move, or remove it, as needed.
+            GridControl_ForReceptionistRole.Visible = false;
             this.employeeTableAdapter.Fill(this.hotel_ManagementDataSet.Employee);
             db = new Hotel_Management_Entities();
             db.Employees.Load();
@@ -169,9 +171,26 @@ namespace General_Manager.Form
 
         private void M010401_ItemClick(object sender, ItemClickEventArgs e)
         {
-            this.ReloadData();
-            dataLayoutControl1.Visible = true;
-            GridControl.Visible = true;
+            if(Label_showrole.Text == "Manager")
+            {
+                this.ReloadData();
+                dataLayoutControl1.Visible = true;
+                GridControl.Visible = true;
+            }
+            else if(Label_showrole.Text == "Receptionist")
+            {
+                EmployeeHotel employee = new EmployeeHotel();
+                Database data = new Database();
+                SqlCommand command = new SqlCommand("select Id, password, fname, lname, CMND, bdate, address, phone, email, " +
+                        "salary, role, daywork, work, picture, gender from employee where role = 'Janitor'", data.GetConnection);
+                GridControl_ForReceptionistRole.DataSource = employee.GetUsers(command);
+                GridControl_ForReceptionistRole.Visible = true;
+                dataLayoutControl1.Visible = true;
+            }
+            else
+            {
+              
+            }
         }
 
         private void M010203_ItemClick(object sender, ItemClickEventArgs e)
@@ -186,9 +205,10 @@ namespace General_Manager.Form
             salary.ShowDialog();
         }
 
-        private void m010303_ItemClick(object sender, ItemClickEventArgs e)
+        private void M010303_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            SalaryCheck check = new SalaryCheck();
+            check.ShowDialog();
         }
     }
 }

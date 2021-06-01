@@ -121,6 +121,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\SalaryCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SalaryCheck.Designer.cs">
+      <DependentUpon>SalaryCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="Salary.cs" />
     <Compile Include="Form\Attendance.cs">
       <SubType>Form</SubType>
@@ -337,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\OutlookAppointmentForm.ru.resx">
       <DependentUpon>OutlookAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SalaryCheck.resx">
+      <DependentUpon>SalaryCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Salary_Perday.resx">
       <DependentUpon>Salary_Perday.cs</DependentUpon>

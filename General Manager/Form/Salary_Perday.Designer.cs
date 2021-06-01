@@ -59,10 +59,9 @@ namespace General_Manager.Form
             // 
             this.Label_his.AutoSize = true;
             this.Label_his.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_his.Location = new System.Drawing.Point(26, 164);
-            this.Label_his.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_his.Location = new System.Drawing.Point(12, 34);
             this.Label_his.Name = "Label_his";
-            this.Label_his.Size = new System.Drawing.Size(47, 17);
+            this.Label_his.Size = new System.Drawing.Size(56, 20);
             this.Label_his.TabIndex = 3;
             this.Label_his.Text = "History";
             // 
@@ -70,10 +69,9 @@ namespace General_Manager.Form
             // 
             this.listBoxControl1.DataSource = this.empHistoryBindingSource;
             this.listBoxControl1.DisplayMember = "description";
-            this.listBoxControl1.Location = new System.Drawing.Point(28, 206);
-            this.listBoxControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.listBoxControl1.Location = new System.Drawing.Point(12, 98);
             this.listBoxControl1.Name = "listBoxControl1";
-            this.listBoxControl1.Size = new System.Drawing.Size(130, 108);
+            this.listBoxControl1.Size = new System.Drawing.Size(275, 352);
             this.listBoxControl1.TabIndex = 6;
             this.listBoxControl1.ValueMember = "Id";
             // 
@@ -93,28 +91,30 @@ namespace General_Manager.Form
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(178, 12);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gridControl1.Location = new System.Drawing.Point(314, 98);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(400, 302);
+            this.gridControl1.Size = new System.Drawing.Size(605, 352);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 397;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
             // Salary_Perday
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 324);
+            this.ClientSize = new System.Drawing.Size(932, 462);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.listBoxControl1);
             this.Controls.Add(this.Label_his);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Salary_Perday";
             this.Text = "Salary_Perday";
             this.Load += new System.EventHandler(this.Salary_Perday_Load);
