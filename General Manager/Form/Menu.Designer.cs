@@ -519,7 +519,7 @@ namespace General_Manager.Form
             // IdTextEdit
             // 
             this.IdTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "Id", true));
-            this.IdTextEdit.Location = new System.Drawing.Point(63, 11);
+            this.IdTextEdit.Location = new System.Drawing.Point(64, 12);
             this.IdTextEdit.MenuManager = this.ribbon;
             this.IdTextEdit.Name = "IdTextEdit";
             this.IdTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -527,7 +527,7 @@ namespace General_Manager.Form
             this.IdTextEdit.Properties.Mask.EditMask = "d";
             this.IdTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.IdTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.IdTextEdit.Size = new System.Drawing.Size(251, 22);
+            this.IdTextEdit.Size = new System.Drawing.Size(250, 22);
             this.IdTextEdit.StyleController = this.dataLayoutControl1;
             this.IdTextEdit.TabIndex = 4;
             // 
@@ -539,7 +539,7 @@ namespace General_Manager.Form
             // passwordTextEdit
             // 
             this.passwordTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "password", true));
-            this.passwordTextEdit.Location = new System.Drawing.Point(370, 11);
+            this.passwordTextEdit.Location = new System.Drawing.Point(370, 12);
             this.passwordTextEdit.MenuManager = this.ribbon;
             this.passwordTextEdit.Name = "passwordTextEdit";
             this.passwordTextEdit.Size = new System.Drawing.Size(250, 22);
@@ -549,30 +549,30 @@ namespace General_Manager.Form
             // fnameTextEdit
             // 
             this.fnameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "fname", true));
-            this.fnameTextEdit.Location = new System.Drawing.Point(63, 37);
+            this.fnameTextEdit.Location = new System.Drawing.Point(64, 38);
             this.fnameTextEdit.MenuManager = this.ribbon;
             this.fnameTextEdit.Name = "fnameTextEdit";
-            this.fnameTextEdit.Size = new System.Drawing.Size(557, 22);
+            this.fnameTextEdit.Size = new System.Drawing.Size(556, 22);
             this.fnameTextEdit.StyleController = this.dataLayoutControl1;
             this.fnameTextEdit.TabIndex = 6;
             // 
             // lnameTextEdit
             // 
             this.lnameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "lname", true));
-            this.lnameTextEdit.Location = new System.Drawing.Point(63, 63);
+            this.lnameTextEdit.Location = new System.Drawing.Point(64, 64);
             this.lnameTextEdit.MenuManager = this.ribbon;
             this.lnameTextEdit.Name = "lnameTextEdit";
-            this.lnameTextEdit.Size = new System.Drawing.Size(557, 22);
+            this.lnameTextEdit.Size = new System.Drawing.Size(556, 22);
             this.lnameTextEdit.StyleController = this.dataLayoutControl1;
             this.lnameTextEdit.TabIndex = 7;
             // 
             // CMNDTextEdit
             // 
             this.CMNDTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "CMND", true));
-            this.CMNDTextEdit.Location = new System.Drawing.Point(676, 11);
+            this.CMNDTextEdit.Location = new System.Drawing.Point(676, 12);
             this.CMNDTextEdit.MenuManager = this.ribbon;
             this.CMNDTextEdit.Name = "CMNDTextEdit";
-            this.CMNDTextEdit.Size = new System.Drawing.Size(250, 22);
+            this.CMNDTextEdit.Size = new System.Drawing.Size(249, 22);
             this.CMNDTextEdit.StyleController = this.dataLayoutControl1;
             this.CMNDTextEdit.TabIndex = 8;
             // 
@@ -580,31 +580,31 @@ namespace General_Manager.Form
             // 
             this.bdateDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("DateTime", this.employeeBindingSource1, "bdate", true));
             this.bdateDateEdit.EditValue = null;
-            this.bdateDateEdit.Location = new System.Drawing.Point(676, 37);
+            this.bdateDateEdit.Location = new System.Drawing.Point(676, 38);
             this.bdateDateEdit.MenuManager = this.ribbon;
             this.bdateDateEdit.Name = "bdateDateEdit";
             this.bdateDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.bdateDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.bdateDateEdit.Size = new System.Drawing.Size(558, 22);
+            this.bdateDateEdit.Size = new System.Drawing.Size(557, 22);
             this.bdateDateEdit.StyleController = this.dataLayoutControl1;
             this.bdateDateEdit.TabIndex = 9;
             // 
             // addressTextEdit
             // 
             this.addressTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "address", true));
-            this.addressTextEdit.Location = new System.Drawing.Point(381, 148);
+            this.addressTextEdit.Location = new System.Drawing.Point(382, 150);
             this.addressTextEdit.MenuManager = this.ribbon;
             this.addressTextEdit.Name = "addressTextEdit";
-            this.addressTextEdit.Size = new System.Drawing.Size(842, 22);
+            this.addressTextEdit.Size = new System.Drawing.Size(839, 22);
             this.addressTextEdit.StyleController = this.dataLayoutControl1;
             this.addressTextEdit.TabIndex = 10;
             // 
             // phoneTextEdit
             // 
             this.phoneTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "phone", true));
-            this.phoneTextEdit.Location = new System.Drawing.Point(982, 11);
+            this.phoneTextEdit.Location = new System.Drawing.Point(981, 12);
             this.phoneTextEdit.MenuManager = this.ribbon;
             this.phoneTextEdit.Name = "phoneTextEdit";
             this.phoneTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -619,7 +619,7 @@ namespace General_Manager.Form
             // salaryTextEdit
             // 
             this.salaryTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "salary", true));
-            this.salaryTextEdit.Location = new System.Drawing.Point(675, 89);
+            this.salaryTextEdit.Location = new System.Drawing.Point(675, 90);
             this.salaryTextEdit.MenuManager = this.ribbon;
             this.salaryTextEdit.Name = "salaryTextEdit";
             this.salaryTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -627,7 +627,7 @@ namespace General_Manager.Form
             this.salaryTextEdit.Properties.Mask.EditMask = "G";
             this.salaryTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.salaryTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.salaryTextEdit.Size = new System.Drawing.Size(559, 22);
+            this.salaryTextEdit.Size = new System.Drawing.Size(558, 22);
             this.salaryTextEdit.StyleController = this.dataLayoutControl1;
             this.salaryTextEdit.TabIndex = 13;
             // 
@@ -635,7 +635,7 @@ namespace General_Manager.Form
             // 
             this.dayworkDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("DateTime", this.employeeBindingSource1, "daywork", true));
             this.dayworkDateEdit.EditValue = null;
-            this.dayworkDateEdit.Location = new System.Drawing.Point(370, 89);
+            this.dayworkDateEdit.Location = new System.Drawing.Point(370, 90);
             this.dayworkDateEdit.MenuManager = this.ribbon;
             this.dayworkDateEdit.Name = "dayworkDateEdit";
             this.dayworkDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -649,7 +649,7 @@ namespace General_Manager.Form
             // workTextEdit
             // 
             this.workTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "work", true));
-            this.workTextEdit.Location = new System.Drawing.Point(63, 89);
+            this.workTextEdit.Location = new System.Drawing.Point(64, 90);
             this.workTextEdit.MenuManager = this.ribbon;
             this.workTextEdit.Name = "workTextEdit";
             this.workTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -657,18 +657,18 @@ namespace General_Manager.Form
             this.workTextEdit.Properties.Mask.EditMask = "N0";
             this.workTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.workTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.workTextEdit.Size = new System.Drawing.Size(251, 22);
+            this.workTextEdit.Size = new System.Drawing.Size(250, 22);
             this.workTextEdit.StyleController = this.dataLayoutControl1;
             this.workTextEdit.TabIndex = 16;
             // 
             // PicturePictureEdit
             // 
             this.PicturePictureEdit.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.employeeBindingSource1, "picture", true));
-            this.PicturePictureEdit.Location = new System.Drawing.Point(63, 115);
+            this.PicturePictureEdit.Location = new System.Drawing.Point(64, 116);
             this.PicturePictureEdit.MenuManager = this.ribbon;
             this.PicturePictureEdit.Name = "PicturePictureEdit";
             this.PicturePictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.PicturePictureEdit.Size = new System.Drawing.Size(251, 180);
+            this.PicturePictureEdit.Size = new System.Drawing.Size(250, 178);
             this.PicturePictureEdit.StyleController = this.dataLayoutControl1;
             this.PicturePictureEdit.TabIndex = 17;
             this.PicturePictureEdit.Click += new System.EventHandler(this.PicturePictureEdit_Click_1);
@@ -676,10 +676,10 @@ namespace General_Manager.Form
             // emailTextEdit
             // 
             this.emailTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "email", true));
-            this.emailTextEdit.Location = new System.Drawing.Point(829, 174);
+            this.emailTextEdit.Location = new System.Drawing.Point(828, 176);
             this.emailTextEdit.MenuManager = this.ribbon;
             this.emailTextEdit.Name = "emailTextEdit";
-            this.emailTextEdit.Size = new System.Drawing.Size(394, 22);
+            this.emailTextEdit.Size = new System.Drawing.Size(393, 22);
             this.emailTextEdit.StyleController = this.dataLayoutControl1;
             this.emailTextEdit.TabIndex = 19;
             // 
@@ -687,7 +687,7 @@ namespace General_Manager.Form
             // 
             this.genderTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "gender", true));
             this.genderTextEdit.EditValue = "";
-            this.genderTextEdit.Location = new System.Drawing.Point(381, 174);
+            this.genderTextEdit.Location = new System.Drawing.Point(382, 176);
             this.genderTextEdit.MenuManager = this.ribbon;
             this.genderTextEdit.Name = "genderTextEdit";
             this.genderTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -697,7 +697,7 @@ namespace General_Manager.Form
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Ms"),
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Mrs"),
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Miss")});
-            this.genderTextEdit.Size = new System.Drawing.Size(392, 22);
+            this.genderTextEdit.Size = new System.Drawing.Size(390, 22);
             this.genderTextEdit.StyleController = this.dataLayoutControl1;
             this.genderTextEdit.TabIndex = 18;
             // 
@@ -705,7 +705,7 @@ namespace General_Manager.Form
             // 
             this.roleTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employeeBindingSource1, "role", true));
             this.roleTextEdit.EditValue = "";
-            this.roleTextEdit.Location = new System.Drawing.Point(676, 63);
+            this.roleTextEdit.Location = new System.Drawing.Point(676, 64);
             this.roleTextEdit.MenuManager = this.ribbon;
             this.roleTextEdit.Name = "roleTextEdit";
             this.roleTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -714,7 +714,7 @@ namespace General_Manager.Form
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Manager"),
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Receptionist"),
             new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "Janior")});
-            this.roleTextEdit.Size = new System.Drawing.Size(558, 22);
+            this.roleTextEdit.Size = new System.Drawing.Size(557, 22);
             this.roleTextEdit.StyleController = this.dataLayoutControl1;
             this.roleTextEdit.TabIndex = 14;
             // 
@@ -748,14 +748,14 @@ namespace General_Manager.Form
             this.ItemForphone});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1227, 288);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1225, 286);
             // 
             // ItemForId
             // 
             this.ItemForId.Control = this.IdTextEdit;
             this.ItemForId.Location = new System.Drawing.Point(0, 0);
             this.ItemForId.Name = "ItemForId";
-            this.ItemForId.Size = new System.Drawing.Size(307, 26);
+            this.ItemForId.Size = new System.Drawing.Size(306, 26);
             this.ItemForId.Text = "Id";
             this.ItemForId.TextSize = new System.Drawing.Size(49, 15);
             // 
@@ -764,7 +764,7 @@ namespace General_Manager.Form
             this.ItemForfname.Control = this.fnameTextEdit;
             this.ItemForfname.Location = new System.Drawing.Point(0, 26);
             this.ItemForfname.Name = "ItemForfname";
-            this.ItemForfname.Size = new System.Drawing.Size(613, 26);
+            this.ItemForfname.Size = new System.Drawing.Size(612, 26);
             this.ItemForfname.Text = "fname";
             this.ItemForfname.TextSize = new System.Drawing.Size(49, 15);
             // 
@@ -773,7 +773,7 @@ namespace General_Manager.Form
             this.ItemForlname.Control = this.lnameTextEdit;
             this.ItemForlname.Location = new System.Drawing.Point(0, 52);
             this.ItemForlname.Name = "ItemForlname";
-            this.ItemForlname.Size = new System.Drawing.Size(613, 26);
+            this.ItemForlname.Size = new System.Drawing.Size(612, 26);
             this.ItemForlname.Text = "lname";
             this.ItemForlname.TextSize = new System.Drawing.Size(49, 15);
             // 
@@ -782,23 +782,23 @@ namespace General_Manager.Form
             this.ItemForwork.Control = this.workTextEdit;
             this.ItemForwork.Location = new System.Drawing.Point(0, 78);
             this.ItemForwork.Name = "ItemForwork";
-            this.ItemForwork.Size = new System.Drawing.Size(307, 26);
+            this.ItemForwork.Size = new System.Drawing.Size(306, 26);
             this.ItemForwork.Text = "work";
             this.ItemForwork.TextSize = new System.Drawing.Size(49, 15);
             // 
             // ItemForCMND
             // 
             this.ItemForCMND.Control = this.CMNDTextEdit;
-            this.ItemForCMND.Location = new System.Drawing.Point(613, 0);
+            this.ItemForCMND.Location = new System.Drawing.Point(612, 0);
             this.ItemForCMND.Name = "ItemForCMND";
-            this.ItemForCMND.Size = new System.Drawing.Size(306, 26);
+            this.ItemForCMND.Size = new System.Drawing.Size(305, 26);
             this.ItemForCMND.Text = "CMND";
             this.ItemForCMND.TextSize = new System.Drawing.Size(49, 15);
             // 
             // ItemForpassword
             // 
             this.ItemForpassword.Control = this.passwordTextEdit;
-            this.ItemForpassword.Location = new System.Drawing.Point(307, 0);
+            this.ItemForpassword.Location = new System.Drawing.Point(306, 0);
             this.ItemForpassword.Name = "ItemForpassword";
             this.ItemForpassword.Size = new System.Drawing.Size(306, 26);
             this.ItemForpassword.Text = "password";
@@ -807,16 +807,16 @@ namespace General_Manager.Form
             // ItemForrole
             // 
             this.ItemForrole.Control = this.roleTextEdit;
-            this.ItemForrole.Location = new System.Drawing.Point(613, 52);
+            this.ItemForrole.Location = new System.Drawing.Point(612, 52);
             this.ItemForrole.Name = "ItemForrole";
-            this.ItemForrole.Size = new System.Drawing.Size(614, 26);
+            this.ItemForrole.Size = new System.Drawing.Size(613, 26);
             this.ItemForrole.Text = "role";
             this.ItemForrole.TextSize = new System.Drawing.Size(49, 15);
             // 
             // ItemFordaywork
             // 
             this.ItemFordaywork.Control = this.dayworkDateEdit;
-            this.ItemFordaywork.Location = new System.Drawing.Point(307, 78);
+            this.ItemFordaywork.Location = new System.Drawing.Point(306, 78);
             this.ItemFordaywork.Name = "ItemFordaywork";
             this.ItemFordaywork.Size = new System.Drawing.Size(305, 26);
             this.ItemFordaywork.Text = "daywork";
@@ -827,7 +827,7 @@ namespace General_Manager.Form
             this.ItemForpicture.Control = this.PicturePictureEdit;
             this.ItemForpicture.Location = new System.Drawing.Point(0, 104);
             this.ItemForpicture.Name = "ItemForpicture";
-            this.ItemForpicture.Size = new System.Drawing.Size(307, 184);
+            this.ItemForpicture.Size = new System.Drawing.Size(306, 182);
             this.ItemForpicture.StartNewLine = true;
             this.ItemForpicture.Text = "picture";
             this.ItemForpicture.TextSize = new System.Drawing.Size(49, 15);
@@ -835,18 +835,18 @@ namespace General_Manager.Form
             // ItemForsalary
             // 
             this.ItemForsalary.Control = this.salaryTextEdit;
-            this.ItemForsalary.Location = new System.Drawing.Point(612, 78);
+            this.ItemForsalary.Location = new System.Drawing.Point(611, 78);
             this.ItemForsalary.Name = "ItemForsalary";
-            this.ItemForsalary.Size = new System.Drawing.Size(615, 26);
+            this.ItemForsalary.Size = new System.Drawing.Size(614, 26);
             this.ItemForsalary.Text = "salary";
             this.ItemForsalary.TextSize = new System.Drawing.Size(49, 15);
             // 
             // tabbedControlGroup2
             // 
-            this.tabbedControlGroup2.Location = new System.Drawing.Point(307, 104);
+            this.tabbedControlGroup2.Location = new System.Drawing.Point(306, 104);
             this.tabbedControlGroup2.Name = "tabbedControlGroup2";
             this.tabbedControlGroup2.SelectedTabPage = this.layoutControlGroup4;
-            this.tabbedControlGroup2.Size = new System.Drawing.Size(920, 184);
+            this.tabbedControlGroup2.Size = new System.Drawing.Size(919, 182);
             this.tabbedControlGroup2.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup4});
             // 
@@ -858,7 +858,7 @@ namespace General_Manager.Form
             this.ItemForemail});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(898, 140);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(895, 136);
             this.layoutControlGroup4.Text = "Group";
             // 
             // ItemForaddress
@@ -866,7 +866,7 @@ namespace General_Manager.Form
             this.ItemForaddress.Control = this.addressTextEdit;
             this.ItemForaddress.Location = new System.Drawing.Point(0, 0);
             this.ItemForaddress.Name = "ItemForaddress";
-            this.ItemForaddress.Size = new System.Drawing.Size(898, 26);
+            this.ItemForaddress.Size = new System.Drawing.Size(895, 26);
             this.ItemForaddress.Text = "address";
             this.ItemForaddress.TextSize = new System.Drawing.Size(49, 15);
             // 
@@ -875,32 +875,32 @@ namespace General_Manager.Form
             this.ItemForgender.Control = this.genderTextEdit;
             this.ItemForgender.Location = new System.Drawing.Point(0, 26);
             this.ItemForgender.Name = "ItemForgender";
-            this.ItemForgender.Size = new System.Drawing.Size(448, 114);
+            this.ItemForgender.Size = new System.Drawing.Size(446, 110);
             this.ItemForgender.Text = "gender";
             this.ItemForgender.TextSize = new System.Drawing.Size(49, 15);
             // 
             // ItemForemail
             // 
             this.ItemForemail.Control = this.emailTextEdit;
-            this.ItemForemail.Location = new System.Drawing.Point(448, 26);
+            this.ItemForemail.Location = new System.Drawing.Point(446, 26);
             this.ItemForemail.Name = "ItemForemail";
-            this.ItemForemail.Size = new System.Drawing.Size(450, 114);
+            this.ItemForemail.Size = new System.Drawing.Size(449, 110);
             this.ItemForemail.Text = "email";
             this.ItemForemail.TextSize = new System.Drawing.Size(49, 15);
             // 
             // ItemForbdate
             // 
             this.ItemForbdate.Control = this.bdateDateEdit;
-            this.ItemForbdate.Location = new System.Drawing.Point(613, 26);
+            this.ItemForbdate.Location = new System.Drawing.Point(612, 26);
             this.ItemForbdate.Name = "ItemForbdate";
-            this.ItemForbdate.Size = new System.Drawing.Size(614, 26);
+            this.ItemForbdate.Size = new System.Drawing.Size(613, 26);
             this.ItemForbdate.Text = "bdate";
             this.ItemForbdate.TextSize = new System.Drawing.Size(49, 15);
             // 
             // ItemForphone
             // 
             this.ItemForphone.Control = this.phoneTextEdit;
-            this.ItemForphone.Location = new System.Drawing.Point(919, 0);
+            this.ItemForphone.Location = new System.Drawing.Point(917, 0);
             this.ItemForphone.Name = "ItemForphone";
             this.ItemForphone.Size = new System.Drawing.Size(308, 26);
             this.ItemForphone.Text = "phone";
@@ -1242,16 +1242,11 @@ namespace General_Manager.Form
         private DevExpress.XtraBars.BarButtonItem M010501;
         private DevExpress.XtraBars.BarButtonItem M010502;
         private DevExpress.XtraBars.BarButtonItem M010503;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup m0102;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup m0103;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup m0104;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup m0105;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem Change_Interface;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem Interface;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup Theme;
         private DevExpress.XtraBars.Ribbon.RibbonPage m02;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup RibbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup M0108;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private Hotel_ManagementDataSet hotel_ManagementDataSet;
         private Hotel_ManagementDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
@@ -1323,5 +1318,10 @@ namespace General_Manager.Form
         private DevExpress.XtraGrid.Columns.GridColumn coldaywork;
         private DevExpress.XtraGrid.Columns.GridColumn colwork;
         private DevExpress.XtraGrid.Columns.GridColumn colpicture;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup m0102;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup m0103;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup m0105;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup M0108;
+        public DevExpress.XtraBars.Ribbon.RibbonPageGroup m0104;
     }
 }

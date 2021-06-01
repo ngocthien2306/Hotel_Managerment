@@ -70,7 +70,7 @@ namespace General_Manager.Form
                 if (CheckInCheck == DialogResult.Yes)
                 {
                     int id = Convert.ToInt32(ID_tb.Text);
-                    em.Description = "Checked in at " + DateTime.Now.ToString("MM/dd/YYYY");
+                    em.Description = "Checked in at " + DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt");
                     em.SaveHistoryCheckINandOut(id);
                     WorkStart = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt");
                 }
@@ -92,7 +92,7 @@ namespace General_Manager.Form
                 if (SoonCheckOut == DialogResult.Yes)
                 {
                     int id = Convert.ToInt32(ID_tb.Text);
-                    em.Description = "Checked out at " + DateTime.Now.ToString("MM/dd/YYYY");
+                    em.Description = "Checked out at " + DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt");
                     em.SaveHistoryCheckINandOut(id);
                     WorkEnd = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt");
                     TimeSpan WD = Convert.ToDateTime(WorkEnd) - Convert.ToDateTime(WorkStart);

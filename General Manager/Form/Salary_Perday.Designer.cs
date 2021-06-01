@@ -30,25 +30,22 @@ namespace General_Manager.Form
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salary_Perday));
             this.schedulerDataStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController(this.components);
-            this.Label_id = new DevExpress.XtraEditors.LabelControl();
-            this.Check_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.Label_his = new System.Windows.Forms.Label();
-            this.Label_salary = new System.Windows.Forms.Label();
             this.listBoxControl1 = new DevExpress.XtraEditors.ListBoxControl();
-            this.hotel_ManagementDataSet = new General_Manager.Hotel_ManagementDataSet();
             this.empHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotel_ManagementDataSet = new General_Manager.Hotel_ManagementDataSet();
             this.empHistoryTableAdapter = new General_Manager.Hotel_ManagementDataSetTableAdapters.empHistoryTableAdapter();
-            this.TextBox_salary = new System.Windows.Forms.TextBox();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empHistoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // schedulerDataStorage1
@@ -58,109 +55,76 @@ namespace General_Manager.Form
             // 
             this.schedulerDataStorage1.AppointmentDependencies.AutoReload = false;
             // 
-            // Label_id
-            // 
-            this.Label_id.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_id.Appearance.Options.UseFont = true;
-            this.Label_id.Location = new System.Drawing.Point(38, 53);
-            this.Label_id.Name = "Label_id";
-            this.Label_id.Size = new System.Drawing.Size(59, 20);
-            this.Label_id.TabIndex = 0;
-            this.Label_id.Text = "Your ID: ";
-            // 
-            // Check_btn
-            // 
-            this.Check_btn.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_btn.Appearance.Options.UseFont = true;
-            this.Check_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Check_btn.ImageOptions.SvgImage")));
-            this.Check_btn.Location = new System.Drawing.Point(623, 36);
-            this.Check_btn.Name = "Check_btn";
-            this.Check_btn.Size = new System.Drawing.Size(123, 53);
-            this.Check_btn.TabIndex = 1;
-            this.Check_btn.Text = "Check";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(167, 50);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(418, 26);
-            this.textEdit1.TabIndex = 2;
-            // 
             // Label_his
             // 
             this.Label_his.AutoSize = true;
             this.Label_his.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_his.Location = new System.Drawing.Point(34, 186);
+            this.Label_his.Location = new System.Drawing.Point(26, 164);
+            this.Label_his.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_his.Name = "Label_his";
-            this.Label_his.Size = new System.Drawing.Size(56, 20);
+            this.Label_his.Size = new System.Drawing.Size(47, 17);
             this.Label_his.TabIndex = 3;
             this.Label_his.Text = "History";
-            // 
-            // Label_salary
-            // 
-            this.Label_salary.AutoSize = true;
-            this.Label_salary.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_salary.Location = new System.Drawing.Point(248, 186);
-            this.Label_salary.Name = "Label_salary";
-            this.Label_salary.Size = new System.Drawing.Size(52, 20);
-            this.Label_salary.TabIndex = 5;
-            this.Label_salary.Text = "Salary";
             // 
             // listBoxControl1
             // 
             this.listBoxControl1.DataSource = this.empHistoryBindingSource;
             this.listBoxControl1.DisplayMember = "description";
-            this.listBoxControl1.Location = new System.Drawing.Point(38, 233);
+            this.listBoxControl1.Location = new System.Drawing.Point(28, 206);
+            this.listBoxControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.listBoxControl1.Name = "listBoxControl1";
-            this.listBoxControl1.Size = new System.Drawing.Size(173, 122);
+            this.listBoxControl1.Size = new System.Drawing.Size(130, 108);
             this.listBoxControl1.TabIndex = 6;
             this.listBoxControl1.ValueMember = "Id";
-            // 
-            // hotel_ManagementDataSet
-            // 
-            this.hotel_ManagementDataSet.DataSetName = "Hotel_ManagementDataSet";
-            this.hotel_ManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // empHistoryBindingSource
             // 
             this.empHistoryBindingSource.DataMember = "empHistory";
             this.empHistoryBindingSource.DataSource = this.hotel_ManagementDataSet;
             // 
+            // hotel_ManagementDataSet
+            // 
+            this.hotel_ManagementDataSet.DataSetName = "Hotel_ManagementDataSet";
+            this.hotel_ManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // empHistoryTableAdapter
             // 
             this.empHistoryTableAdapter.ClearBeforeFill = true;
             // 
-            // TextBox_salary
+            // gridControl1
             // 
-            this.TextBox_salary.Location = new System.Drawing.Point(335, 183);
-            this.TextBox_salary.Multiline = true;
-            this.TextBox_salary.Name = "TextBox_salary";
-            this.TextBox_salary.Size = new System.Drawing.Size(250, 22);
-            this.TextBox_salary.TabIndex = 7;
+            this.gridControl1.Location = new System.Drawing.Point(178, 12);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(400, 302);
+            this.gridControl1.TabIndex = 7;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // Salary_Perday
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 367);
-            this.Controls.Add(this.TextBox_salary);
+            this.ClientSize = new System.Drawing.Size(590, 324);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.listBoxControl1);
-            this.Controls.Add(this.Label_salary);
             this.Controls.Add(this.Label_his);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.Check_btn);
-            this.Controls.Add(this.Label_id);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Salary_Perday";
             this.Text = "Salary_Perday";
             this.Load += new System.EventHandler(this.Salary_Perday_Load);
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empHistoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel_ManagementDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,15 +133,12 @@ namespace General_Manager.Form
         #endregion
         private DevExpress.XtraScheduler.SchedulerDataStorage schedulerDataStorage1;
         private DevExpress.XtraScheduler.UI.SchedulerBarController schedulerBarController1;
-        private DevExpress.XtraEditors.LabelControl Label_id;
-        private DevExpress.XtraEditors.SimpleButton Check_btn;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
         private System.Windows.Forms.Label Label_his;
-        private System.Windows.Forms.Label Label_salary;
         private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
         private Hotel_ManagementDataSet hotel_ManagementDataSet;
         private System.Windows.Forms.BindingSource empHistoryBindingSource;
         private Hotel_ManagementDataSetTableAdapters.empHistoryTableAdapter empHistoryTableAdapter;
-        private System.Windows.Forms.TextBox TextBox_salary;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

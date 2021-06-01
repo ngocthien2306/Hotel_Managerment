@@ -15,6 +15,8 @@ namespace General_Manager.Form
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
+        EmployeeHotel user = new EmployeeHotel();
+        Menu manager = new Menu();
 
         static public int CurrentID { get; set; }
         static public void GetID(int UserID)
@@ -85,10 +87,8 @@ namespace General_Manager.Form
                 }
                 else {
                     string role = "";
-                    EmployeeHotel user = new EmployeeHotel();
                     user.ID = Convert.ToInt32(Username_tb.Text);
                     user.Password = Password_tb.Text;
-
                     Database data = new Database();
                     SqlCommand command = new SqlCommand("SELECT Id, password, fname, lname, CMND, bdate, address, phone, email, " +
                         "salary, role, daywork, work, picture, gender, shift FROM Employee WHERE Id = @id AND password = @pass", data.GetConnection);
@@ -113,7 +113,6 @@ namespace General_Manager.Form
                         WorkShift w = new WorkShift();
                         if (user.GetLogin() && role == "Manager" && Manager_rbt.Checked == true)
                         {
-                            Menu manager = new Menu();
                             manager.Label_ShowId.Text = UserId.ToString();
                             manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
                             manager.PictureUser.Image = Image.FromStream(picture);
@@ -129,11 +128,37 @@ namespace General_Manager.Form
                         }
                         else if (user.GetLogin() && role == "Receptionist" && Receptionist_rbt.Checked == true)
                         {
-
+                            manager.Label_ShowId.Text = UserId.ToString();
+                            manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
+                            manager.PictureUser.Image = Image.FromStream(picture);
+                            //w.InsertId(Convert.ToInt32(UserId));
+                            user.Daylog = DateTime.Now;
+                            user.Fullname = fname + " " + lname;
+                            user.Description = "Login account";
+                            user.Role = role;
+                            user.SaveHistoryLogin();
+                            manager.dataLayoutControl1.Visible = false;
+                            manager.GridControl.Visible = false;
+                            manager.ShowDialog();
                         }
                         else if (user.GetLogin() && role == "Janitor" && Janitor_rbt.Checked == true)
                         {
-
+                            manager.Label_ShowId.Text = UserId.ToString();
+                            manager.Label_wcome.Text = "Wellcome back " + table.Rows[0]["fname"].ToString().Trim();
+                            manager.PictureUser.Image = Image.FromStream(picture);
+                            //w.InsertId(Convert.ToInt32(UserId));
+                            user.Daylog = DateTime.Now;
+                            user.Fullname = fname + " " + lname;
+                            user.Description = "Login account";
+                            user.Role = role;
+                            user.SaveHistoryLogin();
+                            manager.dataLayoutControl1.Visible = false;
+                            manager.GridControl.Visible = false;
+                            manager.m0102.Visible = false;
+                            manager.m0103.Visible = false;
+                            manager.m0104.Visible = false;
+                            manager.m0105.Visible = false;
+                            manager.ShowDialog();
                         }
                         else
                         {
